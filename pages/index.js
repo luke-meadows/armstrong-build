@@ -1,9 +1,13 @@
-import Container from '../components/Container';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
 import ServicesGrid from '../components/ServicesGrid';
+import TopHeader from '../components/TopHeader';
 export default function Home() {
   return (
     <div>
-      <Container>Hello</Container>
+      <TopHeader />
+      <Header />
+      <Hero />
       <ServicesGrid />
     </div>
   );
