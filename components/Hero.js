@@ -12,12 +12,17 @@ export default function Hero() {
             <p className="text">
               We specialise in residential and commercial projects through
               meticulous attention to detail, collaborative efforts, and a
-              genuine care for our clients' needs.
+              genuine care for our clients&apos; needs.
             </p>
             <button>Contact us today</button>
           </div>
           <div className="right-side">
-            <Image src={HeroImg} layout="fill" objectFit="cover" />
+            <Image
+              src={HeroImg}
+              layout="fill"
+              objectFit="cover"
+              alt="diggers"
+            />
           </div>
         </div>
       </Container>

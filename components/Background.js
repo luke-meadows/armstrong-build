@@ -5,7 +5,12 @@ export default function Background() {
   return (
     <StyledBackground>
       <div className="inner-background">
-        <Image src={BackgroundImg} layout="fill" objectFit="cover" />
+        <Image
+          src={BackgroundImg}
+          layout="fill"
+          objectFit="cover"
+          alt="background image"
+        />
       </div>
     </StyledBackground>
   );

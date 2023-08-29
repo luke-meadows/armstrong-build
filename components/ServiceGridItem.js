@@ -1,11 +1,15 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import Img from '../public/images/service-grid-images/new-builds.jpg';
 export default function ServiceGridItem({ service }) {
   return (
     <StyledServiceGridItem>
       <div className="image-container">
-        <Image src={service.img} layout="fill" objectFit="cover" />
+        <Image
+          src={service.img}
+          layout="fill"
+          objectFit="cover"
+          alt="service card image"
+        />
       </div>
       <div className="service-grid-item-text">
         <div>
