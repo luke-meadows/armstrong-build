@@ -1,16 +1,39 @@
 import styled from 'styled-components';
 import Container from './Container';
 import ServiceGridItem from './ServiceGridItem';
+// Images
+import HealthcareImg from '../public/images/service-grid-images/healthcare.jpeg';
+import CommercialBuildingsImg from '../public/images/service-grid-images/commercial-buildings.jpg';
+import NewBuildsImg from '../public/images/service-grid-images/new-builds.jpg';
+import ExtensionsImg from '../public/images/service-grid-images/extensions.jpg';
+import SustainableBuildingsImg from '../public/images/service-grid-images/sustainable-buildings.jpg';
+import RenovationsImg from '../public/images/service-grid-images/rennovations.jpg';
+const serviceGridData = {
+  healthcare: { title: 'Healthcare', blurb: '', img: HealthcareImg },
+  commercial: {
+    title: 'Commercial Buildings',
+    blurb: '',
+    img: CommercialBuildingsImg,
+  },
+  newBuilds: { title: 'New Builds', blurb: '', img: NewBuildsImg },
+  extensions: { title: 'Extensions', blurb: '', img: ExtensionsImg },
+  sustainable: {
+    title: 'Sustainable Buildings',
+    blurb: '',
+    img: SustainableBuildingsImg,
+  },
+  renovations: { title: 'Renovations', blurb: '', img: RenovationsImg },
+};
 export default function ServicesGrid() {
   return (
     <Container>
       <StyledServicesGrid>
-        <ServiceGridItem />
-        <ServiceGridItem />
-        <ServiceGridItem />
-        <ServiceGridItem />
-        <ServiceGridItem />
-        <ServiceGridItem />
+        <ServiceGridItem service={serviceGridData.healthcare} />
+        <ServiceGridItem service={serviceGridData.commercial} />
+        <ServiceGridItem service={serviceGridData.newBuilds} />
+        <ServiceGridItem service={serviceGridData.extensions} />
+        <ServiceGridItem service={serviceGridData.sustainable} />
+        <ServiceGridItem service={serviceGridData.renovations} />
       </StyledServicesGrid>
     </Container>
   );

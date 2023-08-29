@@ -1,15 +1,15 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 import Img from '../public/images/service-grid-images/new-builds.jpg';
-export default function ServiceGridItem() {
+export default function ServiceGridItem({ service }) {
   return (
     <StyledServiceGridItem>
       <div className="image-container">
-        <Image src={Img} layout="fill" objectFit="cover" />
+        <Image src={service.img} layout="fill" objectFit="cover" />
       </div>
       <div className="service-grid-item-text">
         <div>
-          <h3>New Builds</h3>
+          <h3>{service.title}</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. A tempora
             molestiae cum minima facilis maiores eius unde vero quasi vel eos
@@ -25,7 +25,7 @@ const StyledServiceGridItem = styled.div`
   border-radius: 0.3rem;
   background: #f6f6f6;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
-  color: #707070;
+  color: #606060;
   position: relative;
   height: fit-content;
   .service-grid-item-text {
@@ -48,10 +48,13 @@ const StyledServiceGridItem = styled.div`
     background: #000;
     color: #ffdc00;
     width: 100%;
-    border-radius: 0.3rem;
-    outline: none;
-    border: none;
     padding: 0.5rem 0;
+    transition: all 0.2s ease;
+    &:hover {
+      background: #ffdc00;
+      color: #000;
+      font-weight: 500;
+    }
   }
   .image-container {
     position: relative;
