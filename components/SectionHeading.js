@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 import Container from './Container';
 import Link from 'next/link';
-export default function SectionHeading({ heading }) {
+export default function SectionHeading({ heading, noButton = false }) {
   return (
     <Container>
       <StyledSectionHeading>
         <h2>{heading}</h2>
-        <Link href="/contact">
-          <button>Get a Quote</button>
-        </Link>
+        {!noButton && (
+          <Link href="/contact">
+            <button>Get a Quote</button>
+          </Link>
+        )}
       </StyledSectionHeading>
     </Container>
   );
@@ -21,7 +23,11 @@ const StyledSectionHeading = styled.div`
   h2 {
     margin: 0;
     padding: 0;
-    color: #606060;
+    color: black;
+    background: #ffdc00;
+    padding: 0.5rem 2rem;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+    border-radius: 0.3rem;
   }
   button {
     background: #ffdc00;

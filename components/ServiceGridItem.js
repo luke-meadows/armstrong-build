@@ -30,15 +30,12 @@ const StyledServiceGridItem = styled.div`
   background: #f6f6f6;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
   color: #606060;
-  position: relative;
-  height: fit-content;
   .service-grid-item-text {
     padding: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 55%;
     padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
   }
   h3 {
     font-size: 20px;

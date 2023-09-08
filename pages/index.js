@@ -6,6 +6,7 @@ import SectionHeading from '../components/SectionHeading';
 import ServicesGrid from '../components/ServicesGrid';
 import StartBuildingBanner from '../components/StartBuildingBanner';
 import TopHeader from '../components/TopHeader';
+import RecentProjects from '../components/RecentProjects';
 export default function Home() {
   return (
     <StyledHome>
@@ -16,6 +17,8 @@ export default function Home() {
       <SectionHeading heading="Services" />
       <ServicesGrid />
       <StartBuildingBanner />
+      <SectionHeading heading="Some Recent Projects" noButton />
+      <RecentProjects />
     </StyledHome>
   );
 }

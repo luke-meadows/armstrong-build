@@ -69,4 +69,19 @@ const StyledHero = styled.section`
     background: white;
     position: relative;
   }
+  @media only screen and (max-width: 1235px) {
+    .hero-inner {
+      flex-direction: column;
+    }
+    .left-side,
+    .right-side {
+      width: 100%;
+    }
+    .left-side {
+      height: fit-content;
+      button {
+        /* width: fit-content; */
+      }
+    }
+  }
 `;
