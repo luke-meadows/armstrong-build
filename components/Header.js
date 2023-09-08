@@ -31,12 +31,12 @@ const StyledHeader = styled.header`
     gap: 2rem;
     a {
       font-size: 0.8rem;
-      padding: 0.5rem 0;
+      padding: 0.75rem 0;
       font-weight: 500;
     }
     .contact-button {
       background: #ffdc00;
-      padding: 0.5rem 0.75rem;
+      padding: 0.75rem 1.2rem;
       border-radius: 0.3rem;
     }
   }

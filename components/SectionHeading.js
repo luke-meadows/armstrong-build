@@ -25,13 +25,18 @@ const StyledSectionHeading = styled.div`
     padding: 0;
     color: black;
     background: #ffdc00;
-    padding: 0.5rem 2rem;
+    padding: 0.75rem 3rem;
     clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
     border-radius: 0.3rem;
   }
   button {
-    background: #ffdc00;
-    padding: 0.5rem 0.75rem;
+    padding: 0.75rem 2rem;
     font-weight: 500;
+    background: #000;
+    color: #ffdc00;
+    &:hover {
+      color: #000;
+      background: #ffdc00;
+    }
   }
 `;

@@ -1,13 +1,17 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-export default function RecentProjectItem({ position = false, img }) {
+export default function RecentProjectItem({
+  position = false,
+  img,
+  title = 'Lorem ipsum dolor sit.',
+}) {
   return (
     <StyledRecentProjectItem position={position}>
       <div className="top-section">
         <Image src={img} layout="fill" objectFit="cover" />
       </div>
       <div className="bottom-section">
-        <p>Lorem ipsum dolor sit.</p>
+        <p>{title}</p>
         <button>View</button>
       </div>
     </StyledRecentProjectItem>
@@ -40,11 +44,19 @@ const StyledRecentProjectItem = styled.div`
     p {
       color: #fff;
       font-size: 0.8rem;
+      font-weight: 500;
     }
     button {
-      background: #ffdc00;
-      padding: 0.4rem 1rem;
+      background: #000;
+      color: #ffdc00;
+      border: 1px solid #ffdc00;
+      padding: 0.4rem 1.2rem;
       border-radius: 0.3rem;
+      font-size: 0.7rem;
+      &:hover {
+        color: #000;
+        background: #ffdc00;
+      }
     }
   }
 `;

@@ -20,7 +20,7 @@ const StyledStartBuildingBanner = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 01rem;
   margin: 1rem 0;
   border-radius: 0.3rem;
   padding: 1rem 0 1.5rem 0;
@@ -35,13 +35,13 @@ const StyledStartBuildingBanner = styled.section`
     }
   }
   button {
-    border: 1px solid white;
     background: #241e21;
+    border: 1px solid #ffdc00;
     color: #ffdc00;
     padding: 1rem 4rem;
-    transition: all 0.2s ease;
     &:hover {
-      border: 1px solid #ffdc00;
+      background: #ffdc00;
+      color: #000;
     }
   }
 `;
