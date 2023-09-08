@@ -14,7 +14,7 @@ export default function Home() {
       <TopHeader />
       <Header />
       <Hero />
-      <SectionHeading heading="Services" />
+      <SectionHeading heading="Services" noButton />
       <ServicesGrid />
       <StartBuildingBanner />
       <SectionHeading heading="Some Recent Projects" noButton />

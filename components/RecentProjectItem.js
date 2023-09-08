@@ -44,7 +44,6 @@ const StyledRecentProjectItem = styled.div`
     p {
       color: #fff;
       font-size: 0.8rem;
-      font-weight: 500;
     }
     button {
       background: #000;
