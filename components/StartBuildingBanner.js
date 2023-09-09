@@ -27,10 +27,9 @@ const StyledStartBuildingBanner = styled.section`
   .upper {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     p {
       font-size: 24px;
-      font-weight: 200;
       margin: 0;
     }
   }

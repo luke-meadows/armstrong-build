@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styled from 'styled-components';
 export default function ServiceGridItem({ service }) {
   return (
@@ -20,7 +21,9 @@ export default function ServiceGridItem({ service }) {
             dolor ea nihil neque nam, molestias, sapiente eveniet soluta.
           </p>
         </div>
-        <button>Learn More</button>
+        <Link href="/service">
+          <button>Learn More</button>
+        </Link>
       </div>
     </StyledServiceGridItem>
   );

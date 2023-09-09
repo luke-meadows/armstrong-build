@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import Container from './Container';
+import Container from '../Container';
 import Image from 'next/image';
-import HeroImg from '../public/images/hero-images/home-hero.jpg';
-export default function Hero() {
+import HeroImg from '../../public/images/hero-images/home-hero.jpg';
+export default function HomeHero() {
   return (
     <StyledHero>
       <Container>
