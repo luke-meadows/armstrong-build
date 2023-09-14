@@ -5,7 +5,12 @@ export default function TestimonialItem() {
   return (
     <StyledTestimonialItem>
       <div className="quote-image-container">
-        <Image src={QuoteImg} layout="responsive" objectFit="contain" />
+        <Image
+          src={QuoteImg}
+          layout="responsive"
+          objectFit="contain"
+          alt="quote"
+        />
       </div>
 
       <div className="text-container">
