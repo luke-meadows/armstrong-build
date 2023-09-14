@@ -16,7 +16,7 @@ export default function SectionHeading({ heading, noButton = false }) {
   );
 }
 const StyledSectionHeading = styled.div`
-  padding-top: 3rem;
+  margin: 3rem 0 2rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;

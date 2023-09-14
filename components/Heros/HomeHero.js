@@ -8,12 +8,14 @@ export default function HomeHero() {
       <Container>
         <div className="hero-inner">
           <div className="left-side">
-            <h1>Delivering Construction Excellence Across the UK</h1>
-            <p className="text">
-              We specialise in residential and commercial projects through
-              meticulous attention to detail, collaborative efforts, and a
-              genuine care for our clients&apos; needs.
-            </p>
+            <div>
+              <h1>Delivering Construction Excellence Across the UK</h1>
+              <p className="text">
+                We specialise in residential and commercial projects through
+                meticulous attention to detail, collaborative efforts, and a
+                genuine care for our clients&apos; needs.
+              </p>
+            </div>
             <button>Contact us today</button>
           </div>
           <div className="right-side">
@@ -44,6 +46,9 @@ const StyledHero = styled.section`
     background: #000;
     color: #fff;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     h1 {
       font-size: 2.4rem;
       margin: 0;
@@ -60,8 +65,8 @@ const StyledHero = styled.section`
       width: 100%;
       margin-top: 1rem;
       transition: all 0.2s ease;
+      border: 1px solid #ffdc00;
       &:hover {
-        border: 1px solid #ffdc00;
       }
     }
   }

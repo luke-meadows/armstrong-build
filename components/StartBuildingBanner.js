@@ -21,7 +21,7 @@ const StyledStartBuildingBanner = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 01rem;
-  margin: 1rem 0;
+  margin-top: 3rem;
   border-radius: 0.3rem;
   padding: 1rem 0 1.5rem 0;
   .upper {
@@ -31,6 +31,7 @@ const StyledStartBuildingBanner = styled.section`
     p {
       font-size: 24px;
       margin: 0;
+      color: #fff;
     }
   }
   button {

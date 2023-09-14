@@ -8,12 +8,15 @@ export default function NewBuildHero() {
       <Container>
         <div className="hero-inner">
           <div className="left-side">
-            <h1>New Builds</h1>
-            <p className="text">
-              Discover how our construction company is shaping the landscape and
-              delivering excellence in every endeavour. Stay informed, inspired,
-              and connected with our dynamic news hub.
-            </p>
+            <div>
+              <h1>New Builds</h1>
+              <p className="text">
+                From initial concept to final completion, we handle every aspect
+                of the construction process with meticulous care. Our dedication
+                to excellence is reflected in the superior materials we use and
+                the advanced techniques we employ.
+              </p>
+            </div>
             <button>Contact us today</button>
           </div>
           <div className="right-side">
@@ -44,7 +47,9 @@ const StyledHero = styled.section`
     background: #000;
     color: #fff;
     padding: 2rem;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     h1 {
       font-size: 2.4rem;
       margin: 0;

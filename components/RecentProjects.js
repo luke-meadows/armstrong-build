@@ -40,7 +40,7 @@ export default function RecentProjects() {
 }
 const StyledRecentProjects = styled.section`
   .recent-projects-grid {
-    margin: 2rem 0;
+    margin: 0rem 0 0rem 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;

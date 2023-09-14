@@ -7,6 +7,7 @@ import StartBuildingBanner from '../components/StartBuildingBanner';
 import TopHeader from '../components/TopHeader';
 import RecentProjects from '../components/RecentProjects';
 import HomeHero from '../components/Heros/HomeHero';
+import TestimonialsSection from '../components/TestimonialsSection';
 export default function Home() {
   return (
     <StyledHome>
@@ -19,6 +20,8 @@ export default function Home() {
       <StartBuildingBanner />
       <SectionHeading heading="Some Recent Projects" noButton />
       <RecentProjects />
+      <SectionHeading heading="Testimonials" />
+      <TestimonialsSection />
     </StyledHome>
   );
 }

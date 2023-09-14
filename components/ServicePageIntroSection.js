@@ -41,14 +41,12 @@ export default function ServicePageIntroSection() {
 const StyledServicePageIntroSection = styled.section`
   width: 100%;
   display: flex;
-  display: flex;
   border-radius: 0.3rem;
   overflow: hidden;
   margin-top: 3rem;
   .left,
   .right {
     width: 50%;
-    height: 40rem;
   }
   .left {
     position: relative;
@@ -57,5 +55,7 @@ const StyledServicePageIntroSection = styled.section`
     background: rgba(255, 255, 255, 0.5);
     padding: 1rem 2rem;
     color: #606060;
+    h2 {
+    }
   }
 `;

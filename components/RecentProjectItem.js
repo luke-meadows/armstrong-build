@@ -24,11 +24,14 @@ const StyledRecentProjectItem = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+
   grid-row-start: ${(props) => (props.position === 'bottomRight' ? 2 : '')};
   grid-row-end: ${(props) => (props.position === 'bottomRight' ? 4 : '')};
   grid-column-start: ${(props) => (props.position === 'bottomRight' ? 3 : '')};
   grid-row-start: ${(props) => (props.position === 'topLeft' ? 1 : '')};
   grid-row-end: ${(props) => (props.position === 'topLeft' ? 3 : '')};
+  
   .top-section {
     position: relative;
     height: 100%;
