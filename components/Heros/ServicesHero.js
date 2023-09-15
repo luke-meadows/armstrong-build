@@ -1,19 +1,20 @@
 import styled from 'styled-components';
 import Container from '../Container';
 import Image from 'next/image';
-import HeroImg from '../../public/images/hero-images/home-hero.jpg';
-export default function HomeHero() {
+import HeroImg from '../../public/images/hero-images/services-hero.jpg';
+export default function ServicesHero() {
   return (
     <StyledHero>
       <Container>
         <div className="hero-inner">
           <div className="left-side">
             <div>
-              <h1>Delivering Construction Excellence Across the UK</h1>
+              <h1>Services</h1>
               <p className="text">
-                We specialise in residential and commercial projects through
-                meticulous attention to detail, collaborative efforts, and a
-                genuine care for our clients&apos; needs.
+                From initial concept to final completion, we handle every aspect
+                of the construction process with meticulous care. Our dedication
+                to excellence is reflected in the superior materials we use and
+                the advanced techniques we employ.
               </p>
             </div>
             <button>Contact us today</button>

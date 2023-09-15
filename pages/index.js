@@ -20,7 +20,7 @@ export default function Home() {
       <StartBuildingBanner />
       <SectionHeading heading="Some Recent Projects" noButton />
       <RecentProjects />
-      <SectionHeading heading="Testimonials" />
+      <SectionHeading heading="Testimonials" noButton />
       <TestimonialsSection />
     </StyledHome>
   );

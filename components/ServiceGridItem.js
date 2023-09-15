@@ -21,7 +21,7 @@ export default function ServiceGridItem({ service }) {
             dolor ea nihil neque nam, molestias, sapiente eveniet soluta.
           </p>
         </div>
-        <Link href="/service">
+        <Link href={service.url || '/services'}>
           <button>Learn More</button>
         </Link>
       </div>

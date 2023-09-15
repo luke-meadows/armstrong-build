@@ -37,6 +37,7 @@ export default function TestimonialItem() {
           <i className="icon-star" />
           <i className="icon-star" />
           <i className="icon-star" />
+          <span>5/5</span>
         </div>
       </div>
     </StyledTestimonialItem>
@@ -52,8 +53,8 @@ const StyledTestimonialItem = styled.div`
   overflow: hidden;
   .quote-image-container {
     position: relative;
-    width: 2rem;
-    margin-bottom: 1.4rem;
+    width: 1.4rem;
+    margin-bottom: 1rem;
   }
   .title-and-rating {
     display: flex;
@@ -64,11 +65,15 @@ const StyledTestimonialItem = styled.div`
     margin-top: 1.6rem;
   }
   i {
-    color: #ffdc00;
+    color: #000;
+  }
+  span {
+    margin-left: 0.5rem;
   }
   h3 {
-    font-weight: 500;
+    font-weight: 600;
     margin: 0;
+    color: #000;
   }
   p {
     font-size: 0.9rem;

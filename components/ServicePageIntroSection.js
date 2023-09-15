@@ -7,7 +7,12 @@ export default function ServicePageIntroSection() {
     <Container>
       <StyledServicePageIntroSection>
         <div className="left">
-          <Image src={IntroImage} layout="fill" objectFit="cover" />
+          <Image
+            src={IntroImage}
+            layout="fill"
+            objectFit="cover"
+            alt="service-image"
+          />
         </div>
         <div className="right">
           <h2>Built from the ground up</h2>
@@ -43,7 +48,7 @@ const StyledServicePageIntroSection = styled.section`
   display: flex;
   border-radius: 0.3rem;
   overflow: hidden;
-  margin-top: 3rem;
+  margin-top: 4rem;
   .left,
   .right {
     width: 50%;
@@ -52,8 +57,8 @@ const StyledServicePageIntroSection = styled.section`
     position: relative;
   }
   .right {
-    background: rgba(255, 255, 255, 0.5);
-    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem 1.4rem;
     color: #606060;
     h2 {
     }

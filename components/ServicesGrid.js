@@ -15,7 +15,12 @@ const serviceGridData = {
     blurb: '',
     img: CommercialBuildingsImg,
   },
-  newBuilds: { title: 'New Builds', blurb: '', img: NewBuildsImg },
+  newBuilds: {
+    title: 'New Builds',
+    blurb: '',
+    img: NewBuildsImg,
+    url: '/services/new-build',
+  },
   extensions: { title: 'Extensions', blurb: '', img: ExtensionsImg },
   sustainable: {
     title: 'Sustainable Buildings',

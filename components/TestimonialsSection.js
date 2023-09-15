@@ -28,7 +28,7 @@ export default function TestimonialsSection() {
   );
 }
 const StyledTestimonialsSection = styled.section`
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   .box {
     display: grid;
     gap: 2rem;
@@ -39,14 +39,17 @@ const StyledTestimonialsSection = styled.section`
   }
   .default-nav {
     outline: none;
-    background: #000;
+    background: #ffdc00;
+    height: 2.2rem;
+    width: 2.2rem;
     svg {
-      fill: #ffdc00;
+      fill: #000;
+      height: 50%;
     }
   }
   .default-nav:focus,
   .default-nav:hover {
-    background: #000;
+    background: #ffdc00;
   }
 `;
 

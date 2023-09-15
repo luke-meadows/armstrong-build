@@ -11,7 +11,7 @@ export default function RecentProjectItem({
         <Image src={img} layout="fill" objectFit="cover" />
       </div>
       <div className="bottom-section">
-        <p>{title}</p>
+        <h5>{title}</h5>
         <button>View</button>
       </div>
     </StyledRecentProjectItem>
@@ -31,7 +31,7 @@ const StyledRecentProjectItem = styled.div`
   grid-column-start: ${(props) => (props.position === 'bottomRight' ? 3 : '')};
   grid-row-start: ${(props) => (props.position === 'topLeft' ? 1 : '')};
   grid-row-end: ${(props) => (props.position === 'topLeft' ? 3 : '')};
-  
+
   .top-section {
     position: relative;
     height: 100%;
@@ -44,16 +44,17 @@ const StyledRecentProjectItem = styled.div`
     padding: 0 1rem;
     align-items: center;
     justify-content: space-between;
-    p {
+    h5 {
       color: #fff;
       font-size: 0.8rem;
+      font-weight: 600;
     }
     button {
       background: #000;
       color: #ffdc00;
       border: 1px solid #ffdc00;
       padding: 0.4rem 1.2rem;
-      border-radius: 0.3rem;
+      border-radius: 0.2rem;
       font-size: 0.7rem;
       &:hover {
         color: #000;

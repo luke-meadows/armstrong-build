@@ -66,8 +66,10 @@ const StyledHero = styled.section`
       width: 100%;
       margin-top: 1rem;
       transition: all 0.2s ease;
+      border: 1px solid #ffdc00;
       &:hover {
-        border: 1px solid #ffdc00;
+        background: #ffdc00;
+        color: #000;
       }
     }
   }
