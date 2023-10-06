@@ -13,7 +13,7 @@ export default function NewBuildHero() {
               <p className="text">
                 Our team of experienced professionals is eager to provide
                 exceptional customer service and guidance to ensure your
-                project's success.
+                project&apos;s success.
               </p>
               <div className="contact-buttons">
                 <div>
