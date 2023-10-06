@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Container from './Container';
 import Logo from './Logo';
+import Link from 'next/link';
 export default function StartBuildingBanner() {
   return (
     <Container>
@@ -9,7 +10,9 @@ export default function StartBuildingBanner() {
           <p>Start your next building project with</p>
           <Logo />
         </div>
-        <button>Get a quote today</button>
+        <Link href="/contact">
+          <button>Get a quote today</button>
+        </Link>
       </StyledStartBuildingBanner>
     </Container>
   );

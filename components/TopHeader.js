@@ -57,4 +57,7 @@ const StyledTopHeader = styled.div`
     align-items: center;
     gap: 1rem;
   }
+  p {
+    font-size: 0.7rem;
+  }
 `;

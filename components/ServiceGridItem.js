@@ -22,7 +22,7 @@ export default function ServiceGridItem({ service }) {
           </p>
         </div>
         <Link href={service.url || '/services'}>
-          <button>Learn More</button>
+          <button>Learn more</button>
         </Link>
       </div>
     </StyledServiceGridItem>
@@ -41,21 +41,30 @@ const StyledServiceGridItem = styled.div`
     flex-direction: column;
   }
   h3 {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 0;
+    background: #ffdc00;
+    padding: 0.5rem 1.6rem;
+    clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
+    border-radius: 0.2rem;
+    width: fit-content;
+    color: #000;
   }
   p {
     font-size: 14px;
     font-weight: 300;
   }
   button {
+    border: 1px solid #000;
+
     background: #000;
     color: #ffdc00;
     width: 100%;
-    padding: 0.75rem 0;
+    padding: 0.5rem 0;
     transition: all 0.2s ease;
     &:hover {
       background: #ffdc00;
+      border: 1px solid #ffdc00;
       color: #000;
       font-weight: 500;
     }

@@ -63,4 +63,6 @@ const StyledServicePageIntroSection = styled.section`
     h2 {
     }
   }
+  @media only screen and (max-width: 1235px) {
+  }
 `;

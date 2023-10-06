@@ -15,7 +15,7 @@ export default function Home() {
       <TopHeader />
       <Header />
       <HomeHero />
-      <SectionHeading heading="Services" noButton />
+      <Spacer />
       <ServicesGrid />
       <StartBuildingBanner />
       <SectionHeading heading="Some Recent Projects" noButton />
@@ -27,4 +27,7 @@ export default function Home() {
 }
 const StyledHome = styled.main`
   position: relative;
+`;
+const Spacer = styled.div`
+  margin-top: 4rem;
 `;

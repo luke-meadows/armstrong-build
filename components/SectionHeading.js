@@ -16,7 +16,7 @@ export default function SectionHeading({ heading, noButton = false }) {
   );
 }
 const StyledSectionHeading = styled.div`
-  margin: 4cqb 0 2rem 0;
+  margin: 4rem 0 2rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,8 +25,8 @@ const StyledSectionHeading = styled.div`
     padding: 0;
     color: black;
     background: #ffdc00;
-    padding: 0.75rem 3rem;
-    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+    padding: 0.75rem 2rem;
+    clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
     border-radius: 0.3rem;
   }
   button {

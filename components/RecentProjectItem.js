@@ -45,20 +45,22 @@ const StyledRecentProjectItem = styled.div`
     align-items: center;
     justify-content: space-between;
     h5 {
-      color: #fff;
+      color: #f6f6f6;
       font-size: 0.8rem;
-      font-weight: 600;
+      font-weight: 500;
     }
     button {
       background: #000;
       color: #ffdc00;
-      border: 1px solid #ffdc00;
+      border: 1px solid #000;
       padding: 0.4rem 1.2rem;
       border-radius: 0.2rem;
       font-size: 0.7rem;
+      border: 1px solid #ffdc00;
       &:hover {
         color: #000;
         background: #ffdc00;
+        border: 1px solid #ffdc00;
       }
     }
   }
