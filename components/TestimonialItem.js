@@ -31,13 +31,15 @@ export default function TestimonialItem() {
       </div>
       <div className="title-and-rating">
         <h3>Luke Meadows</h3>
-        <div>
-          <i className="icon-star" />
-          <i className="icon-star" />
-          <i className="icon-star" />
-          <i className="icon-star" />
-          <i className="icon-star" />
-          <span>5/5</span>
+        <div className="rating">
+          <div className="stars">
+            <i className="icon-star" />
+            <i className="icon-star" />
+            <i className="icon-star" />
+            <i className="icon-star" />
+            <i className="icon-star" />
+          </div>
+          <p>5/5</p>
         </div>
       </div>
     </StyledTestimonialItem>
@@ -76,12 +78,19 @@ const StyledTestimonialItem = styled.div`
     color: #000;
   }
   p {
-    font-size: 0.9rem;
     margin: 0;
     color: #646464;
   }
   .text-container {
     height: 16rem;
     overflow-y: scroll;
+  }
+  .rating,
+  .stars {
+    display: flex;
+    align-items: center;
+  }
+  .rating {
+    gap: 0.5rem;
   }
 `;

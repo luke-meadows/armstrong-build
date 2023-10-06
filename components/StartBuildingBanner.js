@@ -8,7 +8,7 @@ export default function StartBuildingBanner() {
       <StyledStartBuildingBanner>
         <div className="upper">
           <p>Start your next building project with</p>
-          <Logo />
+          <Logo width="220px  " />
         </div>
         <Link href="/contact">
           <button>Get a quote today</button>
@@ -31,6 +31,7 @@ const StyledStartBuildingBanner = styled.section`
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin-bottom: 0.5rem;
     p {
       font-size: 24px;
       margin: 0;

@@ -8,6 +8,7 @@ import TopHeader from '../components/TopHeader';
 import RecentProjects from '../components/RecentProjects';
 import HomeHero from '../components/Heros/HomeHero';
 import TestimonialsSection from '../components/TestimonialsSection';
+import Showreel from '../components/Showreel';
 export default function Home() {
   return (
     <StyledHome>
@@ -15,6 +16,7 @@ export default function Home() {
       <TopHeader />
       <Header />
       <HomeHero />
+      <Showreel />
       <Spacer />
       <ServicesGrid />
       <StartBuildingBanner />
