@@ -56,12 +56,10 @@ const StyledServiceGridItem = styled.div`
   }
   button {
     border: 1px solid #000;
-
     background: #000;
     color: #ffdc00;
-
     width: 100%;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     transition: all 0.2s ease;
     &:hover {
       background: #ffdc00;
