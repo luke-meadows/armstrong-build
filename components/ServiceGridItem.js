@@ -59,6 +59,7 @@ const StyledServiceGridItem = styled.div`
 
     background: #000;
     color: #ffdc00;
+
     width: 100%;
     padding: 0.5rem 0;
     transition: all 0.2s ease;

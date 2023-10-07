@@ -19,6 +19,7 @@ export default function StartBuildingBanner() {
 }
 const StyledStartBuildingBanner = styled.section`
   background: #241e21;
+  background: #000;
   color: #fff;
   display: flex;
   flex-direction: column;

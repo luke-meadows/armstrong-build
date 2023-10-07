@@ -65,7 +65,7 @@ export const StyledHero = styled.section`
     button {
       padding: 1rem 2rem;
       border: 1px solid white;
-      background: #000;
+      background: #241e21;
       color: #ffdc00;
       font-weight: 500;
       width: 100%;
