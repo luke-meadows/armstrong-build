@@ -4,9 +4,9 @@ import ServiceGridItem from './ServiceGridItem';
 // Images
 import HealthcareImg from '../public/images/service-grid-images/healthcare.jpeg';
 import CommercialBuildingsImg from '../public/images/service-grid-images/commercial-buildings.jpg';
-import NewBuildsImg from '../public/images/service-grid-images/new-builds.jpg';
+import NewBuildsImg from '../public/images/service-grid-images/new-builds.jpeg';
 import ExtensionsImg from '../public/images/service-grid-images/extensions.jpeg';
-import SustainableBuildingsImg from '../public/images/service-grid-images/sustainable-buildings.jpg';
+import SustainableBuildingsImg from '../public/images/service-grid-images/sustainable-buildings.jpeg';
 import RenovationsImg from '../public/images/service-grid-images/rennovations.jpg';
 const serviceGridData = {
   healthcare: { title: 'Healthcare', blurb: '', img: HealthcareImg },
