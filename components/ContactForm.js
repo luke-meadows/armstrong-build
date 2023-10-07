@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import Container from './Container';
+import Image from 'next/image';
+import Chevron from '../public/images/icons/chevron-down.png';
 export default function ContactForm() {
+  // function makeFormInactive
   return (
     <Container>
       <StyledContactForm>
@@ -11,10 +14,14 @@ export default function ContactForm() {
         <div className="dropdown-container">
           <input
             type="text"
-            placeholder="I am interested in"
+            placeholder="I am interested in.."
             className="service"
           />
-          <div className="arrow">V</div>
+          <div className="arrow">
+            <div className="arrow-container">
+              <Image src={Chevron} layout="responsive" objectFit="fill" />
+            </div>
+          </div>
         </div>
         <textarea type="text" placeholder="Message" className="message" />
         <div className="map">
@@ -28,7 +35,7 @@ export default function ContactForm() {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        {/* <button>Send</button> */}
+        <button>Send</button>
       </StyledContactForm>
     </Container>
   );
@@ -54,27 +61,38 @@ const StyledContactForm = styled.form`
   }
   .dropdown-container {
     position: relative;
+    cursor: pointer;
+    input {
+      cursor: pointer;
+    }
     .arrow {
       position: absolute;
       right: 0.5rem;
       top: 50%;
       transform: translateY(-50%);
+      padding: 0.2rem;
       background: #000;
-      padding: 0 0.3rem;
-      color: #ffdc00;
       border-radius: 0.2rem;
+    }
+    .arrow-container {
+      position: relative;
+      width: 0.8rem;
+      height: 0.8rem;
+      svg {
+        fill: blue;
+      }
     }
   }
   .message {
     grid-row-start: 4;
-    grid-row-end: 25;
+    grid-row-end: 27;
     grid-column-start: 1;
     grid-column-end: 2;
     resize: none;
   }
   .map {
     grid-row-start: 3;
-    grid-row-end: 26;
+    grid-row-end: 28;
     grid-column-start: 2;
     grid-column-end: 3;
     padding: 0;

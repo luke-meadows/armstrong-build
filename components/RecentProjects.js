@@ -18,21 +18,40 @@ export default function RecentProjects() {
             position="topLeft"
             img={ProjectImg1}
             title="Bickerton Road, London"
+            service="Feature"
           />
           <RecentProjectItem
             position="bottomRight"
             img={ProjectImg7}
-            title="Door?"
+            title="?????"
+            service="Doors"
           />
           <RecentProjectItem
             img={ProjectImg2}
             title="19th century Victorian property"
+            service="Renovation"
           />
-          <RecentProjectItem img={ProjectImg3} title="Archers Road?" />
+          <RecentProjectItem
+            img={ProjectImg3}
+            title="?????"
+            service="Renovation"
+          />
 
-          <RecentProjectItem img={ProjectImg4} title="Richmond Road" />
-          <RecentProjectItem img={ProjectImg5} title="Bryant’s house" />
-          <RecentProjectItem img={ProjectImg6} title="Devonshire" />
+          <RecentProjectItem
+            img={ProjectImg4}
+            title="Richmond Road"
+            service="New Build"
+          />
+          <RecentProjectItem
+            img={ProjectImg5}
+            title="Bryant’s house"
+            service="New Build"
+          />
+          <RecentProjectItem
+            img={ProjectImg6}
+            title="Devonshire"
+            service="New Build"
+          />
         </div>
       </StyledRecentProjects>
     </Container>

@@ -44,7 +44,7 @@ const StyledServiceGridItem = styled.div`
     font-size: 16px;
     margin-bottom: 0;
     background: #ffdc00;
-    padding: 0.5rem 1.6rem;
+    padding: 0.5rem 1.2rem;
     clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
     border-radius: 0.2rem;
     width: fit-content;

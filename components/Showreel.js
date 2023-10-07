@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Container from './Container';
+import Loader from './Loader';
 import { useEffect } from 'react';
 export default function Showreel() {
   useEffect(() => {
@@ -13,6 +14,7 @@ export default function Showreel() {
           src={`https://player.vimeo.com/video/871787555?background=1&autoplay=1&loop=1&byline=0&title=0muted=1`}
           frameBorder="0"
         ></iframe>
+        <Loader />
       </StyledShowreel>
     </Container>
   );
@@ -23,6 +25,8 @@ const StyledShowreel = styled.div`
   height: 40rem;
   overflow: hidden;
   margin-top: 4rem;
+  background: #000;
+  z-index: 1;
   iframe {
     width: 100%;
     height: 56.25vw;
@@ -32,5 +36,6 @@ const StyledShowreel = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     scale: 1;
+    z-index: 3;
   }
 `;

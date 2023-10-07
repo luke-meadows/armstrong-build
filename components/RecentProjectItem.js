@@ -4,6 +4,7 @@ export default function RecentProjectItem({
   position = false,
   img,
   title = 'Lorem ipsum dolor sit.',
+  service,
 }) {
   return (
     <StyledRecentProjectItem position={position}>
@@ -11,7 +12,10 @@ export default function RecentProjectItem({
         <Image src={img} layout="fill" objectFit="cover" />
       </div>
       <div className="bottom-section">
-        <h5>{title}</h5>
+        <div>
+          <h5>{title}</h5>
+          <h5 className="service">{service}</h5>
+        </div>
         <button>View</button>
       </div>
     </StyledRecentProjectItem>
@@ -38,15 +42,21 @@ const StyledRecentProjectItem = styled.div`
     width: 100%;
   }
   .bottom-section {
-    height: 4rem;
+    height: 5rem;
     background: #000;
     display: flex;
+
     padding: 0 1rem;
     align-items: center;
     justify-content: space-between;
     h5 {
       color: #f6f6f6;
-      font-size: 0.8rem;
+      margin: 0;
+      font-weight: 500;
+    }
+    .service {
+      color: #ffdc00;
+      margin-top: 0.2rem;
       font-weight: 500;
     }
     button {
