@@ -5,7 +5,7 @@ import ServiceGridItem from './ServiceGridItem';
 import HealthcareImg from '../public/images/service-grid-images/healthcare.jpeg';
 import CommercialBuildingsImg from '../public/images/service-grid-images/commercial-buildings.jpg';
 import NewBuildsImg from '../public/images/service-grid-images/new-builds.jpg';
-import ExtensionsImg from '../public/images/service-grid-images/extensions.jpg';
+import ExtensionsImg from '../public/images/service-grid-images/extensions.jpeg';
 import SustainableBuildingsImg from '../public/images/service-grid-images/sustainable-buildings.jpg';
 import RenovationsImg from '../public/images/service-grid-images/rennovations.jpg';
 const serviceGridData = {

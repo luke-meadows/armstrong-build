@@ -9,6 +9,7 @@ import RecentProjects from '../components/RecentProjects';
 import HomeHero from '../components/Heros/HomeHero';
 import TestimonialsSection from '../components/TestimonialsSection';
 import Showreel from '../components/Showreel';
+import Footer from '../components/Footer';
 export default function Home() {
   return (
     <StyledHome>
@@ -24,6 +25,7 @@ export default function Home() {
       <RecentProjects />
       <SectionHeading heading="Testimonials" noButton />
       <TestimonialsSection />
+      <Footer />
     </StyledHome>
   );
 }

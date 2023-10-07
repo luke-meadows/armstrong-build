@@ -6,6 +6,7 @@ import StartBuildingBanner from '../../components/StartBuildingBanner';
 import ServicesGrid from '../../components/ServicesGrid';
 import Spacer from '../../components/Spacer';
 import ServicesHero from '../../components/Heros/ServicesHero';
+import Footer from '../../components/Footer';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Spacer />
       <ServicesGrid />
       <StartBuildingBanner />
+      <Footer />
     </StyledHome>
   );
 }

@@ -28,7 +28,6 @@ export default function TestimonialsSection() {
   );
 }
 const StyledTestimonialsSection = styled.section`
-  margin-bottom: 3rem;
   .box {
     display: grid;
     gap: 2rem;

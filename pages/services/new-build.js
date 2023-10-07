@@ -8,6 +8,7 @@ import TopHeader from '../../components/TopHeader';
 import ServicePageIntroSection from '../../components/ServicePageIntroSection';
 import SectionHeading from '../../components/SectionHeading';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
+import Footer from '../../components/Footer';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <SectionHeading heading="New Build Portfolio" />
       <RecentProjects />
       <StartBuildingBanner />
+      <Footer />
     </StyledHome>
   );
 }
