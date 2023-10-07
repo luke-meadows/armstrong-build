@@ -18,7 +18,6 @@ export default function StartBuildingBanner() {
   );
 }
 const StyledStartBuildingBanner = styled.section`
-  background: #241e21;
   background: #000;
   color: #fff;
   display: flex;
@@ -40,7 +39,7 @@ const StyledStartBuildingBanner = styled.section`
     }
   }
   button {
-    background: #241e21;
+    background: #000;
     border: 1px solid #ffdc00;
     color: #ffdc00;
     padding: 1rem 4rem;

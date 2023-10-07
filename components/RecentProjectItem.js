@@ -60,7 +60,7 @@ const StyledRecentProjectItem = styled.div`
       font-weight: 500;
     }
     button {
-      background: #241e21;
+      background: #000;
       color: #ffdc00;
       border: 1px solid #000;
       padding: 0.4rem 1.2rem;
