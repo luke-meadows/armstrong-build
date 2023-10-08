@@ -9,7 +9,12 @@ import ExtensionsImg from '../public/images/service-grid-images/extensions.jpeg'
 import SustainableBuildingsImg from '../public/images/service-grid-images/sustainable-buildings.jpeg';
 import RenovationsImg from '../public/images/service-grid-images/rennovations.jpg';
 const serviceGridData = {
-  healthcare: { title: 'Healthcare', blurb: '', img: HealthcareImg },
+  healthcare: {
+    title: 'Healthcare',
+    blurb: '',
+    img: HealthcareImg,
+    url: '/services/healthcare',
+  },
   commercial: {
     title: 'Commercial Buildings',
     blurb: '',

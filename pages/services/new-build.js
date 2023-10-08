@@ -1,11 +1,10 @@
 import { styled } from 'styled-components';
 import Background from '../../components/Background';
 import Header from '../../components/Header';
-import NewBuildHero from '../../components/Heros/NewBuildHero';
+import NewBuildHero from '../../components/heros/NewBuildHero';
 import RecentProjects from '../../components/RecentProjects.js';
-
 import TopHeader from '../../components/TopHeader';
-import ServicePageIntroSection from '../../components/ServicePageIntroSection';
+import NewBuildIntroSection from '../../components/service-page-into-sections/NewBuildIntroSection';
 import SectionHeading from '../../components/SectionHeading';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
 import Footer from '../../components/Footer';
@@ -17,7 +16,7 @@ export default function Home() {
       <TopHeader />
       <Header />
       <NewBuildHero />
-      <ServicePageIntroSection />
+      <NewBuildIntroSection />
       <SectionHeading heading="New Build Portfolio" />
       <RecentProjects />
       <StartBuildingBanner />
