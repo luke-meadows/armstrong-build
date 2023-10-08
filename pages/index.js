@@ -6,7 +6,7 @@ import ServicesGrid from '../components/ServicesGrid';
 import StartBuildingBanner from '../components/StartBuildingBanner';
 import TopHeader from '../components/TopHeader';
 import RecentProjects from '../components/RecentProjects';
-import HomeHero from '../components/Heros/HomeHero';
+import HomeHero from '../components/hero/HomeHero';
 import TestimonialsSection from '../components/TestimonialsSection';
 import Showreel from '../components/Showreel';
 import Footer from '../components/Footer';

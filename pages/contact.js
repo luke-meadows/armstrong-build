@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ContactHero from '../components/Heros/ContactHero';
+import ContactHero from '../components/hero/ContactHero';
 import ContactForm from '../components/ContactForm';
 import Background from '../components/Background';
 import TopHeader from '../components/TopHeader';

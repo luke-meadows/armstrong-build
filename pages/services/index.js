@@ -5,7 +5,7 @@ import TopHeader from '../../components/TopHeader';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
 import ServicesGrid from '../../components/ServicesGrid';
 import Spacer from '../../components/Spacer';
-import ServicesHero from '../../components/heros/ServicesHero';
+import ServicesHero from '../../components/hero/ServicesHero';
 import Footer from '../../components/Footer';
 
 export default function Home() {

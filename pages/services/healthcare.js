@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 import Background from '../../components/Background';
 import Header from '../../components/Header';
-import HealthcareHero from '../../components/heros/HealthcareHero';
+import HealthcareHero from '../../components/hero/HealthcareHero';
 import TopHeader from '../../components/TopHeader';
 import HealthcareIntroSection from '../../components/service-page-into-sections/HealthcareIntroSection';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
