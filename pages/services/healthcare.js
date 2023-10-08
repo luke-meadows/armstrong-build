@@ -6,8 +6,6 @@ import TopHeader from '../../components/TopHeader';
 import HealthcareIntroSection from '../../components/service-page-into-sections/HealthcareIntroSection';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
 import Footer from '../../components/Footer';
-import SectionHeading from '../../components/SectionHeading';
-import RecentProjects from '../../components/RecentProjects.js';
 
 export default function Home() {
   return (

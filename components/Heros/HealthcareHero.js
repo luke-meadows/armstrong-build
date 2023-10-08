@@ -2,7 +2,7 @@ import Container from '../Container';
 import Image from 'next/image';
 import HeroImg from '../../public/images/hero-images/healthcare-hero.jpeg';
 import { StyledHero } from './HomeHero';
-export default function NewBuildHero() {
+export default function HealthcareHero() {
   return (
     <StyledHero>
       <Container>
