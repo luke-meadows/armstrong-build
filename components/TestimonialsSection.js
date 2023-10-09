@@ -33,16 +33,16 @@ const StyledTestimonialsSection = styled.section`
     gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     background-size: cover;
-    height: 420px;
+    height: 26rem;
     margin: 0 3rem;
   }
   .default-nav {
     outline: none;
-    background: #ffdc00;
+    background: #000;
     height: 2.2rem;
     width: 2.2rem;
     svg {
-      fill: #000;
+      fill: #ffdc00;
       height: 50%;
     }
   }
