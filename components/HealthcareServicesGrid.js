@@ -61,6 +61,7 @@ const StyledServicesGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  position: relative;
 
   @media only screen and (max-width: 900px) {
     gap: 1rem;

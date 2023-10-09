@@ -5,6 +5,7 @@ import SMASImage from '../public/images/accreditation-images/smas-logo.png';
 import CHASImage from '../public/images/accreditation-images/chas-logo.png';
 import Logo from './Logo.js';
 import SocialLinks from './SocialLinks.js';
+import LocationPinIcon from '../public/images/icons/location-pin.svg';
 import Link from 'next/link.js';
 export default function Footer() {
   return (
@@ -12,7 +13,18 @@ export default function Footer() {
       <Container>
         <div className="inner-footer">
           <div className="address">
-            <p>Head Office</p>
+            <div className="address-first-line">
+              <div className="location-pin">
+                <div className="location-pin-container">
+                  <Image
+                    src={LocationPinIcon}
+                    layout="responsive"
+                    objectFit="fill"
+                  />
+                </div>
+              </div>
+              <p className="address-header">Head Office</p>
+            </div>
             <p>Unit 3, Partons Road, Kings Heath </p>
             <p>Birmingham </p>
             <p>B14 6TA</p>
@@ -21,10 +33,10 @@ export default function Footer() {
 
           <div className="accreditations">
             <div className="accreditation-container">
-              <Image src={SMASImage} layout="fill" objectFit="contain" />
+              <Image src={SMASImage} layout="fill" objectFit="" />
             </div>
             <div className="accreditation-container">
-              <Image src={CHASImage} layout="fill" objectFit="contain" />
+              <Image src={CHASImage} layout="fill" objectFit="" />
             </div>
           </div>
 
@@ -61,18 +73,44 @@ const StyledFooter = styled.footer`
       margin: 0.5rem;
       color: #cdcdcd;
     }
+    .address-header {
+      color: #ffdc00;
+      font-weight: 600;
+      padding-left: 0.5rem;
+    }
+  }
+  .address-first-line {
+    display: flex;
+    align-items: center;
+  }
+
+  .location-pin {
+    transform: translate(50%, -70%);
+    background: #000;
+    border-radius: 0.2rem;
+  }
+  .location-pin-container {
+    position: relative;
+    width: 1rem;
+    height: 0.75rem;
+
+    svg {
+      fill: blue;
+    }
   }
   .accreditations {
     display: flex;
-
     justify-content: center;
+    align-items: center;
     gap: 1rem;
     flex: 1;
   }
   .accreditation-container {
     position: relative;
-    width: 8rem;
-    height: 8rem;
+    min-width: 12rem;
+    height: 7rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
   }
   .logo-and-socials {
     flex: 1;

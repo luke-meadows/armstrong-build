@@ -1,26 +1,51 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import styled from 'styled-components';
+import ServiceGridItemMaximised from './ServiceGridItemMaximised';
+import { useEffect, useRef, useState } from 'react';
 export default function ServiceGridItem({ service }) {
+  const gridItemRef = useRef();
+  const [cardCoords, setCardCoords] = useState();
+  const [hovered, setHovered] = useState(false);
+  useEffect(() => {
+    setCardCoords({
+      left: gridItemRef.current.offsetLeft,
+      top: gridItemRef.current.offsetTop,
+    });
+  });
+  useEffect(() => {
+    console.log('change');
+  }, [cardCoords]);
+  function handleItemHover(e) {
+    setCardCoords({
+      left: e.currentTarget.offsetLeft,
+      top: e.currentTarget.offsetTop,
+    });
+    setHovered(true);
+  }
   return (
-    <StyledServiceGridItem>
-      <div className="image-container">
-        <Image
-          src={service.img}
-          layout="fill"
-          objectFit="cover"
-          alt="service card image"
-        />
-      </div>
-      <div className="service-grid-item-text">
-        <div>
-          <h3>{service.title}</h3>
+    <div className="outer-grid-item" onMouseLeave={() => setHovered(false)}>
+      {hovered && (
+        <ServiceGridItemMaximised service={service} cardCoords={cardCoords} />
+      )}
+      <StyledServiceGridItem onMouseEnter={handleItemHover} ref={gridItemRef}>
+        <div className="image-container">
+          <Image
+            src={service.img}
+            layout="fill"
+            objectFit="cover"
+            alt="service card image"
+          />
         </div>
-      </div>
-    </StyledServiceGridItem>
+        <div className="service-grid-item-text">
+          <div>
+            <h3>{service.title}</h3>
+          </div>
+        </div>
+      </StyledServiceGridItem>
+    </div>
   );
 }
-const StyledServiceGridItem = styled.div`
+export const StyledServiceGridItem = styled.div`
   border-radius: 0.3rem;
   background: #f6f6f6;
   color: #606060;
