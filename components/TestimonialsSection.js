@@ -48,7 +48,7 @@ const StyledTestimonialsSection = styled.section`
   }
   .default-nav:focus,
   .default-nav:hover {
-    background: #ffdc00;
+    background: #000;
   }
 `;
 
