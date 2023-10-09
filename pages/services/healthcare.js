@@ -5,6 +5,8 @@ import HealthcareHero from '../../components/hero/HealthcareHero';
 import TopHeader from '../../components/TopHeader';
 import HealthcareIntroSection from '../../components/service-page-into-sections/HealthcareIntroSection';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
+import SectionHeading from '../../components/SectionHeading';
+import HealthcareServicesGrid from '../../components/HealthcareServicesGrid';
 import Footer from '../../components/Footer';
 
 export default function Home() {
@@ -14,9 +16,9 @@ export default function Home() {
       <TopHeader />
       <Header />
       <HealthcareHero />
+      <SectionHeading heading="Healthcare Construction Applications" noButton />
       <HealthcareIntroSection />
-      {/* <SectionHeading heading="Healthcare Portfolio" />
-      <RecentProjects /> */}
+      <HealthcareServicesGrid />
       <StartBuildingBanner />
       <Footer />
     </StyledHome>

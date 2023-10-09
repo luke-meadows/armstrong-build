@@ -60,8 +60,6 @@ const StyledNewBuildIntroSection = styled.section`
     background: rgba(255, 255, 255, 0.9);
     padding: 0.5rem 1.4rem;
     color: #606060;
-    h2 {
-    }
   }
   @media only screen and (max-width: 1235px) {
   }

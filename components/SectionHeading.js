@@ -34,6 +34,7 @@ const StyledSectionHeading = styled.div`
     font-weight: 500;
     background: #000;
     color: #ffdc00;
+
     &:hover {
       color: #000;
       background: #ffdc00;

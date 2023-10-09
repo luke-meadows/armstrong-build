@@ -15,15 +15,7 @@ export default function ServiceGridItem({ service }) {
       <div className="service-grid-item-text">
         <div>
           <h3>{service.title}</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A tempora
-            molestiae cum minima facilis maiores eius unde vero quasi vel eos
-            dolor ea nihil neque nam, molestias, sapiente eveniet soluta.
-          </p>
         </div>
-        <Link href={service.url || '/services'}>
-          <button>Learn more</button>
-        </Link>
       </div>
     </StyledServiceGridItem>
   );
@@ -31,14 +23,17 @@ export default function ServiceGridItem({ service }) {
 const StyledServiceGridItem = styled.div`
   border-radius: 0.3rem;
   background: #f6f6f6;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
   color: #606060;
+  position: relative;
   .service-grid-item-text {
     padding: 0 1rem;
     padding-bottom: 1rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
   h3 {
     font-size: 16px;
@@ -72,7 +67,6 @@ const StyledServiceGridItem = styled.div`
     position: relative;
     height: 200px;
     overflow: hidden;
-    border-top-right-radius: 0.3rem;
-    border-top-left-radius: 0.3rem;
+    border-radius: 0.3rem;
   }
 `;

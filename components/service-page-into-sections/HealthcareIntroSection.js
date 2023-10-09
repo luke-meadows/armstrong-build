@@ -1,100 +1,40 @@
 import styled from 'styled-components';
 import Container from '../Container';
-import Image from 'next/image';
-import IntroImageConsultation from '../../public/images/service-intro-images/healthcare-consultation.jpeg';
-import IntroImageStoreroom from '../../public/images/service-intro-images/healthcare-storeroom.jpeg';
-import IntroImageHVAC from '../../public/images/service-intro-images/healthcare - HVAC.jpeg';
 export default function NewBuildIntroSection() {
   return (
     <Container>
       <StyledNewBuildIntroSection>
-        <div className="left">
-          <Image
-            src={IntroImageConsultation}
-            layout="fill"
-            objectFit="cover"
-            alt="service-image"
-          />
-        </div>
-        <div className="right">
-          <h2>Consultation rooms</h2>
-          <p>
-            With our team of highly skilled architects, engineers, and builders,
-            we transform your vision into a stunning reality. From initial
-            concept to final completion, we handle every aspect of the
-            construction process with meticulous care. Our dedication to
-            excellence is reflected in the superior materials we use and the
-            advanced techniques we employ.
-          </p>
-        </div>
-        <div className="left">
-          <Image
-            src={IntroImageStoreroom}
-            layout="fill"
-            objectFit="cover"
-            alt="service-image"
-          />
-        </div>
-        <div className="right">
-          <h2>Storerooms</h2>
-          <p>
-            With our team of highly skilled architects, engineers, and builders,
-            we transform your vision into a stunning reality.From initial
-            concept to final completion, we handle every aspect of the
-            construction process with meticulous care. Our dedication to
-            excellence is reflected in the superior materials we use and the
-            advanced techniques we employ.
-          </p>
-        </div>
-        <div className="left">
-          <Image
-            src={IntroImageHVAC}
-            layout="fill"
-            objectFit="cover"
-            alt="service-image"
-          />
-        </div>
-        <div className="right">
-          <h2>HVAC system installation</h2>
-          <p>
-            With our team of highly skilled architects, engineers, and builders,
-            we transform your vision into a stunning reality. From initial
-            concept to final completion, we handle every aspect of the
-            construction process with meticulous care. Our dedication to
-            excellence is reflected in the superior materials we use and the
-            advanced techniques we employ.
-          </p>
-        </div>
+        <p>
+          As a Healthcare Construction specialist we have a wealth of experience
+          supplying semi permanent and permanent solutions to various building
+          applications. We work with national clients and appointed project
+          teams to ensure exact briefs are achieved.
+        </p>
+        <p>
+          Armstrong Build understand and appreciate the difficult challenges
+          healthcare providers face with changing patient demographics, greater
+          expectations from hospital accommodation, tightened budgets and
+          increasingly demanding reductions for carbon and waste management.
+          Whether you require the construction of a new building or a
+          refurbishment of an existing facility, we are committed to providing
+          you with an innovative and seamless project.
+        </p>
+        <p>
+          <strong>
+            Our bespoke building expertise can be utilised in a variety of
+            applications including the following:
+          </strong>
+        </p>
       </StyledNewBuildIntroSection>
     </Container>
   );
 }
 const StyledNewBuildIntroSection = styled.section`
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem 0;
   border-radius: 0.3rem;
   overflow: hidden;
-  margin-top: 4rem;
-
-  .left {
-    position: relative;
-    border-top-left-radius: 0.3rem;
-    border-bottom-left-radius: 0.3rem;
-    overflow: hidden;
-  }
-  .right {
-    border-top-right-radius: 0.3rem;
-    border-bottom-right-radius: 0.3rem;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 2rem 1.4rem;
-    color: #606060;
-    h2,
-    p {
-      margin: 0 0 0.6rem 0;
-    }
-  }
-  @media only screen and (max-width: 1235px) {
-  }
+  margin-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem 2rem;
+  color: #606060;
 `;

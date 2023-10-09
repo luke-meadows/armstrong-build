@@ -65,16 +65,17 @@ export const StyledHero = styled.section`
     button {
       padding: 1rem 2rem;
       border: 1px solid white;
-      background: #000;
-      color: #ffdc00;
+
+      background: #ffdc00;
+      color: #000;
       font-weight: 500;
       width: 100%;
       margin-top: 1rem;
       transition: all 0.2s ease;
       border: 1px solid #ffdc00;
       &:hover {
-        background: #ffdc00;
-        color: #000;
+        background: #000;
+        color: #ffdc00;
       }
     }
   }
