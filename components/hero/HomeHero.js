@@ -32,6 +32,7 @@ export default function HomeHero() {
   );
 }
 export const StyledHero = styled.section`
+  margin-bottom: 4rem;
   .hero-inner {
     display: flex;
     border-radius: 0.3rem;

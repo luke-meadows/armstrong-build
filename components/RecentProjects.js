@@ -58,6 +58,7 @@ export default function RecentProjects() {
   );
 }
 const StyledRecentProjects = styled.section`
+  margin-bottom: 4rem;
   .recent-projects-grid {
     margin: 0rem 0 0rem 0;
     display: grid;
