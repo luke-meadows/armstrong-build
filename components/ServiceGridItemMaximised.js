@@ -1,8 +1,6 @@
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
-export default function ServiceGridItemMaximised({
-  service,
-  cardCoords = { left: 0, top: 0 },
-}) {
+export default function ServiceGridItemMaximised({ service, cardCoords }) {
   return (
     <StyledServiceGridItem cardCoords={cardCoords}>
       <p>
@@ -24,11 +22,11 @@ const StyledServiceGridItem = styled.div`
   height: 200px;
   padding: 1rem;
   border-radius: 0.3rem;
-  background: #f6f6f6;
-  color: #606060;
+  background: black;
+  color: #fff;
   position: absolute;
-  width: calc(33.3% - 1rem);
-  z-index: 4;
+  width: calc(33.33333% - 1.35rem);
+  z-index: 1;
   top: ${(props) => props.cardCoords.top};
   left: ${(props) => props.cardCoords.left};
   .service-grid-item-text {
@@ -53,7 +51,7 @@ const StyledServiceGridItem = styled.div`
   }
   p {
     font-size: 14px;
-    font-weight: 500;
+    /* font-weight: 500; */
     margin: 0;
   }
 `;

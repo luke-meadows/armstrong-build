@@ -70,7 +70,7 @@ const StyledServiceGridItem = styled.div`
   }
   .image-container {
     position: relative;
-    height: 200px;
+    height: 160px;
     overflow: hidden;
     border-top-right-radius: 0.3rem;
     border-top-left-radius: 0.3rem;

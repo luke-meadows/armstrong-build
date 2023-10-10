@@ -4,7 +4,10 @@ import ServiceGridItemMaximised from './ServiceGridItemMaximised';
 import { useEffect, useRef, useState } from 'react';
 export default function ServiceGridItem({ service }) {
   const gridItemRef = useRef();
-  const [cardCoords, setCardCoords] = useState();
+  const [cardCoords, setCardCoords] = useState({
+    left: 0,
+    top: 0,
+  });
   const [hovered, setHovered] = useState(false);
 
   useEffect(() => {
