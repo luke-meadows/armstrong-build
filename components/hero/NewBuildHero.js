@@ -25,6 +25,7 @@ export default function NewBuildHero() {
               layout="fill"
               objectFit="cover"
               alt="diggers"
+              priority
             />
           </div>
         </div>

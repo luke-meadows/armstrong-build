@@ -41,6 +41,7 @@ export default function ContactHero() {
               layout="fill"
               objectFit="cover"
               alt="diggers"
+              priority
             />
           </div>
         </div>

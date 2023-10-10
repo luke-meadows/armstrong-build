@@ -24,6 +24,7 @@ export default function HealthcareHero() {
               layout="fill"
               objectFit="cover"
               alt="diggers"
+              priority
             />
           </div>
         </div>
