@@ -8,6 +8,7 @@ import TopHeader from '../components/TopHeader';
 import RecentProjects from '../components/RecentProjects';
 import HomeHero from '../components/hero/HomeHero';
 import TestimonialsSection from '../components/TestimonialsSection';
+import HealthcareIntroSection from '../components/service-page-into-sections/HealthcareIntroSection';
 import Showreel from '../components/Showreel';
 import Footer from '../components/Footer';
 export default function Home() {
@@ -18,7 +19,9 @@ export default function Home() {
       <Header />
       <HomeHero />
       <Showreel />
-      <Spacer />
+      <SectionHeading heading="Building Services" noButton />
+      {/* <HealthcareIntroSection /> */}
+      {/* <Spacer /> */}
       <ServicesGrid />
       <StartBuildingBanner />
       <SectionHeading heading="Some Recent Projects" noButton />

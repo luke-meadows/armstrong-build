@@ -3,32 +3,36 @@ import Link from 'next/link';
 import styled from 'styled-components';
 export default function ServiceGridItem({ service }) {
   return (
-    <StyledServiceGridItem>
-      <div className="image-container">
-        <Image
-          src={service.img}
-          layout="fill"
-          objectFit="cover"
-          alt="service card image"
-        />
-      </div>
-      <div className="service-grid-item-text">
-        <div>
-          <h3>{service.title}</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A tempora
-            molestiae cum minima facilis maiores eius unde vero quasi vel eos
-            dolor ea nihil neque nam, molestias, sapiente eveniet soluta.
-          </p>
+    <Link href={service.url || '/services'}>
+      <StyledServiceGridItem>
+        <div className="image-container">
+          <Image
+            src={service.img}
+            layout="fill"
+            objectFit="cover"
+            alt="service card image"
+          />
         </div>
-        <Link href={service.url || '/services'}>
-          <button>Learn more</button>
-        </Link>
-      </div>
-    </StyledServiceGridItem>
+        <div className="service-grid-item-text">
+          <div>
+            <h3>{service.title}</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. A
+              tempora molestiae cum minima facilis maiores eius unde vero quasi
+              vel eos dolor ea nihil neque nam, molestias, sapiente eveniet
+              soluta.
+            </p>
+          </div>
+          <Link href={service.url || '/services'}>
+            <button>Learn more</button>
+          </Link>
+        </div>
+      </StyledServiceGridItem>
+    </Link>
   );
 }
 const StyledServiceGridItem = styled.div`
+  cursor: pointer;
   border-radius: 0.3rem;
   background: #f6f6f6;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
@@ -60,7 +64,7 @@ const StyledServiceGridItem = styled.div`
     color: #ffdc00;
     width: 100%;
     padding: 1rem 0;
-    transition: all 0.2s ease;
+    transition: all 0.5s ease-in-out;
     &:hover {
       background: #ffdc00;
       border: 1px solid #ffdc00;

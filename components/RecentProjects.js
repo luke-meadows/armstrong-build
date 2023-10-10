@@ -20,15 +20,15 @@ export default function RecentProjects() {
             title="Bickerton Road, London"
             service="Feature"
           />
-          <RecentProjectItem
+          {/* <RecentProjectItem
             position="bottomRight"
             img={ProjectImg7}
             title="?????"
             service="Doors"
-          />
+          /> */}
           <RecentProjectItem
             img={ProjectImg2}
-            title="19th century Victorian property"
+            title="Victorian property"
             service="Renovation"
           />
           <RecentProjectItem
