@@ -65,9 +65,9 @@ const StyledRecentProjectItem = styled.div`
   .title-container {
     display: flex;
     align-items: center;
-
     gap: 0.5rem;
     transition: padding 0.5s ease-in-out;
+
     position: absolute;
     bottom: 1rem;
     left: 1rem;
