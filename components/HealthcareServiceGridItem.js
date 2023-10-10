@@ -6,28 +6,27 @@ export default function ServiceGridItem({ service }) {
   const gridItemRef = useRef();
   const [cardCoords, setCardCoords] = useState();
   const [hovered, setHovered] = useState(false);
+
   useEffect(() => {
     setCardCoords({
       left: gridItemRef.current.offsetLeft,
       top: gridItemRef.current.offsetTop,
     });
-  });
-  useEffect(() => {
-    console.log('change');
-  }, [cardCoords]);
-  function handleItemHover(e) {
-    setCardCoords({
-      left: e.currentTarget.offsetLeft,
-      top: e.currentTarget.offsetTop,
-    });
-    setHovered(true);
-  }
+  }, [service]);
+
   return (
     <div className="outer-grid-item" onMouseLeave={() => setHovered(false)}>
       {hovered && (
-        <ServiceGridItemMaximised service={service} cardCoords={cardCoords} />
+        <ServiceGridItemMaximised
+          service={service}
+          cardCoords={cardCoords}
+          setHovered={setHovered}
+        />
       )}
-      <StyledServiceGridItem onMouseEnter={handleItemHover} ref={gridItemRef}>
+      <StyledServiceGridItem
+        onMouseEnter={() => setHovered(true)}
+        ref={gridItemRef}
+      >
         <div className="image-container">
           <Image
             src={service.img}
@@ -45,7 +44,7 @@ export default function ServiceGridItem({ service }) {
     </div>
   );
 }
-export const StyledServiceGridItem = styled.div`
+const StyledServiceGridItem = styled.div`
   border-radius: 0.3rem;
   background: #f6f6f6;
   color: #606060;
