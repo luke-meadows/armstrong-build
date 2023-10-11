@@ -48,7 +48,7 @@ const StyledNewBuildIntroSection = styled.section`
   display: flex;
   border-radius: 0.3rem;
   overflow: hidden;
-  margin-top: 4rem;
+  margin-bottom: 4rem;
   .left,
   .right {
     width: 50%;

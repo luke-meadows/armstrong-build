@@ -51,6 +51,7 @@ export default function Footer() {
           <Link href="/services">Services</Link>
           <Link href="/portfolio">Projects</Link>
           <Link href="/faq">FAQ</Link>
+          <Link href="/faq">News</Link>
           <Link href="/policies">Policies</Link>
           <Link href="/contact">Contact us</Link>
         </nav>
@@ -126,7 +127,7 @@ const StyledFooter = styled.footer`
     gap: 1rem;
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid #646464;
+    border-top: 2px solid #646464;
     nav {
       display: flex;
       justify-content: center;
