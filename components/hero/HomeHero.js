@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Container from '../Container';
 import Image from 'next/image';
-import HeroImg from '../../public/images/hero-images/home-hero.jpg';
+import HeroImg from '../../public/images/hero-images/home-hero.jpeg';
 export default function HomeHero() {
   return (
     <StyledHero>

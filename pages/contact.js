@@ -19,6 +19,6 @@ export default function Contact() {
     </StyledContact>
   );
 }
-const StyledContact = styled.section`
+const StyledContact = styled.main`
   position: relative;
 `;

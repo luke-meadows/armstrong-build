@@ -1,26 +1,22 @@
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 import Background from '../../components/Background';
 import Header from '../../components/Header';
 import TopHeader from '../../components/TopHeader';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
 import ServicesGrid from '../../components/ServicesGrid';
-import Spacer from '../../components/Spacer';
-import ServicesHero from '../../components/hero/ServicesHero';
+import PortfolioHero from '../../components/hero/PortfolioHero';
 import Footer from '../../components/Footer';
-
-export default function Home() {
+export default function PortfolioPage() {
   return (
-    <StyledHome>
+    <StyledPortfolioPage>
       <Background />
       <TopHeader />
       <Header />
-      <ServicesHero />
+      <PortfolioHero />
       <ServicesGrid />
       <StartBuildingBanner />
       <Footer />
-    </StyledHome>
+    </StyledPortfolioPage>
   );
 }
-const StyledHome = styled.main`
-  position: relative;
-`;
+const StyledPortfolioPage = styled.main``;

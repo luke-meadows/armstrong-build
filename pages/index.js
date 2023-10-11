@@ -20,8 +20,6 @@ export default function Home() {
       <HomeHero />
       <Showreel />
       <SectionHeading heading="Building Services" noButton />
-      {/* <HealthcareIntroSection /> */}
-      {/* <Spacer /> */}
       <ServicesGrid />
       <StartBuildingBanner />
       <SectionHeading heading="Some Recent Projects" noButton />
