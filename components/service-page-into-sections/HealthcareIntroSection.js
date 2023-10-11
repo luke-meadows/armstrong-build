@@ -34,7 +34,7 @@ const StyledNewBuildIntroSection = styled.section`
   border-radius: 0.3rem;
   overflow: hidden;
   margin-bottom: 2rem;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 1rem 2rem;
+  background: #fff;
   color: #606060;
+  padding: 1rem 2rem;
 `;

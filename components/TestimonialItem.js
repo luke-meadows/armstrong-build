@@ -47,7 +47,7 @@ export default function TestimonialItem() {
 }
 const StyledTestimonialItem = styled.div`
   border-radius: 0.3rem;
-  background: #f6f6f6;
+  background: #fff;
   padding: 1.8rem;
   color: #646464;
   display: flex;

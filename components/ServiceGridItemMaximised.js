@@ -7,8 +7,7 @@ export default function ServiceGridItemMaximised({ service, cardCoords }) {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
         deserunt asperiores officia est, molestiae dolores, sit unde minima
         obcaecati iusto facere totam natus, iure velit sunt pariatur deleniti
-        temporibus ab reiciendis. Voluptates unde minima dolorum harum!
-        Laboriosam voluptatum sit.
+        temporibus ab reiciendis.
       </p>
       <div className="service-grid-item-text">
         <div>
@@ -25,7 +24,7 @@ const StyledServiceGridItem = styled.div`
   background: black;
   color: #fff;
   position: absolute;
-  width: calc(33.33333% - 1.35rem);
+  width: calc(33.33333% - 1.3rem);
   z-index: 1;
   top: ${(props) => props.cardCoords.top};
   left: ${(props) => props.cardCoords.left};
@@ -51,7 +50,7 @@ const StyledServiceGridItem = styled.div`
   }
   p {
     font-size: 14px;
-    /* font-weight: 500; */
+    font-weight: 300;
     margin: 0;
   }
 `;

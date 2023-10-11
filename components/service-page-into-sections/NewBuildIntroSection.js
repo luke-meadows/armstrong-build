@@ -49,6 +49,9 @@ const StyledNewBuildIntroSection = styled.section`
   border-radius: 0.3rem;
   overflow: hidden;
   margin-bottom: 4rem;
+  h2 {
+    margin-top: 0rem;
+  }
   .left,
   .right {
     width: 50%;
@@ -58,7 +61,7 @@ const StyledNewBuildIntroSection = styled.section`
   }
   .right {
     background: rgba(255, 255, 255, 0.9);
-    padding: 0.5rem 1.4rem;
+    padding: 1.4rem;
     color: #606060;
   }
   @media only screen and (max-width: 1235px) {

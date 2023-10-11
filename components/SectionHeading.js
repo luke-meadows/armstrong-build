@@ -1,11 +1,17 @@
 import styled from 'styled-components';
 import Container from './Container';
 import Link from 'next/link';
-export default function SectionHeading({ heading, noButton = false }) {
+import FilterButton from './FilterButton';
+export default function SectionHeading({
+  heading,
+  noButton = false,
+  filterButton = false,
+}) {
   return (
     <Container>
       <StyledSectionHeading>
         <h2>{heading}</h2>
+        {filterButton && <FilterButton />}
         {!noButton && (
           <Link href="/contact">
             <button>Get a Quote</button>
@@ -19,7 +25,7 @@ const StyledSectionHeading = styled.div`
   margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
   h2 {
     margin: 0;
     padding: 0;

@@ -34,7 +34,7 @@ export default function ServiceGridItem({ service }) {
 const StyledServiceGridItem = styled.div`
   cursor: pointer;
   border-radius: 0.3rem;
-  background: #f6f6f6;
+  background: #fff;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
   color: #606060;
   .service-grid-item-text {

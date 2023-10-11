@@ -60,7 +60,7 @@ export const StyledHero = styled.section`
       margin: 0;
     }
     p {
-      font-weight: 300;
+      font-weight: 400;
       font-size: 0.96rem;
     }
     button {

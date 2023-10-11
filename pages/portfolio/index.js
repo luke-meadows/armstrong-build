@@ -3,9 +3,11 @@ import Background from '../../components/Background';
 import Header from '../../components/Header';
 import TopHeader from '../../components/TopHeader';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
-import ServicesGrid from '../../components/ServicesGrid';
+import RecentProjects from '../../components/RecentProjects';
 import PortfolioHero from '../../components/hero/PortfolioHero';
 import Footer from '../../components/Footer';
+import FilterButton from '../../components/FilterButton';
+import SectionHeading from '../../components/SectionHeading';
 export default function PortfolioPage() {
   return (
     <StyledPortfolioPage>
@@ -13,7 +15,9 @@ export default function PortfolioPage() {
       <TopHeader />
       <Header />
       <PortfolioHero />
-      <ServicesGrid />
+      <SectionHeading heading="Projects" noButton filterButton />
+
+      <RecentProjects />
       <StartBuildingBanner />
       <Footer />
     </StyledPortfolioPage>

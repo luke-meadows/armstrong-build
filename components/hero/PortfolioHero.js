@@ -11,10 +11,11 @@ export default function PortfolioHero() {
             <div>
               <h1>Portfolio</h1>
               <p className="text">
-                From initial concept to final completion, we handle every aspect
-                of the construction process with meticulous care. Our dedication
-                to excellence is reflected in the superior materials we use and
-                the advanced techniques we employ.
+                Welcome to our portfolio page, where we proudly showcase our
+                expertise and craftsmanship in building remarkable structures.
+                With years of industry experience and a commitment to
+                excellence, we have successfully completed a diverse range of
+                construction projects.
               </p>
             </div>
             <button>Contact us today</button>
