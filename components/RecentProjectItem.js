@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import styled from 'styled-components';
 import Chevron from '../public/images/icons/chevron-down.png';
+import Link from 'next/link';
 
 export default function RecentProjectItem({
   position = '',
@@ -13,32 +14,34 @@ export default function RecentProjectItem({
   const [projectTitle, setProjectTitle] = useState(title);
 
   return (
-    <StyledRecentProjectItem
-      onMouseEnter={() => {
-        setProjectTitle('View Project'), setHovered('yes');
-      }}
-      onMouseLeave={() => {
-        setProjectTitle(title), setHovered('no');
-      }}
-      position={position}
-      hovered={hovered}
-    >
-      <div className="image-container">
-        <Image src={img} layout="fill" objectFit="cover" />
-      </div>
-      <div className="title-container">
-        <h5>{projectTitle}</h5>
-        <div>
-          {hovered === 'yes' ? (
-            <div className="arrow-container">
-              <Image src={Chevron} layout="responsive" objectFit="fill" />
-            </div>
-          ) : (
-            <p className="project-service">{service}</p>
-          )}
+    <Link href="/portfolio/1234">
+      <StyledRecentProjectItem
+        onMouseEnter={() => {
+          setProjectTitle('View Project'), setHovered('yes');
+        }}
+        onMouseLeave={() => {
+          setProjectTitle(title), setHovered('no');
+        }}
+        position={position}
+        hovered={hovered}
+      >
+        <div className="image-container">
+          <Image src={img} layout="fill" objectFit="cover" />
         </div>
-      </div>
-    </StyledRecentProjectItem>
+        <div className="title-container">
+          <h5>{projectTitle}</h5>
+          <div>
+            {hovered === 'yes' ? (
+              <div className="arrow-container">
+                <Image src={Chevron} layout="responsive" objectFit="fill" />
+              </div>
+            ) : (
+              <p className="project-service">{service}</p>
+            )}
+          </div>
+        </div>
+      </StyledRecentProjectItem>
+    </Link>
   );
 }
 const StyledRecentProjectItem = styled.div`

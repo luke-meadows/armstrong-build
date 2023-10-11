@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Container from './Container';
 import Loader from './Loader';
 import { useEffect } from 'react';
-export default function Showreel() {
+export default function Showreel({ id = '871787555' }) {
   useEffect(() => {
     console.log('rendered');
   });
@@ -11,7 +11,7 @@ export default function Showreel() {
       <StyledShowreel>
         <iframe
           onLoad={(e) => console.log(e)}
-          src={`https://player.vimeo.com/video/871787555?background=1&autoplay=1&loop=1&byline=0&title=0muted=1`}
+          src={`https://player.vimeo.com/video/${id}?background=1&autoplay=1&loop=1&byline=0&title=0muted=1`}
           frameBorder="0"
         ></iframe>
         <Loader />

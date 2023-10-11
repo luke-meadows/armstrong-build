@@ -9,7 +9,7 @@ import ProjectImg5 from '../public/images/recent-project-placeholders/Bryants Ho
 import ProjectImg6 from '../public/images/recent-project-placeholders/Devonshire.jpeg';
 import ProjectImg7 from '../public/images/recent-project-placeholders/Door.jpeg';
 
-export default function RecentProjects() {
+export default function RecentProjects({ more = false }) {
   return (
     <Container>
       <StyledRecentProjects>
@@ -46,38 +46,42 @@ export default function RecentProjects() {
             title="Devonshire"
             service="New Build"
           />
-          <RecentProjectItem
-            position="topLeft"
-            img={ProjectImg1}
-            title="Bickerton Road, London"
-            service="Feature"
-          />
-          <RecentProjectItem
-            img={ProjectImg2}
-            title="Victorian property"
-            service="Renovation"
-          />
-          <RecentProjectItem
-            img={ProjectImg3}
-            title="?????"
-            service="Renovation"
-          />
+          {more && (
+            <>
+              <RecentProjectItem
+                position="topLeft"
+                img={ProjectImg1}
+                title="Bickerton Road, London"
+                service="Feature"
+              />
+              <RecentProjectItem
+                img={ProjectImg2}
+                title="Victorian property"
+                service="Renovation"
+              />
+              <RecentProjectItem
+                img={ProjectImg3}
+                title="?????"
+                service="Renovation"
+              />
 
-          <RecentProjectItem
-            img={ProjectImg4}
-            title="Richmond Road"
-            service="New Build"
-          />
-          <RecentProjectItem
-            img={ProjectImg5}
-            title="Bryant’s house"
-            service="New Build"
-          />
-          <RecentProjectItem
-            img={ProjectImg6}
-            title="Devonshire"
-            service="New Build"
-          />
+              <RecentProjectItem
+                img={ProjectImg4}
+                title="Richmond Road"
+                service="New Build"
+              />
+              <RecentProjectItem
+                img={ProjectImg5}
+                title="Bryant’s house"
+                service="New Build"
+              />
+              <RecentProjectItem
+                img={ProjectImg6}
+                title="Devonshire"
+                service="New Build"
+              />
+            </>
+          )}
         </div>
       </StyledRecentProjects>
     </Container>
