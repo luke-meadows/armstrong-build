@@ -41,6 +41,7 @@ const StyledTestimonialsSection = styled.section`
     background: none;
     height: 2.2rem;
     width: 2.2rem;
+    background: #ffdc00;
     svg {
       fill: #000;
       height: 50%;
@@ -48,6 +49,8 @@ const StyledTestimonialsSection = styled.section`
   }
   .default-nav:focus {
     background: none;
+
+    background: #ffdc00;
   }
   .default-nav:hover {
     background: #ffdc00;

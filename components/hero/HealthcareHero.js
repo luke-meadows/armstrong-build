@@ -16,7 +16,7 @@ export default function HealthcareHero() {
                 promote the well-being of individuals and communities.
               </p>
             </div>
-            <button>Contact us today</button>
+            <button>Contact us</button>
           </div>
           <div className="right-side">
             <Image
