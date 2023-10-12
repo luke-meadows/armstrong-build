@@ -1,81 +1,108 @@
 import styled from 'styled-components';
 import Container from './Container';
+import ProjectTestimonialItem from './ProjectTestimonialItem';
 import ProductInfoImages from './ProductInfoImages';
+
+import { useEffect, useRef, useState } from 'react';
 export default function ProjectInfoSection() {
+  const [scrolling, setScrolling] = useState('yes');
+  const [scrollTop, setScrollTop] = useState(0);
+  const rightRef = useRef();
+  const containerRef = useRef();
+
+  useEffect(() => {
+    function onScroll() {
+      let currentPosition = document.documentElement.scrollTop;
+      let elementPosition = containerRef.current.offsetTop;
+      if (elementPosition <= currentPosition - 32) {
+        setScrolling('no');
+        rightRef.current.classList.add('stick');
+      } else {
+        setScrolling('yes');
+        rightRef.current.classList.remove('stick');
+      }
+      setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
+    }
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [scrollTop]);
+
   return (
-    <Container>
-      <StyledProjectInfoSection>
-        <ProductInfoImages />
-        <div className="right">
-          <h2>House Mansion - Somewhere</h2>
-          <div className="project-info-row">
-            <h4>Client:</h4>
-            <p>Mr and Mrs Meadows</p>
+    <div ref={containerRef} style={{ background: 'black' }}>
+      <Container scrolling={scrolling}>
+        <StyledProjectInfoSection>
+          <ProductInfoImages />
+          <div className="right" ref={rightRef}>
+            <h2>House Mansion - Somewhere</h2>
+            <div className="project-info-row">
+              <h4>Client:</h4>
+              <p>Mr and Mrs Meadows</p>
+            </div>
+            <div className="project-info-row">
+              <h4>Value:</h4>
+              <p>£2,000,030.93</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Mollitia, quia sequi? Incidunt tempore architecto doloribus. Non
+              deleniti, quos temporibus aliquam ea cumque ipsa tempora odio.
+              Adipisci aut quos ratione est.lorem
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Mollitia, quia sequi? Incidunt tempore architecto doloribus. Non
+              deleniti, quos temporibus aliquam ea cumque ipsa tempora odio.
+              Adipisci aut quos ratione est.lorem
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Mollitia, quia sequi? Incidunt tempore architecto doloribus. Non
+              deleniti, quos temporibus aliquam ea cumque ipsa tempora odio.
+              Adipisci aut quos ratione est.lorem
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Mollitia, quia sequi? Incidunt tempore architecto doloribus. Non
+              deleniti, quos temporibus aliquam ea cumque ipsa tempora odio.
+              Adipisci aut quos ratione est.lorem
+            </p>
+            <div className="spacer" />
+            <ProjectTestimonialItem />
+            <button>Check out other new build projects</button>
           </div>
-          <div className="project-info-row">
-            <h4>Value:</h4>
-            <p>£2,000,030.93</p>
-          </div>
-          <div className="spacer" />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia,
-            quia sequi? Incidunt tempore architecto doloribus. Non deleniti,
-            quos temporibus aliquam ea cumque ipsa tempora odio. Adipisci aut
-            quos ratione est.lorem
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia,
-            quia sequi? Incidunt tempore architecto doloribus. Non deleniti,
-            quos temporibus aliquam ea cumque ipsa tempora odio. Adipisci aut
-            quos ratione est.lorem
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia,
-            quia sequi? Incidunt tempore architecto doloribus. Non deleniti,
-            quos temporibus aliquam ea cumque ipsa tempora odio. Adipisci aut
-            quos ratione est.lorem
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia,
-            quia sequi? Incidunt tempore architecto doloribus. Non deleniti,
-            quos temporibus aliquam ea cumque ipsa tempora odio. Adipisci aut
-            quos ratione est.lorem
-          </p>
-          <button>Check out other new build projects</button>
-        </div>
-      </StyledProjectInfoSection>
-    </Container>
+        </StyledProjectInfoSection>
+      </Container>
+    </div>
   );
 }
 const StyledProjectInfoSection = styled.section`
+  margin-top: 4rem;
+  padding: 4rem 0 3rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  .left,
+  color: #ededed;
   .right {
     position: relative;
-  }
-  .right {
-    position: relative;
-    /* position: fixed;
-    left: calc(50% + 1rem);
-    top: 0; */
-    background: #fff;
-    padding: 2rem 2rem 1rem 2rem;
-    max-width: 634px !important;
+    width: 100%;
     border-radius: 0.3rem;
     height: fit-content;
+    max-height: calc(100vh - 4rem);
+    overflow: hidden;
+    p {
+    }
     h2 {
-      margin: 0 0 2rem 0;
-      background: #ffdc00;
-      padding: 0.5rem 1.8rem;
-      clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
+      margin: 0 0 1rem 0;
+      padding: 0.5rem 0;
       width: fit-content;
+      background: #ffdc00;
+      clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
+      padding: 0.5rem 1.8rem;
+      color: #000;
     }
     button {
       padding: 1rem 2rem;
       border: 1px solid white;
-
       background: #ffdc00;
       color: #000;
       font-weight: 500;
@@ -89,15 +116,22 @@ const StyledProjectInfoSection = styled.section`
       }
     }
   }
+  .stick {
+    position: fixed;
+    left: calc(50% + 1rem);
+    top: 2rem;
+    width: 620px;
+  }
   .project-info-row {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     h4,
     p {
       margin: 0;
-      font-size: 18px;
+      font-size: 16px;
+      color: white;
     }
   }
   .image-container {
@@ -109,6 +143,6 @@ const StyledProjectInfoSection = styled.section`
     overflow: hidden;
   }
   .spacer {
-    margin: 2rem 0;
+    height: 0.5rem;
   }
 `;

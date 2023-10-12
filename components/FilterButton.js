@@ -4,13 +4,13 @@ export default function FilterButton({ options, setOption, option = 'All' }) {
   return (
     <StyledFilterButton>
       <p>Filter</p>
-      <button className="active">All</button>
-      <button>Healthcare</button>
-      <button>Commercial</button>
-      <button>New Builds</button>
-      <button>Extensions</button>
-      <button>Sustainable</button>
-      <button>Renovations</button>
+      <button className="filter-button active">All</button>
+      <button className="filter-button">Healthcare</button>
+      <button className="filter-button">Commercial</button>
+      <button className="filter-button">New Builds</button>
+      <button className="filter-button">Extensions</button>
+      <button className="filter-button">Sustainable</button>
+      <button className="filter-button">Renovations</button>
     </StyledFilterButton>
   );
 }
@@ -27,8 +27,8 @@ const StyledFilterButton = styled.div`
     font-weight: 500;
     margin-right: 0.5rem;
   }
-  button {
-    background: none;
+  .filter-button {
+    background: #fff;
     border: 1px solid #000;
     color: #000;
     padding: 0.5rem 1rem;
