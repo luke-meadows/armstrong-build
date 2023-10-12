@@ -33,7 +33,7 @@ export default function ProjectInfoSection() {
         <StyledProjectInfoSection>
           <ProductInfoImages />
           <div className="right" ref={rightRef}>
-            <h2>House Mansion - Somewhere</h2>
+            <h2>House Mansion - West Midlands</h2>
             <div className="project-info-row">
               <h4>Client:</h4>
               <p>Mr and Mrs Meadows</p>
