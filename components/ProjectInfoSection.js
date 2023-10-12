@@ -76,7 +76,6 @@ export default function ProjectInfoSection() {
   );
 }
 const StyledProjectInfoSection = styled.section`
-  margin-top: 4rem;
   padding: 4rem 0 3rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

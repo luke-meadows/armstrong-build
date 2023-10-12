@@ -20,7 +20,7 @@ const StyledShowreel = styled.div`
   border-radius: 0.3rem;
   height: 40rem;
   overflow: hidden;
-  /* margin-bottom: 4rem; */
+  margin-bottom: 4rem;
   background: #000;
   z-index: 1;
   iframe {
