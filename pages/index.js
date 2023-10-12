@@ -25,7 +25,7 @@ export default function Home() {
       <RecentProjects />
       <SectionHeading heading="Testimonials" noButton />
       <TestimonialsSection />
-      {/* <Footer /> */}
+      <Footer />
     </StyledHome>
   );
 }
