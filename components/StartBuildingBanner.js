@@ -11,7 +11,7 @@ export default function StartBuildingBanner() {
           <Logo width="220px  " />
         </div>
         <Link href="/contact">
-          <button>Get a quote today</button>
+          <button>Contact us</button>
         </Link>
       </StyledStartBuildingBanner>
     </Container>
@@ -19,7 +19,7 @@ export default function StartBuildingBanner() {
 }
 const StyledStartBuildingBanner = styled.section`
   background: #000;
-  color: #fff;
+  color: #ededed;
   display: flex;
   flex-direction: column;
   align-items: center;

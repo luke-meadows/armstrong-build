@@ -46,7 +46,6 @@ export const StyledHero = styled.section`
   }
   .left-side {
     background: #000;
-    color: #fff;
     color: #ededed;
     padding: 2rem;
     display: flex;

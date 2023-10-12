@@ -12,10 +12,12 @@ export default function ServiceGridItem({ service }) {
             objectFit="cover"
             alt="service card image"
           />
+          <div className="title-container">
+            <h3>{service.title}</h3>
+          </div>
         </div>
         <div className="service-grid-item-text">
           <div>
-            <h3>{service.title}</h3>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. A
               tempora molestiae cum minima facilis maiores eius unde vero quasi
@@ -44,11 +46,25 @@ const StyledServiceGridItem = styled.div`
     justify-content: space-between;
     flex-direction: column;
   }
+  .title-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: padding 0.5s ease-in-out;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: ${(props) => (props.hovered === 'yes' ? '#000' : '#ffdc00')};
+    clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
+    padding: ${(props) =>
+      props.hovered === 'yes' ? '0.6rem 1.4rem' : '0.5rem 1.2rem'};
+    max-width: calc(100% - 2rem);
+  }
   h3 {
     font-size: 16px;
-    margin-bottom: 0;
+    margin: 0;
     background: #ffdc00;
-    padding: 0.5rem 1.2rem;
+    padding: 0 0.4rem;
     clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
     border-radius: 0.2rem;
     width: fit-content;

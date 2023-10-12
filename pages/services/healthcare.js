@@ -16,7 +16,7 @@ export default function Home() {
       <TopHeader />
       <Header />
       <HealthcareHero />
-      <SectionHeading heading="Healthcare Construction Applications" noButton />
+      <SectionHeading heading="Healthcare Construction Applications" />
       <HealthcareIntroSection />
       <HealthcareServicesGrid />
       <StartBuildingBanner />

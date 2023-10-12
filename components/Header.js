@@ -18,7 +18,7 @@ export default function Header() {
           <Link href="/">FAQ</Link>
           <Link href="/">News</Link>
           <Link href="/contact">
-            <a className="contact-button">Contact Us</a>
+            <a className="contact-button">Contact us</a>
           </Link>
         </nav>
       </StyledHeader>
