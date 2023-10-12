@@ -25,8 +25,7 @@ const StyledShowreel = styled.div`
   z-index: 1;
   iframe {
     width: 100%;
-    height: 56.25vw;
-    min-height: 100%;
+    min-height: 112%;
     position: absolute;
     top: 50%;
     left: 50%;

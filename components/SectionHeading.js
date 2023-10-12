@@ -2,13 +2,16 @@ import styled from 'styled-components';
 import Container from './Container';
 import Link from 'next/link';
 import FilterButton from './FilterButton';
-import Chevron from '../public/images/icons/chevron-down.png';
+import ChevronYellow from '../public/images/icons/chevron-down.png';
+import ChevronBlack from '../public/images/icons/chevron-down-black.png';
 import Image from 'next/image';
+import { useState } from 'react';
 export default function SectionHeading({
   heading,
   noButton = false,
   filterButton = false,
 }) {
+  const [hovered, setHovered] = useState(false);
   return (
     <Container>
       <StyledSectionHeading>
@@ -16,10 +19,17 @@ export default function SectionHeading({
         {filterButton && <FilterButton />}
         {!noButton && (
           <Link href="/services">
-            <button>
+            <button
+              onMouseEnter={() => setHovered(true)}
+              onMouseLeave={() => setHovered(false)}
+            >
               <div className="arrow">
                 <div className="arrow-container">
-                  <Image src={Chevron} layout="responsive" objectFit="fill" />
+                  <Image
+                    src={hovered ? ChevronYellow : ChevronBlack}
+                    layout="responsive"
+                    objectFit="fill"
+                  />
                 </div>
               </div>
               Back to services
@@ -48,30 +58,29 @@ const StyledSectionHeading = styled.div`
     padding: 0.75rem 1rem 0.75rem 2.7rem;
     font-weight: 500;
     position: relative;
-    background: #ffdc00;
-    color: #000;
+    background: #000;
+    color: #ffdc00;
     &:hover {
-      background: #000;
-      color: #ffdc00;
+      background: #ffdc00;
+      color: #000;
+      .arrow {
+        background: #000;
+      }
     }
   }
   .arrow-container {
     position: relative;
-
     width: 0.8rem;
-    /* height: 0.8rem; */
     svg {
-      fill: blue;
     }
   }
   .arrow {
     position: absolute;
     left: 0.85rem;
-    top: 51%;
-
+    top: 50%;
     transform: translateY(-50%) rotate(90deg);
     padding: 0.2rem;
-    background: #000;
+    background: #ffdc00;
     border-radius: 0.2rem;
   }
 `;
