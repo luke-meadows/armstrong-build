@@ -6,6 +6,7 @@ import ProductInfoImages from './ProductInfoImages';
 import { useEffect, useRef, useState } from 'react';
 export default function ProjectInfoSection() {
   const [scrolling, setScrolling] = useState('yes');
+  const [stickBottom, setStickBottom] = useState('no');
   const [scrollTop, setScrollTop] = useState(0);
   const rightRef = useRef();
   const containerRef = useRef();
@@ -14,14 +15,25 @@ export default function ProjectInfoSection() {
     function onScroll() {
       let currentPosition = document.documentElement.scrollTop;
       let elementPosition = containerRef.current.offsetTop;
-      if (elementPosition <= currentPosition - 32) {
-        setScrolling('no');
-        rightRef.current.classList.add('stick');
+      let elementEndPosition =
+        containerRef.current.offsetTop +
+        containerRef.current.offsetHeight -
+        rightRef.current.offsetHeight -
+        94;
+      if (currentPosition >= elementEndPosition) {
+        setStickBottom('yes');
+        return;
       } else {
-        setScrolling('yes');
-        rightRef.current.classList.remove('stick');
+        setStickBottom('no');
+        if (elementPosition <= currentPosition - 32) {
+          setScrolling('no');
+          rightRef.current.classList.add('stick');
+        } else {
+          setScrolling('yes');
+          rightRef.current.classList.remove('stick');
+        }
+        setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
       }
-      setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
     }
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
@@ -30,7 +42,7 @@ export default function ProjectInfoSection() {
   return (
     <div ref={containerRef} style={{ background: 'black' }}>
       <Container scrolling={scrolling}>
-        <StyledProjectInfoSection>
+        <StyledProjectInfoSection stickBottom={stickBottom}>
           <ProductInfoImages />
           <div className="right" ref={rightRef}>
             <h2>House Mansion - West Midlands</h2>
@@ -76,20 +88,20 @@ export default function ProjectInfoSection() {
   );
 }
 const StyledProjectInfoSection = styled.section`
-  padding: 4rem 0 3rem 0;
+  padding: 4rem 0 4rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   color: #ededed;
+  align-items: ${(props) => (props.stickBottom === 'yes' ? 'end' : 'start')};
+  position: relative;
   .right {
     position: relative;
     width: 100%;
     border-radius: 0.3rem;
     height: fit-content;
-    max-height: calc(100vh - 4rem);
-    overflow: hidden;
-    p {
-    }
+    max-height: calc(100vh - 2rem);
+    overflow: scroll !important;
     h2 {
       margin: 0 0 1rem 0;
       padding: 0.5rem 0;
@@ -116,9 +128,11 @@ const StyledProjectInfoSection = styled.section`
     }
   }
   .stick {
-    position: fixed;
+    position: ${(props) =>
+      props.stickBottom === 'yes' ? 'absolute' : 'fixed'};
     left: calc(50% + 1rem);
-    top: 2rem;
+    top: ${(props) => (props.stickBottom === 'yes' ? '' : '2rem')};
+    bottom: ${(props) => (props.stickBottom === 'yes' ? '4rem' : '')};
     width: 620px;
   }
   .project-info-row {
@@ -132,14 +146,6 @@ const StyledProjectInfoSection = styled.section`
       font-size: 16px;
       color: white;
     }
-  }
-  .image-container {
-    width: 100%;
-    height: 22rem;
-    position: relative;
-    margin-bottom: 2rem;
-    border-radius: 0.3rem;
-    overflow: hidden;
   }
   .spacer {
     height: 0.5rem;

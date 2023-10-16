@@ -41,20 +41,16 @@ const serviceGridData = {
 };
 export default function ServicesGrid() {
   return (
-    <Container>
-      <StyledServicesGrid>
-        <HealthcareServiceGridItem service={serviceGridData.aande} />
-        <HealthcareServiceGridItem service={serviceGridData.plantRooms} />
-        <HealthcareServiceGridItem
-          service={serviceGridData.operatingTheatres}
-        />
-        <HealthcareServiceGridItem
-          service={serviceGridData.outpatientFacilities}
-        />
-        <HealthcareServiceGridItem service={serviceGridData.storerooms} />
-        <HealthcareServiceGridItem service={serviceGridData.wards} />
-      </StyledServicesGrid>
-    </Container>
+    <StyledServicesGrid>
+      <HealthcareServiceGridItem service={serviceGridData.aande} />
+      <HealthcareServiceGridItem service={serviceGridData.plantRooms} />
+      <HealthcareServiceGridItem service={serviceGridData.operatingTheatres} />
+      <HealthcareServiceGridItem
+        service={serviceGridData.outpatientFacilities}
+      />
+      <HealthcareServiceGridItem service={serviceGridData.storerooms} />
+      <HealthcareServiceGridItem service={serviceGridData.wards} />
+    </StyledServicesGrid>
   );
 }
 const StyledServicesGrid = styled.div`
@@ -62,8 +58,7 @@ const StyledServicesGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   position: relative;
-  margin-bottom: 4rem;
-
+  margin-top: 2rem;
   @media only screen and (max-width: 900px) {
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);

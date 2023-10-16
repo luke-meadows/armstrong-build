@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Container from '../Container';
+import HealthcareServicesGrid from '../HealthcareServicesGrid';
 export default function NewBuildIntroSection() {
   return (
     <Container>
@@ -25,6 +26,7 @@ export default function NewBuildIntroSection() {
             applications including the following:
           </strong>
         </p>
+        <HealthcareServicesGrid />
       </StyledNewBuildIntroSection>
     </Container>
   );
@@ -36,5 +38,6 @@ const StyledNewBuildIntroSection = styled.section`
   margin-bottom: 2rem;
   background: #fff;
   color: #606060;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
+  position: relative;
 `;

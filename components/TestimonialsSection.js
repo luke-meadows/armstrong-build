@@ -34,7 +34,7 @@ const StyledTestimonialsSection = styled.section`
     grid-template-columns: repeat(3, 1fr);
     background-size: cover;
     height: 26rem;
-    margin: 0 3rem;
+    margin: 0 3rem 4rem 3rem;
   }
   .default-nav {
     outline: none;

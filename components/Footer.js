@@ -60,7 +60,9 @@ export default function Footer() {
   );
 }
 const StyledFooter = styled.footer`
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
+  border-top: 1px solid #646464;
+
   background: #000;
   color: white;
   padding: 2rem 0 1rem 0;
@@ -127,7 +129,7 @@ const StyledFooter = styled.footer`
     gap: 1rem;
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 2px solid #646464;
+    border-top: 1px solid #646464;
     nav {
       display: flex;
       justify-content: center;

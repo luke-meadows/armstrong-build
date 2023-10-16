@@ -2,7 +2,7 @@ import styled from 'styled-components';
 export default function Loader() {
   return (
     <StyledLoader>
-      <div class="loader"></div>
+      <div className="loader"></div>
     </StyledLoader>
   );
 }

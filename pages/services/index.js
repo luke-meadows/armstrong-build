@@ -16,7 +16,6 @@ export default function Home() {
       <Header />
       <ServicesHero />
       <ServicesGrid />
-      <StartBuildingBanner />
       <Footer />
     </StyledHome>
   );

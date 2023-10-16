@@ -17,6 +17,12 @@ export default function ProjectInfoImages() {
         <Image src={Img3} layout="fill" objectFit="cover" />
       </div>
       <div className="image-container">
+        <Image src={Img3} layout="fill" objectFit="cover" />
+      </div>
+      <div className="image-container">
+        <Image src={Img3} layout="fill" objectFit="cover" />
+      </div>
+      <div className="image-container">
         <Image src={Img4} layout="fill" objectFit="cover" />
       </div>
       <div className="image-container">
@@ -48,11 +54,13 @@ export default function ProjectInfoImages() {
 }
 const StyledProjectInfoImages = styled.div`
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   .image-container {
     width: 100%;
     height: 22rem;
     position: relative;
-    margin-bottom: 2rem;
     border-radius: 0.3rem;
     overflow: hidden;
   }

@@ -60,6 +60,7 @@ const StyledSectionHeading = styled.div`
     position: relative;
     background: #000;
     color: #ffdc00;
+    border-radius: 0.3rem;
     &:hover {
       background: #ffdc00;
       color: #000;
@@ -82,5 +83,6 @@ const StyledSectionHeading = styled.div`
     padding: 0.2rem;
     background: #ffdc00;
     border-radius: 0.2rem;
+    transition: all 0.3s ease;
   }
 `;

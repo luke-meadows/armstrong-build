@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import Container from './Container';
 import Loader from './Loader';
-import { useEffect } from 'react';
+import Logo from './Logo';
+
 export default function Showreel({ id = '871787555' }) {
   return (
     <Container>
@@ -11,6 +12,9 @@ export default function Showreel({ id = '871787555' }) {
           frameBorder="0"
         ></iframe>
         <Loader />
+        <div className="logo-container">
+          <Logo />
+        </div>
       </StyledShowreel>
     </Container>
   );
@@ -32,5 +36,11 @@ const StyledShowreel = styled.div`
     transform: translate(-50%, -50%);
     scale: 1;
     z-index: 3;
+  }
+  .logo-container {
+    z-index: 4;
+    position: absolute;
+    bottom: 1.8rem;
+    right: 1.8rem;
   }
 `;

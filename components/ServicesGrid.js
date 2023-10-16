@@ -51,6 +51,7 @@ export default function ServicesGrid() {
 const StyledServicesGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
   gap: 2rem;
   position: relative;
   margin-bottom: 4rem;
