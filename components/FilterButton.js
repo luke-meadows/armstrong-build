@@ -15,7 +15,7 @@ export default function FilterButton({ options, setOption, option = 'All' }) {
   );
 }
 const StyledFilterButton = styled.div`
-  background: #fff;
+  background: #000;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -26,9 +26,10 @@ const StyledFilterButton = styled.div`
     margin: 0;
     font-weight: 500;
     margin-right: 0.5rem;
+    color: #ededed;
   }
   .filter-button {
-    background: #fff;
+    background: #ededed;
     border: 1px solid #000;
     color: #000;
     padding: 0.5rem 1rem;
@@ -36,8 +37,8 @@ const StyledFilterButton = styled.div`
     &.active,
     &:focus,
     &:hover {
-      color: #ffdc00;
-      background: #000;
+      background: #ffdc00;
+      color: #000;
     }
   }
 `;

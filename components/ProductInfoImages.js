@@ -17,12 +17,6 @@ export default function ProjectInfoImages() {
         <Image src={Img3} layout="fill" objectFit="cover" />
       </div>
       <div className="image-container">
-        <Image src={Img3} layout="fill" objectFit="cover" />
-      </div>
-      <div className="image-container">
-        <Image src={Img3} layout="fill" objectFit="cover" />
-      </div>
-      <div className="image-container">
         <Image src={Img4} layout="fill" objectFit="cover" />
       </div>
       <div className="image-container">

@@ -20,9 +20,9 @@ export default function ProjectInfoSection() {
         containerRef.current.offsetHeight -
         rightRef.current.offsetHeight -
         94;
+
       if (currentPosition >= elementEndPosition) {
         setStickBottom('yes');
-        return;
       } else {
         setStickBottom('no');
         if (elementPosition <= currentPosition - 32) {
