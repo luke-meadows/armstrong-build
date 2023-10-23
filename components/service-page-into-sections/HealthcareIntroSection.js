@@ -11,7 +11,7 @@ export default function NewBuildIntroSection() {
           semi-permanent and permanent solutions for a wide range of building
           needs. Our collaborative approach involves working closely with
           national clients and dedicated project teams to ensure that we
-          precisely meet the project's objectives.
+          precisely meet the project&apos;s objectives.
         </p>
         <p>
           At Armstrong Build, we fully grasp and empathize with the complex

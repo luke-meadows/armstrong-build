@@ -15,6 +15,7 @@ export default function ProjectInfoSection() {
 
   useEffect(() => {
     function onScroll() {
+      // makes sure the text element is the correct width when position fixed on smaller screen sizes
       setWidth(infoImagesRef.current.offsetWidth - 1);
       let currentPosition = document.documentElement.scrollTop;
       let elementPosition = containerRef.current.offsetTop;
