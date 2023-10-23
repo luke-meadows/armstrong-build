@@ -6,13 +6,16 @@ import ProductInfoImages from './ProductInfoImages';
 import { useEffect, useRef, useState } from 'react';
 export default function ProjectInfoSection() {
   const [scrolling, setScrolling] = useState('yes');
+  const [width, setWidth] = useState(640);
   const [stickBottom, setStickBottom] = useState('no');
   const [scrollTop, setScrollTop] = useState(0);
   const rightRef = useRef();
+  const infoImagesRef = useRef();
   const containerRef = useRef();
 
   useEffect(() => {
     function onScroll() {
+      setWidth(infoImagesRef.current.offsetWidth - 1);
       let currentPosition = document.documentElement.scrollTop;
       let elementPosition = containerRef.current.offsetTop;
       let elementEndPosition =
@@ -42,8 +45,10 @@ export default function ProjectInfoSection() {
   return (
     <div ref={containerRef} style={{ background: 'black' }}>
       <Container scrolling={scrolling}>
-        <StyledProjectInfoSection stickBottom={stickBottom}>
-          <ProductInfoImages />
+        <StyledProjectInfoSection stickBottom={stickBottom} width={width}>
+          <div ref={infoImagesRef}>
+            <ProductInfoImages />
+          </div>
           <div className="right" ref={rightRef}>
             <h2>House Mansion - West Midlands</h2>
             <div className="project-info-row">
@@ -133,7 +138,7 @@ const StyledProjectInfoSection = styled.section`
     left: calc(50% + 1rem);
     top: ${(props) => (props.stickBottom === 'yes' ? '' : '2rem')};
     bottom: ${(props) => (props.stickBottom === 'yes' ? '4rem' : '')};
-    width: 620px;
+    width: ${(props) => props.width}px;
   }
   .project-info-row {
     display: flex;

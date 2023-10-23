@@ -6,24 +6,28 @@ export default function NewBuildIntroSection() {
     <Container>
       <StyledNewBuildIntroSection>
         <p>
-          As a Healthcare Construction specialist we have a wealth of experience
-          supplying semi permanent and permanent solutions to various building
-          applications. We work with national clients and appointed project
-          teams to ensure exact briefs are achieved.
+          As specialists in Healthcare Construction, we bring a wealth of
+          experience to the table when it comes to delivering both
+          semi-permanent and permanent solutions for a wide range of building
+          needs. Our collaborative approach involves working closely with
+          national clients and dedicated project teams to ensure that we
+          precisely meet the project's objectives.
         </p>
         <p>
-          Armstrong Build understand and appreciate the difficult challenges
-          healthcare providers face with changing patient demographics, greater
-          expectations from hospital accommodation, tightened budgets and
-          increasingly demanding reductions for carbon and waste management.
-          Whether you require the construction of a new building or a
-          refurbishment of an existing facility, we are committed to providing
-          you with an innovative and seamless project.
+          At Armstrong Build, we fully grasp and empathize with the complex
+          challenges that healthcare providers encounter. These challenges
+          encompass evolving patient demographics, higher expectations for
+          hospital accommodations, budget constraints, and the ever-growing
+          demands for carbon and waste reduction. Whether your project involves
+          constructing a brand-new facility or renovating an existing one, our
+          unwavering commitment is to provide you with an innovative and
+          seamlessly executed project.
         </p>
         <p>
           <strong>
-            Our bespoke building expertise can be utilised in a variety of
-            applications including the following:
+            Our custom-built construction expertise can be effectively applied
+            to a diverse array of applications, which include but are not
+            limited to the following:
           </strong>
         </p>
         <HealthcareServicesGrid />
