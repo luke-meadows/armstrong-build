@@ -47,6 +47,7 @@ const StyledContactForm = styled.form`
   padding: 2rem;
   border-radius: 0.3rem;
   grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 4rem;
   .first-name,
   .surname,
   .phone,

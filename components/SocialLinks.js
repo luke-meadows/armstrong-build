@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-export default function SocialLinks() {
+export default function SocialLinks({ color = 'white' }) {
   return (
-    <StyledSocialLinks>
+    <StyledSocialLinks color={color}>
       <div className="icon-container">
         <a href="/" target="_blank" className="linkedin-holder">
           <i className="icon-linkedin" />
@@ -20,7 +20,7 @@ const StyledSocialLinks = styled.div`
   .icon-mail,
   .icon-instagram,
   .icon-linkedin {
-    color: white;
+    color: ${(props) => props.color};
     font-size: 1.1rem;
   }
 

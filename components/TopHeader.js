@@ -20,7 +20,9 @@ const StyledTopHeader = styled.div`
   background: #000;
   color: #fff;
   font-size: 0.7rem;
-  font-weight: 300;
+  font-weight: 400;
+  border-bottom: 1px solid var(--grey);
+
   .inner-top-header {
     justify-content: space-between;
   }
