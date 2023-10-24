@@ -50,6 +50,8 @@ const StyledSectionHeading = styled.div`
     padding: 0;
     color: black;
     background: #ffdc00;
+    /* background: black;
+    color: #ffdc00; */
     padding: 0.75rem 2rem;
     clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
     border-radius: 0.3rem;

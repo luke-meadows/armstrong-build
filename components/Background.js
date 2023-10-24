@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import BackgroundImg from '../public/images/background/background-image.jpeg';
+import BackgroundImg from '../public/images/background/Edit2.jpg';
 export default function Background() {
   return (
     <StyledBackground>

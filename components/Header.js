@@ -4,32 +4,38 @@ import Link from 'next/link';
 import Logo from './Logo';
 export default function Header() {
   return (
-    <Container>
-      <StyledHeader>
-        <Link href="/">
-          <div className="logo-home-link">
-            <Logo />
-          </div>
-        </Link>
-        <nav>
-          <Link href="/">Home</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/portfolio">Portfolio</Link>
-          <Link href="/">FAQ</Link>
-          <Link href="/">News</Link>
-          <Link href="/contact">
-            <a className="contact-button">Contact us</a>
+    <StyledOuterHeader>
+      <Container>
+        <StyledHeader>
+          <Link href="/">
+            <div className="logo-home-link">
+              <Logo />
+            </div>
           </Link>
-        </nav>
-      </StyledHeader>
-    </Container>
+          <nav>
+            <Link href="/">Home</Link>
+            <Link href="/services">Services</Link>
+            <Link href="/portfolio">Portfolio</Link>
+            <Link href="/faq">FAQ</Link>
+            <Link href="/">News</Link>
+            <Link href="/contact">
+              <a className="contact-button">Contact us</a>
+            </Link>
+          </nav>
+        </StyledHeader>
+      </Container>
+    </StyledOuterHeader>
   );
 }
+const StyledOuterHeader = styled.div`
+  background: #fff;
+`;
 const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
+  margin-bottom: 4rem;
   nav {
     display: flex;
     gap: 2rem;
