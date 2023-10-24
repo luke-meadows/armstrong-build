@@ -10,6 +10,7 @@ export default function Background() {
           layout="fill"
           objectFit="cover"
           alt="background image"
+          priority
         />
       </div>
     </StyledBackground>
