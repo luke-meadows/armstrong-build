@@ -1,35 +1,9 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import ServiceGridItemMaximised from './ServiceGridItemMaximised';
-import { useEffect, useRef, useState } from 'react';
 export default function ServiceGridItem({ service }) {
-  const gridItemRef = useRef();
-  const [cardCoords, setCardCoords] = useState({
-    left: 0,
-    top: 0,
-  });
-  const [hovered, setHovered] = useState(false);
-
-  useEffect(() => {
-    setCardCoords({
-      left: gridItemRef.current.offsetLeft,
-      top: gridItemRef.current.offsetTop,
-    });
-  }, [service]);
-
   return (
-    <div className="outer-grid-item" onMouseLeave={() => setHovered(false)}>
-      {hovered && (
-        <ServiceGridItemMaximised
-          service={service}
-          cardCoords={cardCoords}
-          setHovered={setHovered}
-        />
-      )}
-      <StyledServiceGridItem
-        onMouseEnter={() => setHovered(true)}
-        ref={gridItemRef}
-      >
+    <div className="outer-grid-item">
+      <StyledServiceGridItem>
         <div className="image-container">
           <Image
             src={service.img}

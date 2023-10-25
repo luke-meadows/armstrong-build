@@ -47,6 +47,7 @@ export const StyledHero = styled.section`
   .left-side {
     background: #000;
     color: #ededed;
+
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -58,6 +59,7 @@ export const StyledHero = styled.section`
     h1 {
       font-size: 2rem;
       margin: 0;
+      color: #ffdc00;
     }
     p {
       font-weight: 400;

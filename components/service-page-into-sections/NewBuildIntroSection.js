@@ -1,25 +1,20 @@
 import styled from 'styled-components';
 import Container from '../Container';
-import Image from 'next/image';
-import IntroImage from '../../public/images/service-intro-images/new-builds.jpg';
+import ServiceIntroImageDisplay from './ServiceIntroImageDisplay';
+import ServicePromises from './ServicePromises';
 export default function NewBuildIntroSection() {
   return (
     <Container>
       <StyledNewBuildIntroSection>
-        <div className="left">
-          <Image
-            src={IntroImage}
-            layout="fill"
-            objectFit="cover"
-            alt="service-image"
-          />
-        </div>
+        <ServiceIntroImageDisplay />
         <div className="right">
           <h2>Built from the ground up</h2>
+
           <p>
             With our team of highly skilled architects, engineers, and builders,
             we transform your vision into a stunning reality.
           </p>
+
           <p>
             From initial concept to final completion, we handle every aspect of
             the construction process with meticulous care. Our dedication to
@@ -38,12 +33,14 @@ export default function NewBuildIntroSection() {
             and needs. Contact us today to embark on an exciting journey towards
             your ideal living space.
           </p>
+          <ServicePromises />
         </div>
       </StyledNewBuildIntroSection>
     </Container>
   );
 }
 const StyledNewBuildIntroSection = styled.section`
+  background: rgba(255, 255, 255, 0.95);
   width: 100%;
   display: flex;
   border-radius: 0.3rem;
@@ -52,15 +49,8 @@ const StyledNewBuildIntroSection = styled.section`
   h2 {
     margin-top: 0rem;
   }
-  .left,
   .right {
     width: 50%;
-  }
-  .left {
-    position: relative;
-  }
-  .right {
-    background: rgba(255, 255, 255, 0.9);
     padding: 1.4rem;
     color: #606060;
   }

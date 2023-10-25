@@ -39,13 +39,13 @@ const StyledStartBuildingBanner = styled.section`
     }
   }
   button {
-    background: #000;
     border: 1px solid #ffdc00;
-    color: #ffdc00;
     padding: 1rem 4rem;
+    background: #ffdc00;
+    color: #000;
     &:hover {
-      background: #ffdc00;
-      color: #000;
+      background: #000;
+      color: #ffdc00;
     }
   }
 `;
