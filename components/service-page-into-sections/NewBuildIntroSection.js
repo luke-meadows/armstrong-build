@@ -9,12 +9,10 @@ export default function NewBuildIntroSection() {
         <ServiceIntroImageDisplay />
         <div className="right">
           <h2>Built from the ground up</h2>
-
           <p>
             With our team of highly skilled architects, engineers, and builders,
             we transform your vision into a stunning reality.
           </p>
-
           <p>
             From initial concept to final completion, we handle every aspect of
             the construction process with meticulous care. Our dedication to
@@ -46,11 +44,14 @@ const StyledNewBuildIntroSection = styled.section`
   border-radius: 0.3rem;
   overflow: hidden;
   margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
   h2 {
     margin-top: 0rem;
   }
   .right {
-    width: 50%;
+    /* width: 50%; */
     padding: 1.4rem;
     color: #606060;
   }

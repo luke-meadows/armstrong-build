@@ -32,6 +32,7 @@ export default function ServiceIntroImageDisplay() {
           {images.map((image, i) => {
             return (
               <div
+                key={i}
                 className={`image-container ${
                   activeImage === image ? 'active' : ''
                 }`}
@@ -52,7 +53,6 @@ export default function ServiceIntroImageDisplay() {
   );
 }
 const StyledServiceIntroImageDisplay = styled.div`
-  width: 50%;
   .image-container {
     position: relative;
     width: 100%;
