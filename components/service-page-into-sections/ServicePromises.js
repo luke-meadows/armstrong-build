@@ -55,6 +55,7 @@ const StyledServicePromises = styled.div`
       margin: 0;
       font-size: 0.7rem;
       font-weight: 600;
+      color: #000;
     }
     i {
       background: #000;

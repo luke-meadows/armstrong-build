@@ -62,12 +62,11 @@ const StyledServiceIntroImageDisplay = styled.div`
   }
   .image-preview {
     height: 24rem;
-    padding: 1rem 0 0 1rem;
   }
   .image-grid {
     display: grid;
     gap: 0.5rem;
-    padding: 0.5rem 0 1rem 1rem;
+    padding-top: 0.5rem;
     grid-template-columns: repeat(5, 1fr);
     .image-container {
       aspect-ratio: 1;

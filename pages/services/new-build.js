@@ -4,10 +4,12 @@ import Header from '../../components/Header';
 import NewBuildHero from '../../components/hero/NewBuildHero';
 import RecentProjects from '../../components/RecentProjects.js';
 import TopHeader from '../../components/TopHeader';
-import NewBuildIntroSection from '../../components/service-page-into-sections/NewBuildIntroSection';
+
 import SectionHeading from '../../components/SectionHeading';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
 import Footer from '../../components/Footer';
+import ServiceInformation from '../../components/ServiceInformation';
+import Container from '../../components/Container';
 
 export default function Home() {
   return (
@@ -16,7 +18,9 @@ export default function Home() {
       <TopHeader />
       <Header />
       <NewBuildHero />
-      <NewBuildIntroSection />
+      <Container>
+        <ServiceInformation service={{ title: 'hello' }} />
+      </Container>
       <SectionHeading heading="New Build Portfolio" />
       <RecentProjects />
       <StartBuildingBanner />

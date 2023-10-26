@@ -52,3 +52,35 @@ select {
   top: 50%;
   transform: translate(-50%); */
 }
+
+button {
+  padding: 0.75rem 1rem 0.75rem 2.7rem;
+  font-weight: 500;
+  position: relative;
+  background: #000;
+  color: #ffdc00;
+  border-radius: 0.3rem;
+  &:hover {
+    background: #ffdc00;
+    color: #000;
+    .arrow {
+      background: #000;
+    }
+  }
+}
+.arrow-container {
+  position: relative;
+  width: 0.8rem;
+  svg {
+  }
+}
+.arrow {
+  position: absolute;
+  left: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  padding: 0.2rem;
+  background: #ffdc00;
+  border-radius: 0.2rem;
+  transition: all 0.3s ease;
+}
