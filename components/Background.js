@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import BackgroundImg from '../public/images/background/background-image.jpeg';
+import BackgroundImg from '../public/images/background/background-image2.jpeg';
 export default function Background() {
   return (
     <StyledBackground>
@@ -11,6 +11,7 @@ export default function Background() {
           objectFit="cover"
           alt="background image"
           priority
+          placeholder="blur"
         />
       </div>
     </StyledBackground>
@@ -23,7 +24,7 @@ const StyledBackground = styled.div`
   width: 100vw;
   left: 0;
   top: 0;
-  /* filter: brightness(0.9); */
+
   .inner-background {
     position: relative;
     height: 100%;
