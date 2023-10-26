@@ -63,6 +63,94 @@ export default function ServiceInformation({
                 </button>
               </div>
             )}
+            {closeButton && (
+              <div
+                className="close-button"
+                onClick={() => setItemClicked(false)}
+              >
+                <button
+                  onMouseEnter={() => setButtonHovered(true)}
+                  onMouseLeave={() => setButtonHovered(false)}
+                >
+                  <div className="arrow">
+                    <div className="arrow-container">
+                      <Image
+                        src={buttonHovered ? ChevronYellow : ChevronBlack}
+                        layout="responsive"
+                        objectFit="fill"
+                      />
+                    </div>
+                  </div>
+                  Back
+                </button>
+              </div>
+            )}
+            {closeButton && (
+              <div
+                className="close-button"
+                onClick={() => setItemClicked(false)}
+              >
+                <button
+                  onMouseEnter={() => setButtonHovered(true)}
+                  onMouseLeave={() => setButtonHovered(false)}
+                >
+                  <div className="arrow">
+                    <div className="arrow-container">
+                      <Image
+                        src={buttonHovered ? ChevronYellow : ChevronBlack}
+                        layout="responsive"
+                        objectFit="fill"
+                      />
+                    </div>
+                  </div>
+                  Back
+                </button>
+              </div>
+            )}
+            {closeButton && (
+              <div
+                className="close-button"
+                onClick={() => setItemClicked(false)}
+              >
+                <button
+                  onMouseEnter={() => setButtonHovered(true)}
+                  onMouseLeave={() => setButtonHovered(false)}
+                >
+                  <div className="arrow">
+                    <div className="arrow-container">
+                      <Image
+                        src={buttonHovered ? ChevronYellow : ChevronBlack}
+                        layout="responsive"
+                        objectFit="fill"
+                      />
+                    </div>
+                  </div>
+                  Back
+                </button>
+              </div>
+            )}
+            {closeButton && (
+              <div
+                className="close-button"
+                onClick={() => setItemClicked(false)}
+              >
+                <button
+                  onMouseEnter={() => setButtonHovered(true)}
+                  onMouseLeave={() => setButtonHovered(false)}
+                >
+                  <div className="arrow">
+                    <div className="arrow-container">
+                      <Image
+                        src={buttonHovered ? ChevronYellow : ChevronBlack}
+                        layout="responsive"
+                        objectFit="fill"
+                      />
+                    </div>
+                  </div>
+                  Back
+                </button>
+              </div>
+            )}
           </div>
           <p>
             With our team of highly skilled architects, engineers, and builders,
@@ -135,6 +223,7 @@ const StyledServiceInformation = styled.div`
     display: flex;
     flex-direction: column;
     flex: 1;
+    padding-right: 1rem;
     h2 {
       margin: 0;
       padding: 0;
