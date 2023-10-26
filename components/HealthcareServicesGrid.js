@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import HealthcareServiceGridItem from './HealthcareServiceGridItem';
 import HealthcareServiceGridItemExpanded from './HealthcareServiceGridItemExpanded';
@@ -10,7 +10,6 @@ import OutpatientsImg from '../public/images/service-intro-images/healthcare-out
 import StoreroomImg from '../public/images/service-intro-images/healthcare-storeroom.jpeg';
 import WardImg from '../public/images/service-intro-images/healthcare-ward.jpg';
 import ServiceInformation from './ServiceInformation';
-
 const serviceGridData = [
   {
     title: 'A&E Facilities',
@@ -43,6 +42,7 @@ const serviceGridData = [
 ];
 export default function ServicesGrid() {
   const [itemClicked, setItemClicked] = useState(false);
+
   return (
     <StyledServicesGrid itemClicked={itemClicked}>
       {!itemClicked &&
@@ -80,6 +80,7 @@ const StyledServicesGrid = styled.div`
   grid-template-columns: ${(props) =>
     props.itemClicked === false ? 'repeat(3, 1fr)' : 'repeat(1, 1fr)'};
   gap: 2rem;
+
   @media only screen and (max-width: 900px) {
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
