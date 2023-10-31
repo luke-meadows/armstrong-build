@@ -6,14 +6,7 @@ import IntroImage4 from '../../public/images/service-intro-images/new-builds4.jp
 import IntroImage5 from '../../public/images/service-intro-images/new-builds5.jpg';
 import Image from 'next/image';
 import { useState } from 'react';
-export default function ServiceIntroImageDisplay() {
-  const images = [
-    IntroImage,
-    IntroImage2,
-    IntroImage3,
-    IntroImage4,
-    IntroImage5,
-  ];
+export default function ServiceIntroImageDisplay({ images }) {
   const [activeImage, setActiveImage] = useState(images[0]);
   return (
     <StyledServiceIntroImageDisplay>

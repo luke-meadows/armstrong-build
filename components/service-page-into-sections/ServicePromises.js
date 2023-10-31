@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-export default function ServicePromises() {
+export default function ServicePromises({ promises }) {
   return (
     <StyledServicePromises>
       <div className="promise-item">

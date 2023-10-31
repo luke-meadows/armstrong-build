@@ -26,7 +26,7 @@ export default function ServiceInformation({
       marginBottom={marginBottom}
     >
       <div className="image-display-container">
-        <ServiceIntroImageDisplay />
+        <ServiceIntroImageDisplay images={service.images} />
       </div>
       {imageTitle && (
         <div className="service-grid-item-heading">
@@ -152,31 +152,12 @@ export default function ServiceInformation({
               </div>
             )}
           </div>
-          <p>
-            With our team of highly skilled architects, engineers, and builders,
-            we transform your vision into a stunning reality.
-          </p>
-          <p>
-            From initial concept to final completion, we handle every aspect of
-            the construction process with meticulous care. Our dedication to
-            excellence is reflected in the superior materials we use and the
-            advanced techniques we employ.
-          </p>
-          <p>
-            You can expect a seamless and efficient experience. We prioritise
-            open communication, ensuring that your ideas and preferences are
-            incorporated at every stage. Our commitment to timeliness and
-            budgetary considerations guarantees that your project is delivered
-            on schedule and within your desired investment range.
-          </p>
-          <p>
-            Let us build the home of your dreams, tailored to your unique style
-            and needs. Contact us today to embark on an exciting journey towards
-            your ideal living space.
-          </p>
+          {service.description.map((p, i) => {
+            return <p key={i}>{p}</p>;
+          })}
         </div>
         <div>
-          <ServicePromises />
+          <ServicePromises promises={service.promises} />
         </div>
       </div>
     </StyledServiceInformation>
@@ -228,13 +209,42 @@ const StyledServiceInformation = styled.div`
       margin: 0;
       padding: 0;
       color: #000;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
     }
     .right-top-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
+  }
+  button {
+    padding: 0.75rem 1rem 0.75rem 2.7rem;
+    font-weight: 500;
+    position: relative;
+    background: #000;
+    color: #ffdc00;
+    border-radius: 0.3rem;
+    &:hover {
+      background: #ffdc00;
+      color: #000;
+      .arrow {
+        background: #000;
+      }
+    }
+  }
+  .arrow-container {
+    position: relative;
+    width: 0.8rem;
+  }
+  .arrow {
+    position: absolute;
+    left: 0.85rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    padding: 0.2rem;
+    background: #ffdc00;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease;
   }
 `;

@@ -1,52 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import HealthcareServiceGridItem from './HealthcareServiceGridItem';
-import HealthcareServiceGridItemExpanded from './HealthcareServiceGridItemExpanded';
-// Images
-import AandEImg from '../public/images/service-grid-images/healthcare.jpeg';
-import PlantRoomsImg from '../public/images/service-intro-images/healthcare-plant-room.jpeg';
-import OperatingTheatreImg from '../public/images/service-intro-images/healthcare-operating-theatre.jpg';
-import OutpatientsImg from '../public/images/service-intro-images/healthcare-outpatients.jpg';
-import StoreroomImg from '../public/images/service-intro-images/healthcare-storeroom.jpeg';
-import WardImg from '../public/images/service-intro-images/healthcare-ward.jpg';
 import ServiceInformation from './ServiceInformation';
-const serviceGridData = [
-  {
-    title: 'A&E Facilities',
-    blurb: '',
-    img: AandEImg,
-    url: '/services/healthcare',
-  },
-  {
-    title: 'Plant Rooms',
-    blurb: '',
-    img: PlantRoomsImg,
-  },
-  {
-    title: 'Operating Theatres',
-    blurb: '',
-    img: OperatingTheatreImg,
-    url: '/services/new-build',
-  },
-  {
-    title: 'Outpatient Facilities',
-    blurb: '',
-    img: OutpatientsImg,
-  },
-  {
-    title: 'Storerooms',
-    blurb: '',
-    img: StoreroomImg,
-  },
-  { title: 'Wards', blurb: '', img: WardImg },
-];
+import { healthcareData } from '../lib/service-info-sections/healthcare-data';
 export default function ServicesGrid() {
   const [itemClicked, setItemClicked] = useState(false);
 
   return (
     <StyledServicesGrid itemClicked={itemClicked}>
       {!itemClicked &&
-        serviceGridData.map((service, i) => {
+        healthcareData.map((service, i) => {
           return (
             <HealthcareServiceGridItem
               key={i}

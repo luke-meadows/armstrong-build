@@ -10,7 +10,7 @@ import StartBuildingBanner from '../../components/StartBuildingBanner';
 import Footer from '../../components/Footer';
 import ServiceInformation from '../../components/ServiceInformation';
 import Container from '../../components/Container';
-
+import { newBuildData } from '../../lib/service-info-sections/newbuild-data';
 export default function Home() {
   return (
     <StyledHome>
@@ -19,9 +19,9 @@ export default function Home() {
       <Header />
       <NewBuildHero />
       <Container>
-        <ServiceInformation service={{ title: 'hello' }} />
+        <ServiceInformation service={newBuildData} />
       </Container>
-      <SectionHeading heading="New Build Portfolio" />
+      <SectionHeading heading="New Build Projects" />
       <RecentProjects />
       <StartBuildingBanner />
       <Footer />

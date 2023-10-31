@@ -15,7 +15,7 @@ export default function ServiceGridItem({
       <StyledServiceGridItem itemClicked={itemClicked}>
         <div className="image-container">
           <Image
-            src={service.img}
+            src={service.images[0]}
             layout="fill"
             objectFit="cover"
             alt="service card image"
