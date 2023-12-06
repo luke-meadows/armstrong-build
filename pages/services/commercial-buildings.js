@@ -8,6 +8,7 @@ import StartBuildingBanner from '../../components/StartBuildingBanner';
 import Footer from '../../components/Footer';
 import { commercialBuildingData } from '../../lib/service-info-sections/commercial-buildings-data';
 import Container from '../../components/Container';
+import RecentProjects from '../../components/RecentProjects';
 
 export default function CommercialBuildingsPage() {
   return (
@@ -19,6 +20,7 @@ export default function CommercialBuildingsPage() {
       <Container>
         <ServiceInformation service={commercialBuildingData} />
       </Container>
+      <RecentProjects />
       <StartBuildingBanner />
       <Footer />
     </StyledCommercialBuildingsPage>
