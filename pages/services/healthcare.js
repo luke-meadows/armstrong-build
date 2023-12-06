@@ -6,12 +6,11 @@ import TopHeader from '../../components/TopHeader';
 import HealthcareIntroSection from '../../components/service-page-into-sections/HealthcareIntroSection';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
 import SectionHeading from '../../components/SectionHeading';
-
 import Footer from '../../components/Footer';
 
-export default function Home() {
+export default function HealthcarePage() {
   return (
-    <StyledHome>
+    <StyledHealthcarePage>
       <Background />
       <TopHeader />
       <Header />
@@ -20,9 +19,9 @@ export default function Home() {
       <HealthcareIntroSection />
       <StartBuildingBanner />
       <Footer />
-    </StyledHome>
+    </StyledHealthcarePage>
   );
 }
-const StyledHome = styled.main`
+const StyledHealthcarePage = styled.main`
   position: relative;
 `;

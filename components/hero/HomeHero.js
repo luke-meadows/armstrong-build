@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Container from '../Container';
 import Image from 'next/image';
-import HeroImg from '../../public/images/hero-images/home-hero2.jpeg';
+import HeroImg from '../../public/images/hero-images/home-hero.jpg';
 export default function HomeHero() {
   return (
     <StyledHero>
@@ -47,7 +47,6 @@ export const StyledHero = styled.section`
   .left-side {
     background: #000;
     color: #ededed;
-
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -63,7 +62,6 @@ export const StyledHero = styled.section`
     }
     p {
       font-weight: 400;
-      font-size: 0.96rem;
     }
     button {
       padding: 1rem 2rem;

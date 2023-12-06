@@ -1,9 +1,4 @@
 import styled from 'styled-components';
-import IntroImage from '../../public/images/service-intro-images/new-builds.jpg';
-import IntroImage2 from '../../public/images/service-intro-images/new-builds2.jpg';
-import IntroImage3 from '../../public/images/service-intro-images/new-builds3.jpg';
-import IntroImage4 from '../../public/images/service-intro-images/new-builds4.jpg';
-import IntroImage5 from '../../public/images/service-intro-images/new-builds5.jpg';
 import Image from 'next/image';
 import { useState } from 'react';
 export default function ServiceIntroImageDisplay({ images }) {
@@ -21,26 +16,28 @@ export default function ServiceIntroImageDisplay({ images }) {
             />
           </div>
         </div>
-        <div className="image-grid">
-          {images.map((image, i) => {
-            return (
-              <div
-                key={i}
-                className={`image-container ${
-                  activeImage === image ? 'active' : ''
-                }`}
-                onClick={() => setActiveImage(images[i])}
-              >
-                <Image
-                  src={image}
-                  layout="fill"
-                  objectFit="cover"
-                  alt="service-image"
-                />
-              </div>
-            );
-          })}
-        </div>
+        {images.length > 1 && (
+          <div className="image-grid">
+            {images.map((image, i) => {
+              return (
+                <div
+                  key={i}
+                  className={`image-container ${
+                    activeImage === image ? 'active' : ''
+                  }`}
+                  onClick={() => setActiveImage(images[i])}
+                >
+                  <Image
+                    src={image}
+                    layout="fill"
+                    objectFit="cover"
+                    alt="service-image"
+                  />
+                </div>
+              );
+            })}
+          </div>
+        )}
       </div>
     </StyledServiceIntroImageDisplay>
   );
@@ -67,6 +64,6 @@ const StyledServiceIntroImageDisplay = styled.div`
     }
   }
   .active {
-    border: 5px solid #000;
+    border: 5px solid #ffdc00;
   }
 `;

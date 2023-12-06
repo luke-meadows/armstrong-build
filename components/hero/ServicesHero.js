@@ -2,6 +2,7 @@ import Container from '../Container';
 import Image from 'next/image';
 import HeroImg from '../../public/images/hero-images/services-hero.jpeg';
 import { StyledHero } from './HomeHero';
+import Link from 'next/link';
 export default function ServicesHero() {
   return (
     <StyledHero>
@@ -17,7 +18,9 @@ export default function ServicesHero() {
                 the advanced techniques we employ.
               </p>
             </div>
-            <button>Contact us today</button>
+            <Link href="/contact">
+              <button>Contact us today</button>
+            </Link>
           </div>
           <div className="right-side">
             <Image

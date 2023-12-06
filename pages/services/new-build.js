@@ -4,7 +4,6 @@ import Header from '../../components/Header';
 import NewBuildHero from '../../components/hero/NewBuildHero';
 import RecentProjects from '../../components/RecentProjects.js';
 import TopHeader from '../../components/TopHeader';
-
 import SectionHeading from '../../components/SectionHeading';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
 import Footer from '../../components/Footer';
@@ -21,6 +20,7 @@ export default function Home() {
       <Container>
         <ServiceInformation service={newBuildData} />
       </Container>
+      <div className="two-rem-spacer"></div>
       <SectionHeading heading="New Build Projects" />
       <RecentProjects />
       <StartBuildingBanner />
@@ -30,4 +30,8 @@ export default function Home() {
 }
 const StyledHome = styled.main`
   position: relative;
+  .two-rem-spacer {
+    margin-bottom: 2rem;
+    display: inline-block;
+  }
 `;

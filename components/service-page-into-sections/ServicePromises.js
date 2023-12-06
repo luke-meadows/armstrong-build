@@ -43,8 +43,8 @@ export default function ServicePromises({ promises }) {
 }
 const StyledServicePromises = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 0.75rem;
   margin-top: 1.5rem;
   .promise-item {
     display: flex;
@@ -53,7 +53,7 @@ const StyledServicePromises = styled.div`
     gap: 0.5rem;
     p {
       margin: 0;
-      font-size: 0.7rem;
+      font-size: 0.9rem;
       font-weight: 600;
       color: #000;
     }

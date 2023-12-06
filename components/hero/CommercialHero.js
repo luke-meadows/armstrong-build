@@ -1,23 +1,22 @@
 import Container from '../Container';
 import Image from 'next/image';
-import HeroImg from '../../public/images/hero-images/new-builds-hero.jpg';
+import HeroImg from '../../public/images/hero-images/healthcare-hero.jpeg';
 import { StyledHero } from './HomeHero';
-export default function NewBuildHero() {
+export default function HealthcareHero() {
   return (
     <StyledHero>
       <Container>
         <div className="hero-inner">
           <div className="left-side">
             <div>
-              <h1>New Builds</h1>
+              <h1>Commercial Buildings</h1>
               <p className="text">
-                From initial concept to final completion, we handle every aspect
-                of the construction process with meticulous care. Our dedication
-                to excellence is reflected in the superior materials we use and
-                the advanced techniques we employ.
+                Welcome to our Health Buildings Service page, where we
+                specialise in constructing state-of-the-art facilities that
+                promote the well-being of individuals and communities.
               </p>
             </div>
-            <button>New Build Portfolio</button>
+            <button>Contact us</button>
           </div>
           <div className="right-side">
             <Image

@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import Container from '../Container';
 import HealthcareServicesGrid from '../HealthcareServicesGrid';
+import { healthcareData } from '../../lib/service-info-sections/healthcare-data';
+import ServiceInformation from '../ServiceInformation';
 export default function NewBuildIntroSection() {
   return (
     <Container>
@@ -30,7 +32,55 @@ export default function NewBuildIntroSection() {
             limited to the following:
           </strong>
         </p>
-        <HealthcareServicesGrid />
+        <br />
+        <ServiceInformation
+          padding={false}
+          closeButton={true}
+          marginBottom={false}
+          imageTitle={true}
+          title={false}
+          service={healthcareData[0]}
+        />
+        <ServiceInformation
+          padding={false}
+          closeButton={true}
+          marginBottom={false}
+          imageTitle={true}
+          title={false}
+          service={healthcareData[1]}
+        />
+        <ServiceInformation
+          padding={false}
+          closeButton={true}
+          marginBottom={false}
+          imageTitle={true}
+          title={false}
+          service={healthcareData[2]}
+        />
+        <ServiceInformation
+          padding={false}
+          closeButton={true}
+          marginBottom={false}
+          imageTitle={true}
+          title={false}
+          service={healthcareData[3]}
+        />
+        <ServiceInformation
+          padding={false}
+          closeButton={true}
+          marginBottom={false}
+          imageTitle={true}
+          title={false}
+          service={healthcareData[4]}
+        />
+        <ServiceInformation
+          padding={false}
+          closeButton={true}
+          marginBottom={false}
+          imageTitle={true}
+          title={false}
+          service={healthcareData[5]}
+        />
       </StyledNewBuildIntroSection>
     </Container>
   );
@@ -42,6 +92,6 @@ const StyledNewBuildIntroSection = styled.section`
   margin-bottom: 2rem;
   background: #fff;
   color: #606060;
-  padding: 1rem 2rem 2rem 2rem;
+  padding: 1rem 2rem 0rem 2rem;
   position: relative;
 `;

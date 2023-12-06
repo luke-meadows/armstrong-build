@@ -41,11 +41,11 @@ const StyledStartBuildingBanner = styled.section`
   button {
     border: 1px solid #ffdc00;
     padding: 1rem 4rem;
-    background: #ffdc00;
-    color: #000;
+    background: #000;
+    color: #ffdc00;
     &:hover {
-      background: #000;
-      color: #ffdc00;
+      background: #ffdc00;
+      color: #000;
     }
   }
 `;

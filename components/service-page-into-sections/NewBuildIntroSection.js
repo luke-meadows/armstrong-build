@@ -35,9 +35,7 @@ export default function NewBuildIntroSection() {
               towards your ideal living space.
             </p>
           </div>
-          <div>
-            <ServicePromises />
-          </div>
+          <div>{/* <ServicePromises /> */}</div>
         </div>
       </StyledNewBuildIntroSection>
     </Container>

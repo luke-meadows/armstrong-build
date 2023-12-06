@@ -22,8 +22,8 @@ export default function RecentProjectItem({
         onMouseLeave={() => {
           setProjectTitle(title), setHovered('no');
         }}
-        position={position}
         hovered={hovered}
+        position={position}
       >
         <div className="image-container">
           <Image src={img} layout="fill" objectFit="cover" />

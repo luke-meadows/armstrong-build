@@ -18,7 +18,7 @@ export default function Home() {
       <Header />
       <HomeHero />
       <Showreel />
-      <SectionHeading heading="Building Services" noButton />
+      <SectionHeading heading="Construction Services" noButton />
       <ServicesGrid />
       <StartBuildingBanner />
       <SectionHeading heading="Recent Projects" noButton />

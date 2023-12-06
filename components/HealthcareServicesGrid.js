@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import HealthcareServiceGridItem from './HealthcareServiceGridItem';
 import ServiceInformation from './ServiceInformation';
-import { healthcareData } from '../lib/service-info-sections/healthcare-data';
 export default function ServicesGrid() {
   const [itemClicked, setItemClicked] = useState(false);
 
