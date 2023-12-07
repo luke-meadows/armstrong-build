@@ -19,6 +19,7 @@ a {
 
 * {
   box-sizing: border-box;
+  font-smooth: auto;
 }
 button {
   font-family: 'Inter';

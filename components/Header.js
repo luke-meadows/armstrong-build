@@ -18,13 +18,13 @@ const headerVariant = {
     zIndex: 4,
 
     transition: {
-      duration: 0.5,
+      duration: 0.8,
     },
   },
   exit: {
     opacity: 0,
     zIndex: '-1',
-    transition: { duration: 0.3 },
+    transition: { duration: 0.8 },
   },
 };
 export default function Header() {
@@ -33,7 +33,7 @@ export default function Header() {
     <AnimatePresence initial={false}>
       <StyledOuterHeader>
         <Container>
-          <StyledHeader>
+          <StyledHeader showSubHeader={showSubHeader}>
             <Link href="/">
               <div className="logo-home-link">
                 <Logo />
@@ -41,12 +41,14 @@ export default function Header() {
             </Link>
             <nav>
               <Link href="/">
-                <a href="" onMouseEnter={() => setShowSubHeader(false)}>
-                  Home
-                </a>
+                <a href="">Home</a>
               </Link>
               <Link href="/services">
-                <a href="" onMouseEnter={() => setShowSubHeader(true)}>
+                <a
+                  href=""
+                  className="services-link"
+                  onMouseEnter={() => setShowSubHeader(true)}
+                >
                   Services <i className="icon-angle-down" />
                 </a>
               </Link>
@@ -104,6 +106,7 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   z-index: 5 !important;
+
   nav {
     display: flex;
     a {
@@ -112,8 +115,10 @@ const StyledHeader = styled.header`
       font-weight: 500;
       height: 100%;
       position: relative;
-      display: block;
+      box-sizing: border-box;
       padding: 3rem 1.5rem;
+    }
+    .services-link {
     }
     i {
       color: #000;
