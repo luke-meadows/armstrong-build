@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Container from '../Container';
 import Image from 'next/image';
 import HeroImg from '../../public/images/hero-images/home-hero.jpg';
+import Chevron from '../../public/images/icons/chevron-down-black.png';
 export default function HomeHero() {
   return (
     <StyledHero>
@@ -16,7 +17,14 @@ export default function HomeHero() {
                 genuine care for our clients&apos; needs.
               </p>
             </div>
-            <button>Contact us today</button>
+            <button>
+              Contact us today{' '}
+              <span>
+                <div className="chevron-container">
+                  <Image src={Chevron} />
+                </div>
+              </span>
+            </button>
           </div>
           <div className="right-side">
             <Image
@@ -66,11 +74,14 @@ export const StyledHero = styled.section`
     button {
       padding: 1rem 2rem;
       border: 1px solid white;
-
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.4rem;
       background: #ffdc00;
+      width: fit-content;
       color: #000;
-      font-weight: 500;
-      width: 100%;
+      font-weight: 600;
       margin-top: 1rem;
       transition: all 0.2s ease;
       border: 1px solid #ffdc00;
@@ -87,6 +98,12 @@ export const StyledHero = styled.section`
     top: 0;
     width: 60%;
     z-index: 1;
+  }
+  .chevron-container {
+    margin-top: 0.13rem;
+    position: relative;
+    width: 0.8rem;
+    transform: rotate(-90deg);
   }
   .contact-buttons {
     display: grid;
@@ -120,7 +137,7 @@ export const StyledHero = styled.section`
       clip-path: none;
       padding-right: 2rem;
       button {
-        /* width: fit-content; */
+        width: 100%;
       }
     }
   }

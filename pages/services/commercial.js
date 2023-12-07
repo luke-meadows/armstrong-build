@@ -5,6 +5,7 @@ import CommercialHero from '../../components/hero/CommercialHero';
 import TopHeader from '../../components/TopHeader';
 import ServiceInformation from '../../components/ServiceInformation';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
+import SectionHeading from '../../components/SectionHeading';
 import Footer from '../../components/Footer';
 import { commercialBuildingData } from '../../lib/service-info-sections/commercial-buildings-data';
 import Container from '../../components/Container';
@@ -20,6 +21,8 @@ export default function CommercialBuildingsPage() {
       <Container>
         <ServiceInformation service={commercialBuildingData} />
       </Container>
+      <div className="two-rem-spacer" />
+      <SectionHeading heading="Commercial Portfolio" noButton />
       <RecentProjects />
       <StartBuildingBanner />
       <Footer />

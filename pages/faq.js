@@ -1,9 +1,22 @@
-import styled from 'styled-components';
-export default function FAQPage() {
+import { styled } from 'styled-components';
+import Background from '../components/Background';
+import Header from '../components/Header';
+import TopHeader from '../components/TopHeader';
+import FaqHero from '../components/hero/FaqHero';
+import Footer from '../components/Footer';
+import FaqSection from '../components/FaqSection';
+export default function FaqPage() {
   return (
-    <StyledFAQPage>
-      <h1>FAQ page</h1>
-    </StyledFAQPage>
+    <StyledFaqPage>
+      <Background />
+      <TopHeader />
+      <Header />
+      <FaqHero />
+      <FaqSection />
+      <Footer />
+    </StyledFaqPage>
   );
 }
-const StyledFAQPage = styled.main``;
+const StyledFaqPage = styled.main`
+  position: relative;
+`;

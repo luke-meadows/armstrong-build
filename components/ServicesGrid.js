@@ -16,10 +16,10 @@ const serviceGridData = {
     url: '/services/healthcare',
   },
   commercial: {
-    title: 'Commercial Buildings',
+    title: 'Commercial',
     blurb: '',
     img: CommercialBuildingsImg,
-    url: '/services/commercial-buildings',
+    url: '/services/commercial',
   },
   newBuilds: {
     title: 'New Builds',
@@ -29,7 +29,7 @@ const serviceGridData = {
   },
   extensions: { title: 'Extensions', blurb: '', img: ExtensionsImg },
   sustainable: {
-    title: 'Sustainable Buildings',
+    title: 'Sustainable',
     blurb: '',
     img: SustainableBuildingsImg,
   },

@@ -20,7 +20,7 @@ export default function Home() {
       <Container>
         <ServiceInformation service={newBuildData} />
       </Container>
-      <div className="two-rem-spacer"></div>
+      <div className="two-rem-spacer" />
       <SectionHeading heading="New Build Projects" />
       <RecentProjects />
       <StartBuildingBanner />
@@ -30,8 +30,4 @@ export default function Home() {
 }
 const StyledHome = styled.main`
   position: relative;
-  .two-rem-spacer {
-    margin-bottom: 2rem;
-    display: inline-block;
-  }
 `;

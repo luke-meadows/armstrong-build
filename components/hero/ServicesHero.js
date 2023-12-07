@@ -2,6 +2,8 @@ import Container from '../Container';
 import Image from 'next/image';
 import HeroImg from '../../public/images/hero-images/services-hero.jpeg';
 import { StyledHero } from './HomeHero';
+import Chevron from '../../public/images/icons/chevron-down-black.png';
+
 import Link from 'next/link';
 export default function ServicesHero() {
   return (
@@ -19,7 +21,14 @@ export default function ServicesHero() {
               </p>
             </div>
             <Link href="/contact">
-              <button>Contact us today</button>
+              <button>
+                Contact us today{' '}
+                <span>
+                  <div className="chevron-container">
+                    <Image src={Chevron} />
+                  </div>
+                </span>
+              </button>
             </Link>
           </div>
           <div className="right-side">
