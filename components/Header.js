@@ -72,25 +72,26 @@ export default function Header() {
           </StyledHeader>
         </Container>
         {showSubHeader && (
-          <StyledSubHeader
-            variants={headerVariant}
-            initial="initial"
-            animate="enter"
-            exit="exit"
-            onMouseLeave={() => setShowSubHeader(false)}
-          >
-            <div className="inner-container">
-              <h3>Services</h3>
-              <nav>
-                <Link href="/services/healthcare">Healthcare</Link>
-                <Link href="/services/commercial">Commercial</Link>
-                <Link href="/services/new-build">New Build</Link>
-                <Link href="/services/extensions">Extensions</Link>
-                <Link href="/services/sustainable">Sustainable</Link>
-                <Link href="/services/renovations">Renovations</Link>
-              </nav>
-            </div>
-          </StyledSubHeader>
+          <div onMouseLeave={() => setShowSubHeader(false)}>
+            <StyledSubHeader
+              variants={headerVariant}
+              initial="initial"
+              animate="enter"
+              exit="exit"
+            >
+              <div className="inner-container">
+                <h3>Services</h3>
+                <nav>
+                  <Link href="/services/healthcare">Healthcare</Link>
+                  <Link href="/services/commercial">Commercial</Link>
+                  <Link href="/services/new-build">New Build</Link>
+                  <Link href="/services/extensions">Extensions</Link>
+                  <Link href="/services/sustainable">Sustainable</Link>
+                  <Link href="/services/renovations">Renovations</Link>
+                </nav>
+              </div>
+            </StyledSubHeader>
+          </div>
         )}
       </StyledOuterHeader>
     </AnimatePresence>

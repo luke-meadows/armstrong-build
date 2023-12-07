@@ -32,8 +32,14 @@ const serviceGridData = {
     title: 'Sustainable',
     blurb: '',
     img: SustainableBuildingsImg,
+    url: '/services/sustainable',
   },
-  renovations: { title: 'Renovations', blurb: '', img: RenovationsImg },
+  renovations: {
+    title: 'Renovations',
+    blurb: '',
+    img: RenovationsImg,
+    url: '/services/renovations',
+  },
 };
 export default function ServicesGrid() {
   return (
