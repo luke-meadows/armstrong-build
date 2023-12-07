@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import Container from '../Container';
-import HealthcareServicesGrid from '../HealthcareServicesGrid';
 import { healthcareData } from '../../lib/service-info-sections/healthcare-data';
 import ServiceInformation from '../ServiceInformation';
 export default function NewBuildIntroSection() {
@@ -14,23 +13,6 @@ export default function NewBuildIntroSection() {
           needs. Our collaborative approach involves working closely with
           national clients and dedicated project teams to ensure that we
           precisely meet the project&apos;s objectives.
-        </p>
-        <p>
-          At Armstrong Build, we fully grasp and empathize with the complex
-          challenges that healthcare providers encounter. These challenges
-          encompass evolving patient demographics, higher expectations for
-          hospital accommodations, budget constraints, and the ever-growing
-          demands for carbon and waste reduction. Whether your project involves
-          constructing a brand-new facility or renovating an existing one, our
-          unwavering commitment is to provide you with an innovative and
-          seamlessly executed project.
-        </p>
-        <p>
-          <strong>
-            Our custom-built construction expertise can be effectively applied
-            to a diverse array of applications, which include but are not
-            limited to the following:
-          </strong>
         </p>
         <br />
         <ServiceInformation

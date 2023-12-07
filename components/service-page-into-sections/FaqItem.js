@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
 import Chevron from '../../public/images/icons/chevron-down-black.png';
+
 import { useState } from 'react';
 import Image from 'next/image';
 export default function FaqItem({ question, answer }) {
@@ -15,25 +16,7 @@ export default function FaqItem({ question, answer }) {
       </div>
       <AnimatePresence initial={false} mode="wait">
         {expanded && (
-          <motion.div
-            animate={{
-              zIndex: 1,
-              transition: {
-                type: 'tween',
-                duration: 0.15,
-                ease: 'circOut',
-              },
-            }}
-            exit={{
-              zIndex: 0,
-              transition: {
-                type: 'tween',
-                duration: 0.15,
-                ease: 'circIn',
-              },
-            }}
-            className="answer"
-          >
+          <motion.div className="answer">
             <p> {answer}</p>
           </motion.div>
         )}
@@ -45,6 +28,7 @@ const StyledFaqItem = styled.div`
   background: #ededed;
   padding: 1rem;
   border-radius: 0.3rem;
+  z-index: 0;
   cursor: pointer;
   p {
     margin: 0;

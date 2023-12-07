@@ -9,7 +9,7 @@ export default function NewBuildHero() {
         <div className="hero-inner">
           <div className="left-side">
             <div>
-              <h1>New Builds</h1>
+              <h1>New Build</h1>
               <p className="text">
                 From initial concept to final completion, we handle every aspect
                 of the construction process with meticulous care. Our dedication

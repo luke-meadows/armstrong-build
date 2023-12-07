@@ -47,14 +47,12 @@ select {
   display: inline-block;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
-  /* position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%); */
-  /* color: #1b1b1b; */
 }
 
 .two-rem-spacer {
   margin-bottom: 2rem;
   display: inline-block;
+}
+section {
+  transition: all 0.5 ease;
 }
