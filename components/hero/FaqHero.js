@@ -13,8 +13,8 @@ export default function HealthcareHero() {
             <div>
               <h1>FAQ</h1>
               <p className="text">
-                If you can't find your answer below, please contact us and one
-                of the team will be happy to help.
+                If you can&apos;t find your answer below, please contact us and
+                one of the team will be happy to help.
               </p>
             </div>
             <button>
