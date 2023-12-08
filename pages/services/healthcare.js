@@ -15,7 +15,7 @@ export default function HealthcarePage() {
       <TopHeader />
       <Header />
       <HealthcareHero />
-      <SectionHeading heading="Healthcare Construction Applications" noButton />
+      <SectionHeading heading="Healthcare Construction" noButton />
       <HealthcareIntroSection />
       <StartBuildingBanner />
       <Footer />

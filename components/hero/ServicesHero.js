@@ -11,15 +11,15 @@ export default function ServicesHero() {
       <Container>
         <div className="hero-inner">
           <div className="left-side">
-            <div>
+            <div className="hero-text-top">
               <h1>Services</h1>
-              <p className="text">
-                From initial concept to final completion, we handle every aspect
-                of the construction process with meticulous care. Our dedication
-                to excellence is reflected in the superior materials we use and
-                the advanced techniques we employ.
-              </p>
             </div>
+            <p className="text">
+              From initial concept to final completion, we handle every aspect
+              of the construction process with meticulous care. Our dedication
+              to excellence is reflected in the superior materials we use and
+              the advanced techniques we employ.
+            </p>
             <Link href="/contact">
               <button>
                 Contact us today{' '}

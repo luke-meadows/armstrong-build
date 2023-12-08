@@ -8,16 +8,16 @@ export default function PortfolioHero() {
       <Container>
         <div className="hero-inner">
           <div className="left-side">
-            <div>
+            <div className="hero-text-top">
               <h1>Portfolio</h1>
-              <p className="text">
-                Welcome to our portfolio page, where we proudly showcase our
-                expertise and craftsmanship in building remarkable structures.
-                With years of industry experience and a commitment to
-                excellence, we have successfully completed a diverse range of
-                construction projects.
-              </p>
             </div>
+            <p className="text">
+              Welcome to our portfolio page, where we proudly showcase our
+              expertise and craftsmanship in building remarkable structures.
+              With years of industry experience and a commitment to excellence,
+              we have successfully completed a diverse range of construction
+              projects.
+            </p>
             <button>Contact us today</button>
           </div>
           <div className="right-side">

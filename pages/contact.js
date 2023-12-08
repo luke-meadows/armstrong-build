@@ -13,7 +13,8 @@ export default function Contact() {
       <TopHeader />
       <Header />
       <ContactHero />
-      <SectionHeading heading="Send us a message" noButton />
+      <SectionHeading heading="Send us a message" noButton filterButton />
+
       <ContactForm />
       <Footer />
     </StyledContact>
