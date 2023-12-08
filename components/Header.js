@@ -14,6 +14,7 @@ const headerVariant = {
     zIndex: 0,
   },
   enter: {
+    y: 0,
     opacity: 1,
     zIndex: 4,
 
@@ -30,8 +31,8 @@ const headerVariant = {
 export default function Header() {
   const [showSubHeader, setShowSubHeader] = useState(false);
   return (
-    <AnimatePresence initial={false}>
-      <StyledOuterHeader>
+    <StyledOuterHeader>
+      <AnimatePresence mode="sync">
         <Container>
           <StyledHeader showSubHeader={showSubHeader}>
             <Link href="/">
@@ -53,9 +54,7 @@ export default function Header() {
                 </a>
               </Link>
               <Link href="/portfolio">
-                <a href="" onMouseEnter={() => setShowSubHeader(false)}>
-                  Portfolio
-                </a>
+                <a href="">Portfolio</a>
               </Link>
               <Link href="/faq">
                 <a href="" onMouseEnter={() => setShowSubHeader(false)}>
@@ -93,21 +92,21 @@ export default function Header() {
             </StyledSubHeader>
           </div>
         )}
-      </StyledOuterHeader>
-    </AnimatePresence>
+      </AnimatePresence>
+    </StyledOuterHeader>
   );
 }
 const StyledOuterHeader = styled.div`
   background: #fff;
   margin-bottom: 4rem;
   height: fit-content;
+  transition: height 1.2s ease;
 `;
 const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 5 !important;
-
+  z-index: 5;
   nav {
     display: flex;
     a {
