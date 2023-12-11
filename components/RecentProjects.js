@@ -17,6 +17,7 @@ export default function RecentProjects({ more = false }) {
         <div className="recent-projects-grid">
           {portfolioData.map((item, i) => (
             <RecentProjectItem
+              key={i}
               img={item.images[0]}
               title={item.title}
               service={item.service}
