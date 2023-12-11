@@ -8,13 +8,21 @@ import ProjectImg4 from '../public/images/recent-project-placeholders/Richmond R
 import ProjectImg5 from '../public/images/recent-project-placeholders/Bryants House.png';
 import ProjectImg6 from '../public/images/recent-project-placeholders/Devonshire.jpeg';
 import ProjectImg7 from '../public/images/recent-project-placeholders/Door.jpeg';
+import { portfolioData } from '../lib/portfolio-data';
 
 export default function RecentProjects({ more = false }) {
   return (
     <Container>
       <StyledRecentProjects>
         <div className="recent-projects-grid">
-          <RecentProjectItem
+          {portfolioData.map((item, i) => (
+            <RecentProjectItem
+              img={item.images[0]}
+              title={item.title}
+              service={item.service}
+            />
+          ))}
+          {/* <RecentProjectItem
             position="topLeft"
             img={ProjectImg1}
             title="Bickerton Road, London"
@@ -45,8 +53,8 @@ export default function RecentProjects({ more = false }) {
             img={ProjectImg6}
             title="Devonshire"
             service="New Build"
-          />
-          {more && (
+          /> */}
+          {/* {more && (
             <>
               <RecentProjectItem
                 position="topLeft"
@@ -81,7 +89,7 @@ export default function RecentProjects({ more = false }) {
                 service="New Build"
               />
             </>
-          )}
+          )} */}
         </div>
       </StyledRecentProjects>
     </Container>
