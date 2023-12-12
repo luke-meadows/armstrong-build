@@ -9,7 +9,7 @@ import StartBuildingBanner from '../../components/StartBuildingBanner';
 import Footer from '../../components/Footer';
 import ServiceInformation from '../../components/ServiceInformation';
 import Container from '../../components/Container';
-import { newBuildData } from '../../lib/service-info-sections/newbuild-data';
+import { extensionData } from '../../lib/service-info-sections/extension-data';
 export default function extensions() {
   return (
     <StyledExtensionsPage>
@@ -18,7 +18,7 @@ export default function extensions() {
       <Header />
       <ExtensionsHero />
       <Container>
-        <ServiceInformation service={newBuildData} />
+        <ServiceInformation service={extensionData} />
       </Container>
       <div className="two-rem-spacer" />
       <SectionHeading heading="Extension Projects" />
