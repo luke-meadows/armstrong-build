@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Chevron from '../public/images/icons/chevron-down.png';
 import Link from 'next/link';
@@ -7,11 +7,14 @@ import Link from 'next/link';
 export default function RecentProjectItem({
   position = '',
   img,
-  title = 'Lorem ipsum dolor sit.',
+  title,
   service,
 }) {
   const [hovered, setHovered] = useState('no');
   const [projectTitle, setProjectTitle] = useState(title);
+  useEffect(() => {
+    setProjectTitle(title);
+  }, [title]);
 
   return (
     <Link href="/portfolio/1234">

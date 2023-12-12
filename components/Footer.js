@@ -60,7 +60,6 @@ export default function Footer() {
   );
 }
 const StyledFooter = styled.footer`
-  /* margin-top: 4rem; */
   border-top: 1px solid #646464;
 
   background: #000;

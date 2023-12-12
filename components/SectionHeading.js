@@ -10,13 +10,15 @@ export default function SectionHeading({
   heading,
   noButton = false,
   filterButton = false,
+  setFilter,
+  filter,
 }) {
   const [hovered, setHovered] = useState(false);
   return (
     <Container>
       <StyledSectionHeading>
         <h2>{heading}</h2>
-        {filterButton && <FilterButton />}
+        {filterButton && <FilterButton setFilter={setFilter} filter={filter} />}
         {!noButton && (
           <Link href="/services">
             <button

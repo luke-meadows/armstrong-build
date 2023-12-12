@@ -26,7 +26,7 @@ export default function Home() {
         <ServicesGrid />
         <StartBuildingBanner />
         <SectionHeading heading="Recent Projects" noButton />
-        <RecentProjects />
+        <RecentProjects limit={true} />
         <SectionHeading heading="Testimonials" noButton />
         <TestimonialsSection />
         <Footer />

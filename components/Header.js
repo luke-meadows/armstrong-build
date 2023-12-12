@@ -61,11 +61,13 @@ export default function Header() {
                   FAQ
                 </a>
               </Link>
-              <Link
-                href="/contact"
-                onMouseEnter={() => setShowSubHeader(false)}
-              >
-                <a className="contact-button">Contact us</a>
+              <Link href="/contact">
+                <a
+                  onMouseEnter={() => setShowSubHeader(false)}
+                  className="contact-button"
+                >
+                  Contact us
+                </a>
               </Link>
             </nav>
           </StyledHeader>
