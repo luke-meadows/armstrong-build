@@ -94,7 +94,6 @@ export const StyledHero = styled.section`
     }
   }
   .right-side {
-    background: white;
     position: absolute;
     right: 0;
     top: 0;
