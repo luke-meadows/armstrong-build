@@ -19,7 +19,7 @@ export default function AboutUsSection() {
           With a reputation for producing distinctive work and unparalleled
           quality to meet our clients highest expectations. Armstrong Build has
           been serving homeowners and businesses in Birmingham and the West
-          Midlands for over 29 years.
+          Midlands for over 30 years.
         </p>
       </StyledAboutUsSection>
     </Container>
