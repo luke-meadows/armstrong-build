@@ -1,6 +1,6 @@
 import Container from '../Container';
 import Image from 'next/image';
-import HeroImg from '../../public/images/hero-images/new-builds-hero.jpg';
+import HeroImg from '../../public/images/project-images/023/7.jpg';
 import { StyledHero } from './HomeHero';
 export default function RenovationsHero() {
   return (
