@@ -123,6 +123,9 @@ const StyledHeader = styled.header`
     i {
       color: #000;
     }
+    .icon-angle-down {
+      margin-right: -0.8rem;
+    }
     .contact-button {
       background: #ffdc00;
       padding: 0.75rem 1.2rem;
