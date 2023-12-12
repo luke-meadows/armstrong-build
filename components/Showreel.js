@@ -3,10 +3,10 @@ import Container from './Container';
 import Loader from './Loader';
 import Logo from './Logo';
 
-export default function Showreel({ id = '871787555' }) {
+export default function Showreel({ id = '871787555', coupled = false }) {
   return (
     <Container>
-      <StyledShowreel>
+      <StyledShowreel coupled={coupled}>
         <iframe
           src={`https://player.vimeo.com/video/${id}?background=1&autoplay=1&loop=1&byline=0&title=0muted=1`}
           frameBorder="0"
@@ -22,9 +22,11 @@ export default function Showreel({ id = '871787555' }) {
 const StyledShowreel = styled.div`
   position: relative;
   border-radius: 0.3rem;
+  border-bottom-left-radius: ${(props) => (props.coupled ? '0rem' : '0.3rem')};
+  border-bottom-right-radius: ${(props) => (props.coupled ? '0rem' : '0.3rem')};
   height: 40rem;
   overflow: hidden;
-  margin-bottom: 4rem;
+  margin-bottom: ${(props) => (props.coupled ? '0rem' : '4rem')};
   background: #000;
   z-index: 1;
   iframe {
