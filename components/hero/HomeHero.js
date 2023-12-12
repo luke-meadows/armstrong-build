@@ -50,7 +50,7 @@ export const StyledHero = styled.section`
   .left-side,
   .right-side {
     width: 50%;
-    height: 18rem;
+    min-height: 18rem;
   }
   .left-side {
     background: #000;
@@ -98,6 +98,7 @@ export const StyledHero = styled.section`
     top: 0;
     width: 60%;
     z-index: 1;
+    height: 100%;
   }
   .chevron-container {
     margin-top: 0.13rem;

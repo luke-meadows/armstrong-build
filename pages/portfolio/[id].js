@@ -35,7 +35,8 @@ export default function ProjectPage() {
       <ProjectHero
         title={project?.title}
         desc="Lorem ipsum dolor sit amet consectetur adipisicing consectetur adipisicing elit. Fuga saepe autem sint itaque qui rerum deserunt non quasi est nihil. elit. Fuga saepe autem sint. Fuga saepe autem sint itaque qui rerum deserunt non quasi est nihil."
-        image={project.images[0]}
+        image={project?.images[0]}
+        service={project?.service}
       />
       {project?.videoUrl && <Showreel id="873417291" />}
       <ProjectInfoSection project={project} />

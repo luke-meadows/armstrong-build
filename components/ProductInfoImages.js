@@ -7,7 +7,7 @@ import Image from 'next/image';
 export default function ProjectInfoImages({ images = [] }) {
   return (
     <StyledProjectInfoImages>
-      {images.map((image, i) => (
+      {images?.map((image, i) => (
         <div className="image-container" key={i}>
           <Image src={image} layout="fill" objectFit="cover" />
         </div>
@@ -17,9 +17,7 @@ export default function ProjectInfoImages({ images = [] }) {
 }
 const StyledProjectInfoImages = styled.div`
   position: relative;
-`;
-display: flex;
-`
+  display: flex;
   flex-direction: column;
   gap: 2rem;
   .image-container {

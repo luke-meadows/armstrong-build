@@ -48,7 +48,7 @@ export default function ProjectInfoSection({ project }) {
       <Container scrolling={scrolling}>
         <StyledProjectInfoSection stickBottom={stickBottom} width={width}>
           <div ref={infoImagesRef}>
-            <ProductInfoImages images={project.images} />
+            <ProductInfoImages images={project?.images} />
           </div>
           <div className="right" ref={rightRef}>
             <h2>{project?.title}</h2>
@@ -86,7 +86,7 @@ export default function ProjectInfoSection({ project }) {
             </p>
             <div className="spacer" />
             <ProjectTestimonialItem />
-            <button>Check out other {project.service} projects</button>
+            <button>Check out other {project?.service} projects</button>
           </div>
         </StyledProjectInfoSection>
       </Container>
