@@ -12,9 +12,10 @@ export default function ProjectInfoSection({ project }) {
   const rightRef = useRef();
   const infoImagesRef = useRef();
   const containerRef = useRef();
-
+  const [noStick, setNoStick] = useState(false);
   useEffect(() => {
     function onScroll() {
+      if (noStick) return;
       // makes sure the text element is the correct width when position fixed on smaller screen sizes
       setWidth(infoImagesRef.current.offsetWidth - 1);
       let currentPosition = document.documentElement.scrollTop;
@@ -24,7 +25,6 @@ export default function ProjectInfoSection({ project }) {
         containerRef.current.offsetHeight -
         rightRef.current.offsetHeight -
         94;
-
       if (currentPosition >= elementEndPosition) {
         setStickBottom('yes');
       } else {
@@ -42,6 +42,13 @@ export default function ProjectInfoSection({ project }) {
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
   }, [scrollTop]);
+  useEffect(() => {
+    if (project.images.length < 3) {
+      setNoStick(true);
+    } else {
+      setNoStick(false);
+    }
+  }, [project]);
 
   return (
     <div ref={containerRef} style={{ background: 'black' }}>
@@ -101,6 +108,7 @@ const StyledProjectInfoSection = styled.section`
   color: #ededed;
   align-items: ${(props) => (props.stickBottom === 'yes' ? 'end' : 'start')};
   position: relative;
+  min-height: 20rem;
   .right {
     position: relative;
     width: 100%;
@@ -108,6 +116,7 @@ const StyledProjectInfoSection = styled.section`
     height: fit-content;
     max-height: calc(100vh - 2rem);
     overflow: scroll !important;
+
     h2 {
       margin: 0 0 1rem 0;
       padding: 0.5rem 0;
