@@ -43,7 +43,7 @@ export default function ProjectInfoSection({ project }) {
     return () => window.removeEventListener('scroll', onScroll);
   }, [scrollTop]);
   useEffect(() => {
-    if (project.images.length < 3) {
+    if (project?.images.length < 3) {
       setNoStick(true);
     } else {
       setNoStick(false);

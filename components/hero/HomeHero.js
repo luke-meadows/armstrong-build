@@ -41,9 +41,9 @@ export default function HomeHero() {
 }
 export const StyledHero = styled.section`
   margin-bottom: 4rem;
-  background: #000;
 
   .hero-inner {
+    background: #000;
     display: flex;
     border-radius: 0.3rem;
     overflow: hidden;
