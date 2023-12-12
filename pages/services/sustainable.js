@@ -24,8 +24,8 @@ export default function sustainable() {
         <ServiceInformation service={sustainableData.plantRoom} />
       </Container>
       <div className="two-rem-spacer" />
-      <SectionHeading heading="Sustainable Building Projects" />
-      <RecentProjects />
+      <SectionHeading heading="Sustainable Projects" />
+      <RecentProjects limit={true} filter="Sustainable" />
       <StartBuildingBanner />
       <Footer />
     </StyledSustainablePage>

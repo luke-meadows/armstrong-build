@@ -7,6 +7,7 @@ import HealthcareIntroSection from '../../components/service-page-into-sections/
 import StartBuildingBanner from '../../components/StartBuildingBanner';
 import SectionHeading from '../../components/SectionHeading';
 import Footer from '../../components/Footer';
+import RecentProjects from '../../components/RecentProjects';
 
 export default function HealthcarePage() {
   return (
@@ -17,6 +18,8 @@ export default function HealthcarePage() {
       <HealthcareHero />
       <SectionHeading heading="Healthcare Construction" noButton />
       <HealthcareIntroSection />
+      <SectionHeading heading="Healthcare Projects" />
+      <RecentProjects limit={true} filter="Healthcare" />
       <StartBuildingBanner />
       <Footer />
     </StyledHealthcarePage>

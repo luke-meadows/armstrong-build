@@ -71,7 +71,7 @@ const StyledNewBuildIntroSection = styled.section`
   width: 100%;
   border-radius: 0.3rem;
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   background: #fff;
   color: #606060;
   padding: 1rem 2rem 0rem 2rem;

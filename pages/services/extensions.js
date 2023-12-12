@@ -22,7 +22,7 @@ export default function extensions() {
       </Container>
       <div className="two-rem-spacer" />
       <SectionHeading heading="Extension Projects" />
-      <RecentProjects />
+      <RecentProjects limit={true} filter="Extension" />
       <StartBuildingBanner />
       <Footer />
     </StyledExtensionsPage>

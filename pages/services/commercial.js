@@ -22,8 +22,8 @@ export default function CommercialBuildingsPage() {
         <ServiceInformation service={commercialBuildingData} />
       </Container>
       <div className="two-rem-spacer" />
-      <SectionHeading heading="Commercial Portfolio" noButton />
-      <RecentProjects />
+      <SectionHeading heading="Commercial Projects" />
+      <RecentProjects limit={true} filter="Commercial" />
       <StartBuildingBanner />
       <Footer />
     </StyledCommercialBuildingsPage>

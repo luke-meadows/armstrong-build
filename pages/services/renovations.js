@@ -21,8 +21,8 @@ export default function Home() {
         <ServiceInformation service={newBuildData} />
       </Container>
       <div className="two-rem-spacer" />
-      <SectionHeading heading="New Build Projects" />
-      <RecentProjects />
+      <SectionHeading heading="Renovation Projects" />
+      <RecentProjects limit={true} filter="Renovation" />
       <StartBuildingBanner />
       <Footer />
     </StyledHome>

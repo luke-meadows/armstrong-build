@@ -22,7 +22,7 @@ export default function Home() {
       </Container>
       <div className="two-rem-spacer" />
       <SectionHeading heading="New Build Projects" />
-      <RecentProjects />
+      <RecentProjects limit={true} filter="New Build" />
       <StartBuildingBanner />
       <Footer />
     </StyledHome>
