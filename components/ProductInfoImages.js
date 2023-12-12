@@ -4,51 +4,22 @@ import Img2 from '../public/images/dummy-project-images/hall.jpg';
 import Img3 from '../public/images/dummy-project-images/livingr.jpg';
 import Img4 from '../public/images/dummy-project-images/livingr2.jpg';
 import Image from 'next/image';
-export default function ProjectInfoImages() {
+export default function ProjectInfoImages({ images = [] }) {
   return (
     <StyledProjectInfoImages>
-      <div className="image-container">
-        <Image src={Img1} layout="fill" objectFit="cover" />
-      </div>
-      <div className="image-container">
-        <Image src={Img2} layout="fill" objectFit="cover" />
-      </div>
-      <div className="image-container">
-        <Image src={Img3} layout="fill" objectFit="cover" />
-      </div>
-      <div className="image-container">
-        <Image src={Img4} layout="fill" objectFit="cover" />
-      </div>
-      <div className="image-container">
-        <Image src={Img1} layout="fill" objectFit="cover" />
-      </div>
-      <div className="image-container">
-        <Image src={Img2} layout="fill" objectFit="cover" />
-      </div>
-      <div className="image-container">
-        <Image src={Img3} layout="fill" objectFit="cover" />
-      </div>
-      <div className="image-container">
-        <Image src={Img4} layout="fill" objectFit="cover" />
-      </div>
-      <div className="image-container">
-        <Image src={Img1} layout="fill" objectFit="cover" />
-      </div>
-      <div className="image-container">
-        <Image src={Img2} layout="fill" objectFit="cover" />
-      </div>
-      <div className="image-container">
-        <Image src={Img3} layout="fill" objectFit="cover" />
-      </div>
-      <div className="image-container">
-        <Image src={Img4} layout="fill" objectFit="cover" />
-      </div>
+      {images.map((image, i) => (
+        <div className="image-container" key={i}>
+          <Image src={image} layout="fill" objectFit="cover" />
+        </div>
+      ))}
     </StyledProjectInfoImages>
   );
 }
 const StyledProjectInfoImages = styled.div`
   position: relative;
-  display: flex;
+`;
+display: flex;
+`
   flex-direction: column;
   gap: 2rem;
   .image-container {

@@ -4,7 +4,7 @@ import ProjectTestimonialItem from './ProjectTestimonialItem';
 import ProductInfoImages from './ProductInfoImages';
 
 import { useEffect, useRef, useState } from 'react';
-export default function ProjectInfoSection() {
+export default function ProjectInfoSection({ project }) {
   const [scrolling, setScrolling] = useState('yes');
   const [width, setWidth] = useState(640);
   const [stickBottom, setStickBottom] = useState('no');
@@ -48,10 +48,10 @@ export default function ProjectInfoSection() {
       <Container scrolling={scrolling}>
         <StyledProjectInfoSection stickBottom={stickBottom} width={width}>
           <div ref={infoImagesRef}>
-            <ProductInfoImages />
+            <ProductInfoImages images={project.images} />
           </div>
           <div className="right" ref={rightRef}>
-            <h2>House Mansion - West Midlands</h2>
+            <h2>{project?.title}</h2>
             <div className="project-info-row">
               <h4>Client:</h4>
               <p>Mr and Mrs Meadows</p>
@@ -86,7 +86,7 @@ export default function ProjectInfoSection() {
             </p>
             <div className="spacer" />
             <ProjectTestimonialItem />
-            <button>Check out other new build projects</button>
+            <button>Check out other {project.service} projects</button>
           </div>
         </StyledProjectInfoSection>
       </Container>

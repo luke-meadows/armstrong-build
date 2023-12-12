@@ -31,6 +31,7 @@ export default function RecentProjects({ filter = 'all', limit = false }) {
               img={item.images[0]}
               title={item.title}
               service={item.service}
+              id={item.id}
             />
           ))}
         </div>

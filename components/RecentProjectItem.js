@@ -9,6 +9,7 @@ export default function RecentProjectItem({
   img,
   title,
   service,
+  id,
 }) {
   const [hovered, setHovered] = useState('no');
   const [projectTitle, setProjectTitle] = useState(title);
@@ -17,7 +18,7 @@ export default function RecentProjectItem({
   }, [title]);
 
   return (
-    <Link href="/portfolio/1234">
+    <Link href={`/portfolio/${id}`}>
       <StyledRecentProjectItem
         onMouseEnter={() => {
           setProjectTitle('View Project'), setHovered('yes');
