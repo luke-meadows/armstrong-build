@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 import QuoteImg from '../public/images/icons/quote.png';
-export default function TestimonialItem() {
+export default function TestimonialItem({ testimonial }) {
   return (
     <StyledTestimonialItem>
       <div className="quote-image-container">
@@ -14,23 +14,10 @@ export default function TestimonialItem() {
       </div>
 
       <div className="text-container">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
-          mollitia laudantium blanditiis cupiditate tempore velit modi suscipit!
-          Officia doloremque obcaecati facere repellendus expedita unde
-          accusantium quibusdam molestiae quia, quod magni quae omnis mollitia
-          suscipit natus blanditiis amet reiciendis ea eaque vitae architecto.
-          Dolorum cumque quos, ex qui necessitatibus reprehenderit earum sint
-          quasi doloremque commodi rem exercitationem provident. Atque ducimus
-          rerum, cumque voluptas ad aliquam quidem autem eius cupiditate ullam
-          dolorem officiis minima voluptate nihil adipisci, officia consequatur
-          quisquam sed omnis recusandae et maxime fugit fugiat. Quisquam
-          sapiente, aliquam facere recusandae dignissimos voluptatem quibusdam
-          suscipit quos ratione rem? Corporis, quibusdam quisquam?
-        </p>
+        <p>{testimonial.message}</p>
       </div>
       <div className="title-and-rating">
-        <h3>Luke Meadows</h3>
+        <h3>{testimonial.name}</h3>
         <div className="rating">
           <div className="stars">
             <i className="icon-star" />

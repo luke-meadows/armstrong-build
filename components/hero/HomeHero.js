@@ -10,7 +10,7 @@ export default function HomeHero() {
         <div className="hero-inner">
           <div className="left-side">
             <div>
-              <h1>Delivering Construction Excellence Across the UK</h1>
+              <h1>We Deliver High Quality Construction Projects</h1>
               <p className="text">
                 We specialise in residential and commercial projects through
                 meticulous attention to detail, collaborative efforts, and a

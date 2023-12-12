@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Container from './Container';
 import { Slide } from 'react-slideshow-image';
 import TestimonialItem from './TestimonialItem';
+import { testimonialData } from '../lib/testimonial-data';
 
 export default function TestimonialsSection() {
   return (
@@ -11,14 +12,12 @@ export default function TestimonialsSection() {
           <div className="slide-container">
             <Slide>
               <div className="box">
-                <TestimonialItem />
-                <TestimonialItem />
-                <TestimonialItem />
+                <TestimonialItem testimonial={testimonialData[0]} />
+                <TestimonialItem testimonial={testimonialData[1]} />
               </div>
               <div className="box">
-                <TestimonialItem />
-                <TestimonialItem />
-                <TestimonialItem />
+                <TestimonialItem testimonial={testimonialData[2]} />
+                <TestimonialItem testimonial={testimonialData[3]} />
               </div>
             </Slide>
           </div>
@@ -32,7 +31,7 @@ const StyledTestimonialsSection = styled.section`
   .box {
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     background-size: cover;
     height: 26rem;
     margin: 0 3rem;

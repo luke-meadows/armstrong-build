@@ -51,6 +51,7 @@ const StyledRecentProjectItem = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
+  background: #000;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
   position: relative;
   cursor: pointer;
