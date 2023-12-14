@@ -12,11 +12,11 @@ export default function ProjectHero() {
             <div>
               <h1>Sustainable Buildings</h1>
               <p className="text">
-                Elevate your space into the 21st century with Armstrong Build's
-                sustainable appliance installation service. Harness the power of
-                the sun with solar energy, conserve water with rainwater
-                harvesting, and embrace eco-friendly solutions like solar
-                heating systems and sustainable plant rooms.
+                Elevate your space into the 21st century with Armstrong
+                Build&apos;s sustainable appliance installation service. Harness
+                the power of the sun with solar energy, conserve water with
+                rainwater harvesting, and embrace eco-friendly solutions like
+                solar heating systems and sustainable plant rooms.
               </p>
             </div>
             <button>
