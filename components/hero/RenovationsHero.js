@@ -1,6 +1,7 @@
 import Container from '../Container';
 import Image from 'next/image';
 import HeroImg from '../../public/images/project-images/023/7.jpg';
+import Chevron from '../../public/images/icons/chevron-down-black.png';
 import { StyledHero } from './HomeHero';
 export default function RenovationsHero() {
   return (
@@ -17,7 +18,14 @@ export default function RenovationsHero() {
                 the advanced techniques we employ.
               </p>
             </div>
-            <button>New Build Portfolio</button>
+            <button>
+              Get a quote
+              <span>
+                <div className="chevron-container">
+                  <Image src={Chevron} />
+                </div>
+              </span>
+            </button>
           </div>
           <div className="right-side">
             <Image

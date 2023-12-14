@@ -12,13 +12,13 @@ export default function ProjectHero() {
             <div>
               <h1>Extensions</h1>
               <p className="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                veritatis a voluptatem vero doloremque maxime aliquid nesciunt
-                at fugit impedit!
+                If you are planning to build your home extension please contact
+                us. From conception through to completion we can help you with
+                every stage.
               </p>
             </div>
             <button>
-              See more Extensions
+              Get a quote
               <span>
                 <div className="chevron-container">
                   <Image src={Chevron} />

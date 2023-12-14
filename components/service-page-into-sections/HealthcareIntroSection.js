@@ -6,15 +6,6 @@ export default function NewBuildIntroSection() {
   return (
     <Container>
       <StyledNewBuildIntroSection>
-        <p>
-          As specialists in Healthcare Construction, we bring a wealth of
-          experience to the table when it comes to delivering both
-          semi-permanent and permanent solutions for a wide range of building
-          needs. Our collaborative approach involves working closely with
-          national clients and dedicated project teams to ensure that we
-          precisely meet the project&apos;s objectives.
-        </p>
-        <br />
         <ServiceInformation
           padding={false}
           closeButton={true}
@@ -72,8 +63,5 @@ const StyledNewBuildIntroSection = styled.section`
   border-radius: 0.3rem;
   overflow: hidden;
   margin-bottom: 4rem;
-  background: #fff;
-  color: #606060;
-  padding: 1rem 2rem 0rem 2rem;
   position: relative;
 `;

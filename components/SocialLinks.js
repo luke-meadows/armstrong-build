@@ -3,13 +3,13 @@ export default function SocialLinks({ color = 'white' }) {
   return (
     <StyledSocialLinks color={color}>
       <div className="icon-container">
-        <a href="/" target="_blank" className="linkedin-holder">
+        {/* <a href="/" target="_blank" className="linkedin-holder">
           <i className="icon-linkedin" />
-        </a>
+        </a> */}
         <a href="https://www.instagram.com/armstrongbuildltd/" target="_blank">
           <i className="icon-instagram" />
         </a>
-        <a href="mailto:lukemeadowsdev@gmail.com" className="mail-holder">
+        <a href="mailto:info@armstrongbuild.com" className="mail-holder">
           <i className="icon-mail" />
         </a>
       </div>

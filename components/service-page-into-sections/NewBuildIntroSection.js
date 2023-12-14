@@ -13,8 +13,11 @@ export default function NewBuildIntroSection() {
           <div>
             <h2>Built from the ground up!</h2>
             <p>
-              With our team of highly skilled architects, engineers, and
-              builders, we transform your vision into a stunning reality.
+              From initial concept to final completion, we handle every aspect
+              of the construction process with professionalism and care. Our
+              dedication to you as the customer is reflected in the superior
+              materials we use and the advanced techniques we employ, delivered
+              on time and within budget.
             </p>
             <p>
               From initial concept to final completion, we handle every aspect
