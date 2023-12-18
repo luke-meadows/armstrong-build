@@ -13,7 +13,7 @@ export default function ProjectHero() {
             <div>
               <h1>Extensions</h1>
               <p className="text">
-                If your planning to expand your living space we can provide a
+                If you&apos;re planning to expand your living space we provide a
                 range of building services to help create the extension you
                 desire. Our team of skilled architects, engineers, and craftsmen
                 collaborate closely with you, ensuring that your vision is not

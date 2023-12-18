@@ -10,9 +10,14 @@ import Footer from '../../components/Footer';
 import ServiceInformation from '../../components/ServiceInformation';
 import Container from '../../components/Container';
 import { newBuildData } from '../../lib/service-info-sections/newbuild-data';
+import { NextSeo } from 'next-seo';
 export default function Home() {
   return (
     <StyledHome>
+      <NextSeo
+        title="New Build Construction - Armstrong Build"
+        description="With our team of highly skilled architects, engineers, and builders, we transform your vision into a stunning reality."
+      />
       <Background />
       <TopHeader />
       <Header />

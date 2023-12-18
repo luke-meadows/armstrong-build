@@ -10,9 +10,17 @@ import Footer from '../../components/Footer';
 import ServiceInformation from '../../components/ServiceInformation';
 import Container from '../../components/Container';
 import { sustainableData } from '../../lib/service-info-sections/sustainable-data';
+import { NextSeo } from 'next-seo';
 export default function sustainable() {
   return (
     <StyledSustainablePage>
+      <NextSeo
+        title="Sustainable Construction - Armstrong Build"
+        description="Harness
+        the power of the sun with solar energy, conserve water with
+        rainwater harvesting, and embrace eco-friendly solutions like
+        solar heating systems and sustainable plant rooms."
+      />
       <Background />
       <TopHeader />
       <Header />

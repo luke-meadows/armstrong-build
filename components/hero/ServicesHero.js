@@ -5,6 +5,7 @@ import { StyledHero } from './HomeHero';
 import Chevron from '../../public/images/icons/chevron-down-black.png';
 
 import Link from 'next/link';
+import Button from '../Button';
 export default function ServicesHero() {
   return (
     <StyledHero>
@@ -21,14 +22,7 @@ export default function ServicesHero() {
               the advanced techniques we employ.
             </p>
             <Link href="/contact">
-              <button>
-                Contact us today{' '}
-                <span>
-                  <div className="chevron-container">
-                    <Image src={Chevron} />
-                  </div>
-                </span>
-              </button>
+              <Button />
             </Link>
           </div>
           <div className="right-side">

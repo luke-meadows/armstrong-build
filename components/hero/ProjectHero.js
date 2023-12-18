@@ -3,15 +3,8 @@ import Image from 'next/image';
 import Chevron from '../../public/images/icons/chevron-down-black.png';
 import { StyledHero } from './HomeHero';
 import Link from 'next/link';
+import Button from '../Button';
 export default function ProjectHero({ title, desc, image, service }) {
-  const linkCodes = {
-    Healthcare: 'healthcare',
-    Commercial: 'commercial',
-    'New Build': 'new-build',
-    Extension: 'extensions',
-    Sustainable: 'sustainable',
-    Renovation: 'renovations',
-  };
   return (
     <StyledHero>
       <Container>
@@ -21,16 +14,7 @@ export default function ProjectHero({ title, desc, image, service }) {
               <h1>{title}</h1>
               <p className="text">{desc}</p>
             </div>
-            <Link href={`/services/${linkCodes[service]}`}>
-              <button>
-                See more {service}
-                <span>
-                  <div className="chevron-container">
-                    <Image src={Chevron} />
-                  </div>
-                </span>
-              </button>
-            </Link>
+            <Button />
           </div>
           <div className="right-side">
             <Image

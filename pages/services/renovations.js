@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <StyledHome>
       <NextSeo
-        title="Renovations - Armstrong Build"
+        title="Renovation Construction - Armstrong Build"
         description="With a focus on quality craftsmanship, we seamlessly blend contemporary design with the unique character of your home."
       />
       <Background />
