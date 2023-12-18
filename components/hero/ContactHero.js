@@ -1,6 +1,6 @@
 import Container from '../Container';
 import Image from 'next/image';
-import HeroImg from '../../public/images/hero-images/contact-hero.jpg';
+import HeroImg from '../../public/images/project-images/024/1.jpg';
 import { StyledHero } from './HomeHero';
 export default function ContactHero() {
   return (
@@ -11,9 +11,10 @@ export default function ContactHero() {
             <div>
               <h1>Contact us</h1>
               <p className="text">
-                Our team of experienced professionals is eager to provide
-                exceptional customer service and guidance to ensure your
-                project&apos;s success.
+                <strong>Send us a message</strong> to get started. Our team of
+                experienced professionals is eager to provide exceptional
+                customer service and guidance to ensure your project&apos;s
+                success.
               </p>
               <div className="contact-buttons">
                 <div>

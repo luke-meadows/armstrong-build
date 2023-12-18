@@ -10,16 +10,34 @@ export default function TestimonialsSection() {
       <div className="inner-container">
         <StyledTestimonialsSection>
           <div className="slide-container">
-            <Slide>
-              <div className="box">
-                <TestimonialItem testimonial={testimonialData[0]} />
-                <TestimonialItem testimonial={testimonialData[1]} />
-              </div>
-              <div className="box">
-                <TestimonialItem testimonial={testimonialData[2]} />
-                <TestimonialItem testimonial={testimonialData[3]} />
-              </div>
-            </Slide>
+            <div className="large-screen-testimonials">
+              <Slide>
+                <div className="box">
+                  <TestimonialItem testimonial={testimonialData[0]} />
+                  <TestimonialItem testimonial={testimonialData[1]} />
+                </div>
+                <div className="box">
+                  <TestimonialItem testimonial={testimonialData[2]} />
+                  <TestimonialItem testimonial={testimonialData[3]} />
+                </div>
+              </Slide>
+            </div>
+            <div className="small-screen-testimonials">
+              <Slide>
+                <div className="box">
+                  <TestimonialItem testimonial={testimonialData[0]} />
+                </div>
+                <div className="box">
+                  <TestimonialItem testimonial={testimonialData[1]} />
+                </div>
+                <div className="box">
+                  <TestimonialItem testimonial={testimonialData[2]} />
+                </div>
+                <div className="box">
+                  <TestimonialItem testimonial={testimonialData[3]} />
+                </div>
+              </Slide>
+            </div>
           </div>
         </StyledTestimonialsSection>
       </div>
@@ -54,6 +72,25 @@ const StyledTestimonialsSection = styled.section`
   }
   .default-nav:hover {
     background: #ffdc00;
+  }
+  .small-screen-testimonials {
+    display: none;
+  }
+  .large-screen-testimonials {
+    display: initial;
+  }
+  @media only screen and (max-width: 1000px) {
+    .box {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .small-screen-testimonials {
+      display: initial;
+    }
+    .large-screen-testimonials,
+    .default-nav {
+      display: none;
+    }
   }
 `;
 

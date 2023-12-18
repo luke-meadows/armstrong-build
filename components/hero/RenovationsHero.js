@@ -12,10 +12,11 @@ export default function RenovationsHero() {
             <div>
               <h1>Renovations</h1>
               <p className="text">
-                From initial concept to final completion, we handle every aspect
-                of the construction process with meticulous care. Our dedication
-                to excellence is reflected in the superior materials we use and
-                the advanced techniques we employ.
+                At Armstrong Build, we understand that a well-executed
+                renovation can redefine your daily living experience. Whether
+                you envision a sleek and efficient kitchen, a spa-like bathroom
+                retreat, or a complete home makeover, our team of skilled
+                professionals is dedicated to bringing your vision to fruition.
               </p>
             </div>
             <Button />

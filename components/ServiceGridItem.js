@@ -115,8 +115,7 @@ const StyledServiceGridItem = styled.div`
     position: relative;
     height: 200px;
     overflow: hidden;
-    border-top-right-radius: 0.3rem;
-    border-top-left-radius: 0.3rem;
+    border-radius: 0.3rem;
   }
   .arrow-container {
     position: relative;

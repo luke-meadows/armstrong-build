@@ -24,6 +24,7 @@ const StyledShowreel = styled.div`
   border-radius: 0.3rem;
   border-bottom-left-radius: ${(props) => (props.coupled ? '0rem' : '0.3rem')};
   border-bottom-right-radius: ${(props) => (props.coupled ? '0rem' : '0.3rem')};
+  height: 15rem;
   height: 40rem;
   overflow: hidden;
   margin-bottom: ${(props) => (props.coupled ? '0rem' : '4rem')};
@@ -36,7 +37,6 @@ const StyledShowreel = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    scale: 1;
     z-index: 3;
   }
   .logo-container {
@@ -44,5 +44,12 @@ const StyledShowreel = styled.div`
     position: absolute;
     bottom: 1.8rem;
     right: 1.8rem;
+  }
+  @media only screen and (max-width: 1235px) {
+    height: 15rem;
+    height: 25rem;
+  }
+  @media only screen and (max-width: 900px) {
+    height: 15rem;
   }
 `;

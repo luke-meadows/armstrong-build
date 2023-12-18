@@ -1,18 +1,24 @@
 import styled from 'styled-components';
 import Container from './Container';
 import Logo from './Logo';
+import Button from './Button';
 
 export default function AboutUsSection() {
   return (
     <Container>
       <StyledAboutUsSection>
-        {/* <Logo /> */}
-        {/* <div classNaeme="spacer" /> */}
+        <h1>
+          Healthcare | Commercial Buildings | New Builds | Extensions |
+          Sustainable Buildings | Renovations
+        </h1>
         <p>
-          Specialising in all areas of construction, our resource of skills
-          allows us to be the preferred choice for clients with period or
-          prestige homes, requiring &apos;sympathetic&apos; extension or
-          renovation, often expertly carried out using reclaimed materials.
+          We have been serving homeowners and businesses in Birmingham and the
+          West Midlands for over 30 years. Specialising in all areas of
+          construction, our resource of skills allows us to be the preferred
+          choice for clients with period or prestige homes, requiring
+          &apos;sympathetic&apos; extension or renovation. We can also manage
+          newer, more modern properties, or a mix of the two! Our diverse skill
+          set allows us to tackle any project with effectiveness.
         </p>
         <br />
         <p>
@@ -21,6 +27,13 @@ export default function AboutUsSection() {
           been serving homeowners and businesses in Birmingham and the West
           Midlands for over 30 years.
         </p>
+        <br />
+        <p>
+          Please get in touch for to discuss the best in construction options
+          for you – with no obligation:
+        </p>
+        <br />
+        <Button text="Contact us" />
       </StyledAboutUsSection>
     </Container>
   );
@@ -34,7 +47,7 @@ const StyledAboutUsSection = styled.section`
   border-bottom-right-radius: 0.3rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   .spacer {
     margin-bottom: 1.8rem;
   }
@@ -42,5 +55,14 @@ const StyledAboutUsSection = styled.section`
     margin: 0;
     /* text-align: center; */
     font-size: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+    color: var(--yellow);
+    font-weight: 400;
+  }
+  @media only screen and (max-width: 1235px) {
+    padding: 1.2rem 1rem;
   }
 `;

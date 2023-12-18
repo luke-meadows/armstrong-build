@@ -12,31 +12,31 @@ import Showreel from '../components/Showreel';
 import Footer from '../components/Footer';
 import { AnimatePresence, motion } from 'framer-motion';
 import AboutUsSection from '../components/AboutUsSection';
+import { NextSeo } from 'next-seo';
 export default function Home() {
   return (
     <StyledHome>
-      <motion.div className="test">
-        <Background />
-        <TopHeader />
-        <Header />
-        <HomeHero />
-        <Showreel coupled={true} />
-        <AboutUsSection />
-        <SectionHeading heading="Construction Services" noButton />
-        <ServicesGrid />
-        <StartBuildingBanner />
-        <SectionHeading heading="Recent Projects" noButton />
-        <RecentProjects limit={true} filter="All" />
-        <SectionHeading heading="Testimonials" noButton />
-        <TestimonialsSection />
-        <Footer />
-      </motion.div>
+      <NextSeo
+        title="Armstrong Build - Construction"
+        description="With a focus on quality craftsmanship, we seamlessly blend contemporary design with the unique character of your home."
+      />
+      <Background />
+      <TopHeader />
+      <Header />
+      <HomeHero />
+      <Showreel coupled={true} />
+      <AboutUsSection />
+      <SectionHeading heading="Construction Services" noButton />
+      <ServicesGrid />
+      <StartBuildingBanner />
+      <SectionHeading heading="Recent Projects" noButton />
+      <RecentProjects limit={true} filter="All" />
+      <SectionHeading heading="Testimonials" noButton />
+      <TestimonialsSection />
+      <Footer />
     </StyledHome>
   );
 }
 const StyledHome = styled.main`
   position: relative;
-  .test {
-    transition: all 0.3s ease;
-  }
 `;

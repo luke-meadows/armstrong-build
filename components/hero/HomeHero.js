@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Container from '../Container';
 import Image from 'next/image';
-import HeroImg from '../../public/images/hero-images/home-hero.jpeg';
+import HeroImg from '../../public/images/project-images/025/9.jpg';
 import Button from '../Button';
 export default function HomeHero() {
   return (
@@ -10,11 +10,19 @@ export default function HomeHero() {
         <div className="hero-inner">
           <div className="left-side">
             <div>
-              <h1>We Deliver High Quality Construction Projects</h1>
+              <h1>
+                Commercial and Residential Construction{' '}
+                <span>- West Midlands and Beyond!</span>
+              </h1>
               <p className="text">
-                We specialise in residential and commercial projects through
-                meticulous attention to detail, collaborative efforts, and a
-                genuine care for our clients&apos; needs.
+                From healthcare and commercial buildings to residential new
+                builds and property extensions, Armstrong Build has the
+                experience and expertise required for your next construction
+                project.
+              </p>
+              <p>
+                We pride ourselves on constructing industry leading spaces for
+                over <strong>30 years</strong>.
               </p>
             </div>
             <Button />
@@ -55,6 +63,7 @@ export const StyledHero = styled.section`
     flex-direction: column;
     justify-content: space-between;
     padding-right: 8rem;
+    gap: 1rem;
     clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
     z-index: 2;
 
@@ -62,9 +71,12 @@ export const StyledHero = styled.section`
       font-size: 2rem;
       margin: 0;
       color: #ffdc00;
+      span {
+        font-weight: 400;
+      }
     }
     p {
-      font-weight: 400;
+      font-weight: 00;
     }
   }
   .right-side {
@@ -108,10 +120,13 @@ export const StyledHero = styled.section`
       width: 100%;
       position: relative;
     }
+
     .left-side {
       height: fit-content;
       clip-path: none;
       padding-right: 2rem;
+      padding: 1.5rem 1rem;
+
       button {
         width: 100%;
       }
