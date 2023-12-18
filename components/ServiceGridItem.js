@@ -80,13 +80,13 @@ const StyledServiceGridItem = styled.div`
     padding: ${(props) =>
       props.hovered === 'yes' ? '0.6rem 1.4rem' : '0.5rem 1.2rem'};
     max-width: calc(100% - 2rem);
+    border-radius: 0.2rem;
   }
   h3 {
     font-size: 18px;
     margin: 0;
     padding: 0 0.4rem;
     clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
-    border-radius: 0.2rem;
 
     color: ${(props) => (props.hovered === 'yes' ? '#ffdc00' : '#000')};
   }

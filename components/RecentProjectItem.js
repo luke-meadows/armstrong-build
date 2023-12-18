@@ -83,11 +83,11 @@ const StyledRecentProjectItem = styled.div`
     padding: ${(props) =>
       props.hovered === 'yes' ? '0.6rem 1.4rem' : '0.5rem 1.2rem'};
     max-width: calc(100% - 2rem);
+    border-radius: 0.3rem;
   }
   h5 {
     font-size: 16px;
     margin: 0;
-    border-radius: 0.2rem;
     width: fit-content;
     color: ${(props) => (props.hovered === 'yes' ? '#ffdc00' : '#000')};
   }

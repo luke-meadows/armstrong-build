@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Chevron from '../../public/images/icons/chevron-down-black.png';
 import { StyledHero } from './HomeHero';
 import HeroImage from '../../public/images/hero-images/extensions-hero.jpg';
+import Button from '../Button';
 export default function ProjectHero() {
   return (
     <StyledHero>
@@ -12,19 +13,22 @@ export default function ProjectHero() {
             <div>
               <h1>Extensions</h1>
               <p className="text">
-                If you are planning to build your home extension please contact
-                us. From conception through to completion we can help you with
-                every stage.
+                If your planning to expand your living space we can provide a
+                range of building services to help create the extension you
+                desire. Our team of skilled architects, engineers, and craftsmen
+                collaborate closely with you, ensuring that your vision is not
+                only met but exceeded.
               </p>
             </div>
-            <button>
+            {/* <button>
               Get a quote
               <span>
                 <div className="chevron-container">
                   <Image src={Chevron} />
                 </div>
               </span>
-            </button>
+            </button> */}
+            <Button />
           </div>
           <div className="right-side">
             <Image

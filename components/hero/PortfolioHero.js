@@ -2,6 +2,7 @@ import Container from '../Container';
 import Image from 'next/image';
 import HeroImg from '../../public/images/hero-images/services-hero.jpeg';
 import { StyledHero } from './HomeHero';
+import Button from '../Button';
 export default function PortfolioHero() {
   return (
     <StyledHero>
@@ -18,7 +19,7 @@ export default function PortfolioHero() {
               we have successfully completed a diverse range of construction
               projects.
             </p>
-            <button>Contact us today</button>
+            <Button />
           </div>
           <div className="right-side">
             <Image

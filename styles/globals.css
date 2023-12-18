@@ -9,6 +9,8 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   --grey: #cecece;
+  --yellow: #ffdc00;
+  --black: #000;
 }
 
 a {

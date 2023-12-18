@@ -1,8 +1,9 @@
 import Container from '../Container';
 import Image from 'next/image';
-import Chevron from '../../public/images/icons/chevron-down-black.png';
+
 import { StyledHero } from './HomeHero';
 import HeroImage from '../../public/images/hero-images/services-hero.jpeg';
+import Button from '../Button';
 export default function ProjectHero() {
   return (
     <StyledHero>
@@ -19,14 +20,7 @@ export default function ProjectHero() {
                 solar heating systems and sustainable plant rooms.
               </p>
             </div>
-            <button>
-              Get a quote
-              <span>
-                <div className="chevron-container">
-                  <Image src={Chevron} />
-                </div>
-              </span>
-            </button>
+            <Button />
           </div>
           <div className="right-side">
             <Image

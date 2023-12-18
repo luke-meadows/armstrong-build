@@ -8,10 +8,17 @@ import StartBuildingBanner from '../../components/StartBuildingBanner';
 import SectionHeading from '../../components/SectionHeading';
 import Footer from '../../components/Footer';
 import RecentProjects from '../../components/RecentProjects';
+import { NextSeo } from 'next-seo';
 
 export default function HealthcarePage() {
   return (
     <StyledHealthcarePage>
+      <NextSeo
+        title="Healthcare Construction - Armstrong Build"
+        description="Our expert team specialises in constructing state of the art
+        healthcare facilities, ensuring precision, compliance, and a
+        healing environment."
+      />
       <Background />
       <TopHeader />
       <Header />

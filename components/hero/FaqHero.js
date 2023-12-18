@@ -1,9 +1,8 @@
 import Container from '../Container';
 import Image from 'next/image';
 import HeroImg from '../../public/images/hero-images/faq-hero.jpg';
-import Chevron from '../../public/images/icons/chevron-down-black.png';
-
 import { StyledHero } from './HomeHero';
+import Button from '../Button';
 export default function HealthcareHero() {
   return (
     <StyledHero>
@@ -17,14 +16,7 @@ export default function HealthcareHero() {
                 one of the team will be happy to help.
               </p>
             </div>
-            <button>
-              Contact us{' '}
-              <span>
-                <div className="chevron-container">
-                  <Image src={Chevron} />
-                </div>
-              </span>
-            </button>
+            <Button text="Contact us" />
           </div>
           <div className="right-side">
             <Image
