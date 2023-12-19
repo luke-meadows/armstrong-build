@@ -12,7 +12,7 @@ export default function FaqSection() {
       question:
         'I’ve seen a new Kitchen / Bathroom I like. Do you offer an installation only service?',
       answer:
-        'Of Course. Use our contact us using the email address at the top right of the page. If you upload pictures of the site it will help us be more accurate. An estimate given by this method is not considered valid until we have made a site inspection.',
+        'Of Course. Use our contact us using the email address at the top of the page. If you upload pictures of the site it will help us be more accurate. An estimate given by this method is not considered valid until we have made a site inspection.',
     },
     {
       question:

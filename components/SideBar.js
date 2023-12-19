@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import SideBarServicesDropdown from './SidebarServicesDropdown';
 import Button from '../components/Button';
+import Logo from './Logo';
 
 export default function SideBar({ setShowSidebar }) {
   useEffect(() => {
@@ -30,7 +31,9 @@ export default function SideBar({ setShowSidebar }) {
         className="sidebar-inner"
       >
         <div className="top-section">
-          <h2>Menu </h2>
+          <div className="logo-container-side-bar">
+            <Logo width="300" />
+          </div>
           <button onClick={() => setShowSidebar(false)}>CLOSE</button>
         </div>
         <nav>
@@ -93,9 +96,13 @@ const StyledSideBar = styled(motion.div)`
   overflow: hidden;
   .top-section {
     display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    margin: 2.5rem 0 4rem 0;
+  }
+  .logo-container-side-bar {
   }
   i {
     margin-left: -0.2rem;
@@ -131,6 +138,7 @@ const StyledSideBar = styled(motion.div)`
     color: #000;
     font-weight: 800;
     font-size: 1rem;
+    height: fit-content;
   }
   .image-container {
     position: relative;
