@@ -95,4 +95,7 @@ const StyledSectionHeading = styled.div`
       display: none;
     }
   }
+  @media only screen and (max-width: 900px) {
+    margin-bottom: 1rem;
+  }
 `;

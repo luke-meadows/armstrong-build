@@ -5,7 +5,7 @@ import { StyledHero } from './HomeHero';
 export default function ContactHero() {
   return (
     <StyledHero>
-      <Container>
+      <Container noGapMobile>
         <div className="hero-inner">
           <div className="left-side">
             <div>

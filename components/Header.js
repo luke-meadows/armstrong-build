@@ -28,7 +28,7 @@ const headerVariant = {
     transition: { duration: 0.8 },
   },
 };
-export default function Header() {
+export default function Header({ setShowSidebar }) {
   const [showSubHeader, setShowSubHeader] = useState(false);
   return (
     <StyledOuterHeader>
@@ -71,6 +71,9 @@ export default function Header() {
                 </a>
               </Link>
             </nav>
+            <div onClick={() => setShowSidebar(true)} className="nav-icon">
+              Nav icon
+            </div>
           </StyledHeader>
         </Container>
         {showSubHeader && (
@@ -146,10 +149,16 @@ const StyledHeader = styled.header`
   .logo-home-link {
     cursor: pointer;
   }
+  .nav-icon {
+    display: none;
+  }
   @media only screen and (max-width: 900px) {
     padding: 1rem 0;
     nav {
       display: none;
+    }
+    .nav-icon {
+      display: initial;
     }
   }
 `;

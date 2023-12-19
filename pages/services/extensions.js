@@ -1,9 +1,7 @@
 import { styled } from 'styled-components';
 import Background from '../../components/Background';
-import Header from '../../components/Header';
 import ExtensionsHero from '../../components/hero/ExtensionsHero';
 import RecentProjects from '../../components/RecentProjects.js';
-import TopHeader from '../../components/TopHeader';
 import SectionHeading from '../../components/SectionHeading';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
 import Footer from '../../components/Footer';
@@ -21,8 +19,7 @@ export default function extensions() {
         desire."
       />
       <Background />
-      <TopHeader />
-      <Header />
+
       <ExtensionsHero />
       <Container>
         <ServiceInformation service={extensionData} />

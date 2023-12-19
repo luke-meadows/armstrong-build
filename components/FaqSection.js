@@ -27,7 +27,7 @@ export default function FaqSection() {
     },
   ];
   return (
-    <Container>
+    <Container noGapMobile>
       <StyledFaqSection>
         <div className="flex-container">
           {faqs.map((faq, i) => (
@@ -48,5 +48,10 @@ const StyledFaqSection = styled.section`
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+  }
+  @media only screen and (max-width: 900px) {
+    padding: 2rem 1rem;
+
+    border-radius: 0;
   }
 `;

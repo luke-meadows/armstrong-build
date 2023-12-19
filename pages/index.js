@@ -20,8 +20,6 @@ export default function Home() {
         description="With a focus on quality craftsmanship, we seamlessly blend contemporary design with the unique character of your home."
       />
       <Background />
-      <TopHeader />
-      <Header />
       <HomeHero />
       <Showreel coupled={true} />
       <AboutUsSection />

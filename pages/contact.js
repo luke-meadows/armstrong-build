@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import ContactHero from '../components/hero/ContactHero';
 import ContactForm from '../components/ContactForm';
 import Background from '../components/Background';
-import TopHeader from '../components/TopHeader';
-import Header from '../components/Header';
+
 import SectionHeading from '../components/SectionHeading';
 import Footer from '../components/Footer';
 import { NextSeo } from 'next-seo';
@@ -15,8 +14,6 @@ export default function Contact() {
         description="Send us a message to get started on your construction journey."
       />
       <Background />
-      <TopHeader />
-      <Header />
       <ContactHero />
       <SectionHeading heading="Send us a message" noButton />
       <ContactForm />

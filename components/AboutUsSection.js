@@ -44,7 +44,6 @@ const StyledAboutUsSection = styled.section`
   border-bottom-right-radius: 0.3rem;
   display: flex;
   flex-direction: column;
-
   .spacer {
     margin-bottom: 1.8rem;
   }
@@ -59,7 +58,10 @@ const StyledAboutUsSection = styled.section`
     font-weight: 500;
   }
   @media only screen and (max-width: 1235px) {
-    padding: 1rem;
+    padding: 2rem 1rem;
+    border-radius: 0;
+    margin-bottom: 2rem;
+
     h1 {
       font-size: 1.5rem;
     }

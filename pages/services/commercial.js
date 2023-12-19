@@ -1,8 +1,6 @@
 import { styled } from 'styled-components';
 import Background from '../../components/Background';
-import Header from '../../components/Header';
-import CommercialHero from '../../components/hero/CommercialHero';
-import TopHeader from '../../components/TopHeader';
+
 import ServiceInformation from '../../components/ServiceInformation';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
 import SectionHeading from '../../components/SectionHeading';
@@ -20,8 +18,7 @@ export default function CommercialBuildingsPage() {
         description="At Armstrong Build, we pride ourselves on being a leading force in the industry, dedicated to delivering exceptional construction solutions that stand the test of time."
       />
       <Background />
-      <TopHeader />
-      <Header />
+
       <CommercialHero />
       <Container>
         <ServiceInformation service={commercialBuildingData} />

@@ -1,9 +1,8 @@
 import { styled } from 'styled-components';
 import Background from '../../components/Background';
-import Header from '../../components/Header';
+
 import RenovationsHero from '../../components/hero/RenovationsHero';
 import RecentProjects from '../../components/RecentProjects.js';
-import TopHeader from '../../components/TopHeader';
 import SectionHeading from '../../components/SectionHeading';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
 import Footer from '../../components/Footer';
@@ -19,8 +18,7 @@ export default function Home() {
         description="With a focus on quality craftsmanship, we seamlessly blend contemporary design with the unique character of your home."
       />
       <Background />
-      <TopHeader />
-      <Header />
+
       <RenovationsHero />
       <Container>
         <ServiceInformation service={newBuildData} />

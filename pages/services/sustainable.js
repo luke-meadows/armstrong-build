@@ -1,9 +1,9 @@
 import { styled } from 'styled-components';
 import Background from '../../components/Background';
-import Header from '../../components/Header';
+
 import SustainableHero from '../../components/hero/SustainableHero';
 import RecentProjects from '../../components/RecentProjects.js';
-import TopHeader from '../../components/TopHeader';
+
 import SectionHeading from '../../components/SectionHeading';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
 import Footer from '../../components/Footer';
@@ -22,8 +22,7 @@ export default function sustainable() {
         solar heating systems and sustainable plant rooms."
       />
       <Background />
-      <TopHeader />
-      <Header />
+
       <SustainableHero />
       <Container>
         <ServiceInformation service={sustainableData.solar} />

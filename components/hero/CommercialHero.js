@@ -6,7 +6,7 @@ import Button from '../Button';
 export default function HealthcareHero() {
   return (
     <StyledHero>
-      <Container>
+      <Container noGapMobile>
         <div className="hero-inner">
           <div className="left-side">
             <div>

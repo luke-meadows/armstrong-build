@@ -7,7 +7,7 @@ import Button from '../Button';
 export default function ProjectHero() {
   return (
     <StyledHero>
-      <Container>
+      <Container noGapMobile>
         <div className="hero-inner">
           <div className="left-side">
             <div>

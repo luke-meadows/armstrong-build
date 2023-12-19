@@ -8,8 +8,7 @@ export default function ContactForm() {
     e.preventDefault();
   }
   const { inputs, handleChange, clearForm } = useForm({
-    firstName: '',
-    surname: '',
+    name: '',
     email: '',
     phone: '',
     message: '',
@@ -18,15 +17,15 @@ export default function ContactForm() {
     <Container>
       <StyledContactForm onSubmit={handleSubmit}>
         <input
-          name="firstName"
-          value={inputs.firstName}
+          name="name"
+          value={inputs.name}
           required={true}
           type="text"
-          placeholder="First Name *"
-          className="first-name"
+          placeholder="Name *"
+          className="name"
           onChange={handleChange}
         />
-        <input
+        {/* <input
           name="surname"
           value={inputs.surname}
           required={true}
@@ -34,7 +33,7 @@ export default function ContactForm() {
           placeholder="Surname *"
           className="surname"
           onChange={handleChange}
-        />
+        /> */}
         <input
           name="phone"
           value={inputs.phone}
@@ -57,7 +56,7 @@ export default function ContactForm() {
           value={inputs.message}
           required={true}
           type="text"
-          placeholder="Message *"
+          placeholder="Tell us about your project *"
           className="message"
           onChange={handleChange}
         />
@@ -85,7 +84,7 @@ const StyledContactForm = styled.form`
   border-radius: 0.3rem;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 4rem;
-  .first-name,
+  .name,
   .surname,
   .phone,
   .email,
@@ -96,6 +95,14 @@ const StyledContactForm = styled.form`
     border: 2px solid #d9d9d9;
     border-radius: 0.3rem;
     width: 100%;
+  }
+  .name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    font-weight: 600;
   }
   .dropdown-container {
     position: relative;
@@ -145,10 +152,11 @@ const StyledContactForm = styled.form`
     grid-column-end: 2;
     grid-row-start: 28;
     grid-row-end: 32;
+    font-weight: 800;
+    font-size: 1rem;
     &:hover {
       background: #ffdc00;
       color: #000;
-      font-weight: 500;
     }
   }
   .privacy {
@@ -170,7 +178,7 @@ const StyledContactForm = styled.form`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    .first-name,
+    .name,
     .surname,
     .phone,
     .email,

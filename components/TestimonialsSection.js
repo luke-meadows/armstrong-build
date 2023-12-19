@@ -92,6 +92,9 @@ const StyledTestimonialsSection = styled.section`
       display: none;
     }
   }
+  @media only screen and (max-width: 900px) {
+    margin-bottom: 2rem;
+  }
 `;
 
 const TestimonialsContainer = styled.div`

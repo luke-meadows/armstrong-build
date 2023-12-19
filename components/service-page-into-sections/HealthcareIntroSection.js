@@ -4,7 +4,7 @@ import { healthcareData } from '../../lib/service-info-sections/healthcare-data'
 import ServiceInformation from '../ServiceInformation';
 export default function NewBuildIntroSection() {
   return (
-    <Container noGapMobile>
+    <Container>
       <StyledNewBuildIntroSection>
         <ServiceInformation
           padding={false}

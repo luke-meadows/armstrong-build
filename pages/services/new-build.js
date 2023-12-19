@@ -1,9 +1,7 @@
 import { styled } from 'styled-components';
 import Background from '../../components/Background';
-import Header from '../../components/Header';
 import NewBuildHero from '../../components/hero/NewBuildHero';
 import RecentProjects from '../../components/RecentProjects.js';
-import TopHeader from '../../components/TopHeader';
 import SectionHeading from '../../components/SectionHeading';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
 import Footer from '../../components/Footer';
@@ -19,8 +17,6 @@ export default function Home() {
         description="With our team of highly skilled architects, engineers, and builders, we transform your vision into a stunning reality."
       />
       <Background />
-      <TopHeader />
-      <Header />
       <NewBuildHero />
       <Container>
         <ServiceInformation service={newBuildData} />

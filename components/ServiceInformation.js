@@ -44,7 +44,7 @@ const StyledServiceInformation = styled.div`
       margin-top: 0;
     }
     h2 {
-      font-size: 1.4rem;
+      font-size: 2rem;
       margin: 0 0 1rem 0;
       color: var(--yellow);
       font-weight: 500;
@@ -97,7 +97,7 @@ const StyledServiceInformation = styled.div`
   }
   @media only screen and (max-width: 900px) {
     padding: 2rem 1rem;
-    border-radius: 0;
+
     .right {
       h2 {
         font-size: 2rem;
