@@ -63,10 +63,12 @@ const StyledTestimonialItem = styled.div`
     font-weight: 600;
     margin: 0;
     color: #000;
+    font-size: 1.4rem;
   }
   p {
     margin: 0;
     color: #646464;
+    font-size: 1.1rem;
   }
   .text-container {
     height: 16rem;

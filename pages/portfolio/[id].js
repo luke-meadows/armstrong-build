@@ -7,6 +7,7 @@ import ProjectInfoSection from '../../components/ProjectInfoSection';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { portfolioData } from '../../lib/portfolio-data';
+import { NextSeo } from 'next-seo';
 
 export default function ProjectPage() {
   const route = useRouter();
@@ -26,8 +27,11 @@ export default function ProjectPage() {
   }, [route.asPath]);
   return (
     <StyledProjectPage>
+      <NextSeo
+        title={`${project?.title} - Armstrong Build`}
+        description={`A ${project?.service} project in Armstrong Build's portfolio`}
+      />
       <Background />
-
       <ProjectHero
         title={project?.title}
         desc={project?.heroText}

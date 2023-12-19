@@ -20,6 +20,18 @@ export default function TestimonialsSection() {
                   <TestimonialItem testimonial={testimonialData[2]} />
                   <TestimonialItem testimonial={testimonialData[3]} />
                 </div>
+                <div className="box">
+                  <TestimonialItem testimonial={testimonialData[4]} />
+                  <TestimonialItem testimonial={testimonialData[5]} />
+                </div>
+                <div className="box">
+                  <TestimonialItem testimonial={testimonialData[6]} />
+                  <TestimonialItem testimonial={testimonialData[7]} />
+                </div>
+                <div className="box">
+                  <TestimonialItem testimonial={testimonialData[8]} />
+                  <TestimonialItem testimonial={testimonialData[9]} />
+                </div>
               </Slide>
             </div>
             <div className="small-screen-testimonials">
@@ -35,6 +47,24 @@ export default function TestimonialsSection() {
                 </div>
                 <div className="box">
                   <TestimonialItem testimonial={testimonialData[3]} />
+                </div>
+                <div className="box">
+                  <TestimonialItem testimonial={testimonialData[4]} />
+                </div>
+                <div className="box">
+                  <TestimonialItem testimonial={testimonialData[5]} />
+                </div>
+                <div className="box">
+                  <TestimonialItem testimonial={testimonialData[6]} />
+                </div>
+                <div className="box">
+                  <TestimonialItem testimonial={testimonialData[7]} />
+                </div>
+                <div className="box">
+                  <TestimonialItem testimonial={testimonialData[8]} />
+                </div>
+                <div className="box">
+                  <TestimonialItem testimonial={testimonialData[9]} />
                 </div>
               </Slide>
             </div>
