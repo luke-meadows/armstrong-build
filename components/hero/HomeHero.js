@@ -21,8 +21,8 @@ export default function HomeHero() {
                 project.
               </p>
               <p>
-                We pride ourselves on constructing industry leading spaces for
-                over <strong>30 years</strong>.
+                We pride ourselves on building industry leading spaces for over{' '}
+                <strong>30 years</strong>.
               </p>
             </div>
             <Button text="See our portfolio" url="/portfolio" />
