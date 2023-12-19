@@ -12,6 +12,7 @@ export default function Background() {
           alt="background image"
           priority
           placeholder="blur"
+          as="image"
         />
       </div>
     </StyledBackground>

@@ -6,9 +6,14 @@ import TopHeader from '../components/TopHeader';
 import Header from '../components/Header';
 import SectionHeading from '../components/SectionHeading';
 import Footer from '../components/Footer';
+import { NextSeo } from 'next-seo';
 export default function Contact() {
   return (
     <StyledContact>
+      <NextSeo
+        title="Contact us - Armstrong Build"
+        description="Send us a message to get started on your construction journey."
+      />
       <Background />
       <TopHeader />
       <Header />
