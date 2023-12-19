@@ -1,6 +1,8 @@
 import { styled } from 'styled-components';
 import Background from '../../components/Background';
 
+import CommercialHero from '../../components/hero/CommercialHero';
+
 import ServiceInformation from '../../components/ServiceInformation';
 import StartBuildingBanner from '../../components/StartBuildingBanner';
 import SectionHeading from '../../components/SectionHeading';

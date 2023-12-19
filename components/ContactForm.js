@@ -193,6 +193,7 @@ const StyledContactForm = styled.form`
     }
   }
   @media only screen and (max-width: 900px) {
+    margin-bottom: 2rem;
     .map {
       display: none;
     }

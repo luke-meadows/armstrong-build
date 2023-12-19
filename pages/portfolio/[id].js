@@ -1,11 +1,8 @@
 import styled from 'styled-components';
 import Background from '../../components/Background';
-import Header from '../../components/Header';
-import TopHeader from '../../components/TopHeader';
 import ProjectHero from '../../components/hero/ProjectHero';
 import Footer from '../../components/Footer';
 import Showreel from '../../components/Showreel';
-import HeroImg from '../../public/images/dummy-project-images/hero.jpg';
 import ProjectInfoSection from '../../components/ProjectInfoSection';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
@@ -30,8 +27,7 @@ export default function ProjectPage() {
   return (
     <StyledProjectPage>
       <Background />
-      <TopHeader />
-      <Header />
+
       <ProjectHero
         title={project?.title}
         desc={project?.heroText}

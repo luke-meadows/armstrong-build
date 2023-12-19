@@ -9,7 +9,7 @@ export default function TopHeader() {
           <SocialLinks />
           <div className="contact-info-container">
             <a href="tel:0121 441 5222">
-              <span className="dont-show-on-mobile">Tel:</span> 0121 441 5222
+              <span className="">Tel:</span> 0121 441 5222
             </a>
             <a
               className="dont-show-on-mobile"

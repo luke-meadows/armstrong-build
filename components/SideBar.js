@@ -31,7 +31,7 @@ export default function SideBar({ setShowSidebar }) {
       >
         <div className="top-section">
           <h2>Menu </h2>
-          <Button text="CLOSE" />
+          <button onClick={() => setShowSidebar(false)}>CLOSE</button>
         </div>
         <nav>
           <p
@@ -64,7 +64,7 @@ export default function SideBar({ setShowSidebar }) {
             </a>
           </Link>
         </nav>
-        <div className="socials">
+        {/* <div className="socials">
           <a
             target="blank"
             href="https://www.linkedin.com/company/86046305"
@@ -74,7 +74,7 @@ export default function SideBar({ setShowSidebar }) {
               <i className="icon-instagram" />
             </div>
           </a>
-        </div>
+        </div> */}
       </motion.div>
     </StyledSideBar>
   );
@@ -125,7 +125,13 @@ const StyledSideBar = styled(motion.div)`
       cursor: pointer;
     }
   }
-
+  button {
+    padding: 0.75rem 1rem;
+    background: var(--yellow);
+    color: #000;
+    font-weight: 800;
+    font-size: 1rem;
+  }
   .image-container {
     position: relative;
     height: calc(100vh - 5rem);

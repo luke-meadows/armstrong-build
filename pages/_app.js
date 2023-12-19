@@ -12,7 +12,6 @@ function MyApp({ Component, pageProps }) {
   const [showSidebar, setShowSidebar] = useState(false);
   return (
     <Page>
-      <button onClick={() => setShowSidebar(true)}>Click</button>
       <AnimatePresence initial={false}>
         {showSidebar && (
           <SideBar key="sidebar" setShowSidebar={setShowSidebar} />

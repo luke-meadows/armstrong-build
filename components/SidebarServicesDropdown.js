@@ -56,12 +56,13 @@ const StyledDropdown = styled(motion.div)`
     border-bottom: 1px solid var(--yellow2);
     width: fit-content;
     padding-right: 0.2rem;
-    background: #000;
-    color: var(--yellow);
-    padding: 0.5rem;
+    background: var(--yellow);
+    color: #000;
+    padding: 0.75rem;
     width: 100%;
     text-align: left;
     border-radius: 0.3rem;
+    font-weight: 700;
   }
   @media only screen and (max-width: 900px) {
     .dropdown-link {

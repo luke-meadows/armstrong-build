@@ -72,7 +72,9 @@ export default function Header({ setShowSidebar }) {
               </Link>
             </nav>
             <div onClick={() => setShowSidebar(true)} className="nav-icon">
-              Nav icon
+              <div className="line" />
+              <div className="line" />
+              <div className="line" />
             </div>
           </StyledHeader>
         </Container>
@@ -151,6 +153,16 @@ const StyledHeader = styled.header`
   }
   .nav-icon {
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1.2rem;
+    width: 2rem;
+    .line {
+      width: 100%;
+      height: 4px;
+      background: #000;
+      border-radius: 2rem;
+    }
   }
   @media only screen and (max-width: 900px) {
     padding: 1rem 0;
@@ -159,6 +171,7 @@ const StyledHeader = styled.header`
     }
     .nav-icon {
       display: initial;
+      display: flex;
     }
   }
 `;
