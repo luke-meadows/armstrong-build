@@ -40,6 +40,7 @@ export default function Header() {
                 <Logo />
               </div>
             </Link>
+
             <nav>
               <Link href="/">
                 <a href="">Home</a>
@@ -103,6 +104,9 @@ const StyledOuterHeader = styled.div`
   margin-bottom: 4rem;
   height: fit-content;
   transition: height 1.2s ease;
+  @media only screen and (max-width: 1235px) {
+    margin-bottom: 1rem;
+  }
 `;
 const StyledHeader = styled.header`
   display: flex;
@@ -138,6 +142,12 @@ const StyledHeader = styled.header`
   }
   .logo-home-link {
     cursor: pointer;
+  }
+  @media only screen and (max-width: 900px) {
+    padding: 1rem 0;
+    nav {
+      display: none;
+    }
   }
 `;
 

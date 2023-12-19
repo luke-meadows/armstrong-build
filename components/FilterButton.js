@@ -82,4 +82,7 @@ const StyledFilterButton = styled.div`
       color: #000;
     }
   }
+  @media only screen and (max-width: 1235px) {
+    display: none;
+  }
 `;

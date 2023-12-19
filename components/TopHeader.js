@@ -8,8 +8,15 @@ export default function TopHeader() {
         <div className="inner-top-header">
           <SocialLinks />
           <div className="contact-info-container">
-            <p>Tel: 0121 441 5222</p>
-            <p>Email: info@armstrongbuild.com</p>
+            <a href="tel:0121 441 5222">
+              <span className="dont-show-on-mobile">Tel:</span> 0121 441 5222
+            </a>
+            <a
+              className="dont-show-on-mobile"
+              href="mailto:info@armstrongbuild.com"
+            >
+              Email: info@armstrongbuild.com
+            </a>
           </div>
         </div>
       </Container>
@@ -22,7 +29,7 @@ const StyledTopHeader = styled.div`
   font-size: 0.7rem;
   font-weight: 400;
   border-bottom: 1px solid var(--grey);
-
+  padding: 0.5rem 0;
   .inner-top-header {
     justify-content: space-between;
   }
@@ -33,7 +40,15 @@ const StyledTopHeader = styled.div`
     align-items: center;
     gap: 1rem;
   }
-  p {
+  a {
     font-size: 0.7rem;
+  }
+  @media only screen and (max-width: 1235px) {
+    .dont-show-on-mobile {
+      display: none;
+    }
+    a {
+      font-size: 1rem;
+    }
   }
 `;

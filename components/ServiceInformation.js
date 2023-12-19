@@ -45,14 +45,12 @@ const StyledServiceInformation = styled.div`
       margin-top: 0;
     }
     h2 {
+      font-size: 1.4rem;
+      margin: 0 0 1rem 0;
+      color: var(--yellow);
+      font-weight: 500;
       margin: 0;
       padding: 0;
-      color: #fff;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-      border-radius: 0.2rem;
-      width: fit-content;
-      font-size: 2rem;
     }
     .right-top-container {
       display: flex;
@@ -89,5 +87,13 @@ const StyledServiceInformation = styled.div`
     background: #ffdc00;
     border-radius: 0.2rem;
     transition: all 0.3s ease;
+  }
+
+  @media only screen and (max-width: 1235px) {
+    flex-direction: column;
+    gap: 1rem;
+    .image-display-container {
+      width: 100%;
+    }
   }
 `;

@@ -10,7 +10,6 @@ import HomeHero from '../components/hero/HomeHero';
 import TestimonialsSection from '../components/TestimonialsSection';
 import Showreel from '../components/Showreel';
 import Footer from '../components/Footer';
-import { AnimatePresence, motion } from 'framer-motion';
 import AboutUsSection from '../components/AboutUsSection';
 import { NextSeo } from 'next-seo';
 export default function Home() {

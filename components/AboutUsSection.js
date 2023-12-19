@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Container from './Container';
-import Logo from './Logo';
+
 import Button from './Button';
 
 export default function AboutUsSection() {
@@ -12,13 +12,12 @@ export default function AboutUsSection() {
           Sustainable Buildings | Renovations
         </h1>
         <p>
-          We have been serving homeowners and businesses in Birmingham and the
-          West Midlands for over 30 years. Specialising in all areas of
-          construction, our resource of skills allows us to be the preferred
-          choice for clients with period or prestige homes, requiring
-          &apos;sympathetic&apos; extension or renovation. We can also manage
-          newer, more modern properties, or a mix of the two! Our diverse skill
-          set allows us to tackle any project with effectiveness.
+          Specialising in all areas of construction, our resource of skills
+          allows us to be the preferred choice for clients with period or
+          prestige homes, requiring &apos;sympathetic&apos; extension or
+          renovation. We can also manage newer, more modern properties, or a mix
+          of the two! Our diverse skill set allows us to tackle any project with
+          confidence.
         </p>
         <br />
         <p>
@@ -29,8 +28,8 @@ export default function AboutUsSection() {
         </p>
         <br />
         <p>
-          Please get in touch for to discuss the best in construction options
-          for you – with no obligation:
+          Please get in touch for to discuss the best construction options for
+          you – with no obligation:
         </p>
         <br />
         <Button text="Contact us" />
@@ -53,16 +52,18 @@ const StyledAboutUsSection = styled.section`
   }
   p {
     margin: 0;
-    /* text-align: center; */
     font-size: 1rem;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin: 0 0 1rem 0;
     color: var(--yellow);
-    font-weight: 400;
+    font-weight: 500;
   }
   @media only screen and (max-width: 1235px) {
-    padding: 1.2rem 1rem;
+    padding: 1rem;
+    h1 {
+      font-size: 1.5rem;
+    }
   }
 `;

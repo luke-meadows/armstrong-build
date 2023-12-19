@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Container from './Container.js';
 import Image from 'next/image.js';
-import SMASImage from '../public/images/accreditation-images/smas-logo.png';
+import SMASImage from '../public/images/accreditation-images/premier-warranty-logo.png';
 import CHASImage from '../public/images/accreditation-images/chas-logo.png';
 import Logo from './Logo.js';
 import SocialLinks from './SocialLinks.js';
@@ -33,10 +33,10 @@ export default function Footer() {
 
           <div className="accreditations">
             <div className="accreditation-container">
-              <Image src={SMASImage} layout="fill" objectFit="" />
+              <Image src={SMASImage} layout="responsive" objectFit="cover" />
             </div>
             <div className="accreditation-container">
-              <Image src={CHASImage} layout="fill" objectFit="" />
+              <Image src={CHASImage} layout="responsive" objectFit="" />
             </div>
           </div>
 
@@ -110,7 +110,6 @@ const StyledFooter = styled.footer`
   .accreditation-container {
     position: relative;
     min-width: 12rem;
-    height: 7rem;
     border-radius: 0.3rem;
     overflow: hidden;
   }
@@ -140,6 +139,26 @@ const StyledFooter = styled.footer`
       font-weight: 00;
       text-decoration: underline;
       color: #cdcdcd;
+    }
+  }
+  @media only screen and (max-width: 1235px) {
+    .address {
+      display: none;
+    }
+    .accreditations {
+      justify-content: flex-start;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .accreditations {
+      flex-direction: column;
+      align-items: start;
+    }
+    .accreditation-container {
+      min-width: 6rem;
+    }
+    .footer-nav {
+      display: none;
     }
   }
 `;

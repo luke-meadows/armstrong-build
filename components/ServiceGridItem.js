@@ -83,7 +83,7 @@ const StyledServiceGridItem = styled.div`
     border-radius: 0.2rem;
   }
   h3 {
-    font-size: 18px;
+    font-size: 1.1rem;
     margin: 0;
     padding: 0 0.4rem;
     clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);

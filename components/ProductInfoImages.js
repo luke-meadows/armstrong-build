@@ -1,8 +1,4 @@
 import styled from 'styled-components';
-import Img1 from '../public/images/dummy-project-images/dining.jpg';
-import Img2 from '../public/images/dummy-project-images/hall.jpg';
-import Img3 from '../public/images/dummy-project-images/livingr.jpg';
-import Img4 from '../public/images/dummy-project-images/livingr2.jpg';
 import Image from 'next/image';
 export default function ProjectInfoImages({ images = [] }) {
   return (

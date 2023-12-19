@@ -90,4 +90,9 @@ const StyledSectionHeading = styled.div`
     border-radius: 0.2rem;
     transition: all 0.3s ease;
   }
+  @media only screen and (max-width: 1235px) {
+    button {
+      display: none;
+    }
+  }
 `;

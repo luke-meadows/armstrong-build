@@ -26,4 +26,7 @@ const StyledLoader = styled.div`
       transform: rotate(1turn);
     }
   }
+  @media only screen and (max-width: 900px) {
+    display: none;
+  }
 `;

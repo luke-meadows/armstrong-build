@@ -116,11 +116,27 @@ const StyledContactForm = styled.form`
     }
   }
   @media only screen and (max-width: 1235px) {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    .first-name,
+    .surname,
+    .phone,
+    .email,
+    .service,
+    .message,
+    button {
+      font-size: 16px;
+    }
+
     .message {
       height: 18rem;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .map {
+      display: none;
     }
   }
 `;

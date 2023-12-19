@@ -48,6 +48,7 @@ const StyledRecentProjects = styled.section`
     gap: 1rem;
   }
   @media only screen and (max-width: 1235px) {
+    margin-bottom: 2rem;
     .recent-projects-grid {
       grid-template-columns: repeat(2, 1fr);
     }

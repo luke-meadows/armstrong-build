@@ -11,4 +11,7 @@ export default function Logo({ width = '250px' }) {
 const StyledLogo = styled.div`
   position: relative;
   width: ${(props) => props.width};
+  @media only screen and (max-width: 1235px) {
+    width: 180px;
+  }
 `;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Container from './Container';
 import { Slide } from 'react-slideshow-image';
-import TestimonialItem from './TestimonialItem';
+import TestimonialItem from '../components/TestimonialItem';
 import { testimonialData } from '../lib/testimonial-data';
 
 export default function TestimonialsSection() {

@@ -1,6 +1,6 @@
 import Container from '../Container';
 import Image from 'next/image';
-import HeroImg from '../../public/images/project-images/024/1.jpg';
+import HeroImg from '../../public/images/hero-images/contact-hero.jpg';
 import { StyledHero } from './HomeHero';
 export default function ContactHero() {
   return (
@@ -31,12 +31,12 @@ export default function ContactHero() {
                 </div>
                 <div>
                   <h5>Address</h5>
-                  <p>Unit 3, Partons Road, Kings Heath Birmingham B14 6TA</p>
+                  <p>Unit 3, Partons Road, Kings Heath, Birmingham, B14 6TA</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="right-side">
+          <div className="right-side contact-hero">
             <Image
               src={HeroImg}
               layout="fill"

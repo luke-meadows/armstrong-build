@@ -25,7 +25,7 @@ export default function HomeHero() {
                 over <strong>30 years</strong>.
               </p>
             </div>
-            <Button />
+            <Button text="See our portfolio" url="/portfolio" />
           </div>
           <div className="right-side">
             <Image
@@ -112,8 +112,12 @@ export const StyledHero = styled.section`
     }
   }
   @media only screen and (max-width: 1235px) {
+    margin-bottom: 2rem;
     .hero-inner {
       flex-direction: column-reverse;
+    }
+    .contact-hero {
+      display: none;
     }
     .left-side,
     .right-side {
@@ -123,6 +127,7 @@ export const StyledHero = styled.section`
 
     .left-side {
       height: fit-content;
+      min-height: 5rem;
       clip-path: none;
       padding-right: 2rem;
       padding: 1.5rem 1rem;

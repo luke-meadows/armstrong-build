@@ -1,6 +1,6 @@
 import Container from '../Container';
 import Image from 'next/image';
-import HeroImg from '../../public/images/hero-images/services-hero.jpeg';
+import HeroImg from '../../public/images/project-images/012/2.jpeg';
 import { StyledHero } from './HomeHero';
 import Button from '../Button';
 export default function PortfolioHero() {
@@ -14,10 +14,9 @@ export default function PortfolioHero() {
             </div>
             <p className="text">
               Welcome to our portfolio page, where we proudly showcase our
-              expertise and craftsmanship in building remarkable structures.
-              With years of industry experience and a commitment to excellence,
-              we have successfully completed a diverse range of construction
-              projects.
+              expertise and craftsmanship. With <strong>30 years</strong> of
+              industry experience and a commitment to excellence, we have
+              successfully completed a diverse range of construction projects.
             </p>
             <Button />
           </div>
