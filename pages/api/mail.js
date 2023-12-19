@@ -12,7 +12,7 @@ export default async function handler(req, res) {
 
   const email = {
     to: 'hello@lukemeadows.dev',
-    from: 'lukemeadowsdev@gmail.com',
+    from: 'hello@lukemeadows.dev',
     subject: 'New Website Enquiry',
     text: messageText,
   };
