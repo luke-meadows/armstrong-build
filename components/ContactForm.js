@@ -13,7 +13,15 @@ export default function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    clearForm();
+    fetch('/api/mail', {
+      method: 'post',
+      body: JSON.stringify(inputs),
+    }).then((res) => {
+      if (res.status === 200) {
+        clearForm();
+      } else {
+      }
+    });
   }
 
   return (
