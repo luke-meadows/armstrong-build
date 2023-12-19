@@ -11,7 +11,7 @@ export default async function handler(req, res) {
   `;
 
   const email = {
-    to: 'lukemeadowsdev@gmail.com',
+    to: 'hello@lukemeadows.dev',
     from: 'lukemeadowsdev@gmail.com',
     subject: 'New Website Enquiry',
     text: messageText,
