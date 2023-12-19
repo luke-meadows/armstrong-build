@@ -4,7 +4,7 @@ import { healthcareData } from '../../lib/service-info-sections/healthcare-data'
 import ServiceInformation from '../ServiceInformation';
 export default function NewBuildIntroSection() {
   return (
-    <Container>
+    <Container noGapMobile>
       <StyledNewBuildIntroSection>
         <ServiceInformation
           padding={false}
@@ -64,4 +64,7 @@ const StyledNewBuildIntroSection = styled.section`
   overflow: hidden;
   margin-bottom: 4rem;
   position: relative;
+  @media only screen and (max-width: 1235px) {
+    margin-bottom: 2rem;
+  }
 `;

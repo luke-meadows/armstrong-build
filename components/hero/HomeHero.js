@@ -6,7 +6,7 @@ import Button from '../Button';
 export default function HomeHero() {
   return (
     <StyledHero>
-      <Container>
+      <Container noGapMobile>
         <div className="hero-inner">
           <div className="left-side">
             <div>
@@ -109,6 +109,11 @@ export const StyledHero = styled.section`
       color: #ffdc00;
       margin: 0;
       margin-bottom: 0.3rem;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .hero-inner {
+      border-radius: 0;
     }
   }
   @media only screen and (max-width: 1235px) {

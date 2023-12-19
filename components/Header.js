@@ -107,6 +107,9 @@ const StyledOuterHeader = styled.div`
   @media only screen and (max-width: 1235px) {
     margin-bottom: 1rem;
   }
+  @media only screen and (max-width: 900px) {
+    margin-bottom: 0rem;
+  }
 `;
 const StyledHeader = styled.header`
   display: flex;

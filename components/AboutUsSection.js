@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 import Container from './Container';
-
 import Button from './Button';
-
 export default function AboutUsSection() {
   return (
-    <Container>
+    <Container noGapMobile>
       <StyledAboutUsSection>
         <h1>
           Healthcare | Commercial Buildings | New Builds | Extensions |

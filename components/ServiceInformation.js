@@ -29,7 +29,6 @@ const StyledServiceInformation = styled.div`
   background: #000;
   position: relative;
   margin-bottom: 2rem;
-
   .image-display-container {
     width: 50%;
   }
@@ -94,6 +93,15 @@ const StyledServiceInformation = styled.div`
     gap: 1rem;
     .image-display-container {
       width: 100%;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    padding: 2rem 1rem;
+    border-radius: 0;
+    .right {
+      h2 {
+        font-size: 2rem;
+      }
     }
   }
 `;

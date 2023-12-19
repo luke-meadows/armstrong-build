@@ -2,37 +2,64 @@ import styled from 'styled-components';
 import Container from './Container';
 import Image from 'next/image';
 import Chevron from '../public/images/icons/chevron-down.png';
+import useForm from '../lib/useForm';
 export default function ContactForm() {
   function handleSubmit(e) {
     e.preventDefault();
   }
+  const { inputs, handleChange, clearForm } = useForm({
+    firstName: '',
+    surname: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
   return (
     <Container>
       <StyledContactForm onSubmit={handleSubmit}>
         <input
+          name="firstName"
+          value={inputs.firstName}
           required={true}
           type="text"
           placeholder="First Name *"
           className="first-name"
+          onChange={handleChange}
         />
         <input
+          name="surname"
+          value={inputs.surname}
           required={true}
           type="text"
           placeholder="Surname *"
           className="surname"
+          onChange={handleChange}
         />
-        <input type="text" placeholder="Phone" className="phone" />
         <input
+          name="phone"
+          value={inputs.phone}
+          type="phone"
+          placeholder="Phone"
+          className="phone"
+          onChange={handleChange}
+        />
+        <input
+          name="email"
+          value={inputs.email}
           required={true}
-          type="text"
+          type="email"
           placeholder="Email *"
           className="email"
+          onChange={handleChange}
         />
         <textarea
+          name="message"
+          value={inputs.message}
           required={true}
           type="text"
           placeholder="Message *"
           className="message"
+          onChange={handleChange}
         />
         <div className="map">
           <iframe
