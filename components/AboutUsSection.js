@@ -26,8 +26,8 @@ export default function AboutUsSection() {
         </p>
         <br />
         <p>
-          Please get in touch for to discuss the best construction options for
-          you – with no obligation:
+          Please get in touch for a no obligation consultation to discuss the
+          best construction options for you:
         </p>
         <br />
         <Button text="Contact us" />
