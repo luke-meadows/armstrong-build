@@ -4,15 +4,28 @@ import Image from 'next/image';
 import Chevron from '../public/images/icons/chevron-down.png';
 import useForm from '../lib/useForm';
 export default function ContactForm() {
-  function handleSubmit(e) {
-    e.preventDefault();
-  }
   const { inputs, handleChange, clearForm } = useForm({
     name: '',
     email: '',
     phone: '',
     message: '',
   });
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    fetch('/api/mail', {
+      method: 'post',
+      body: JSON.stringify(inputs),
+    }).then((res) => {
+      if (res.status === 200) {
+        // do stuff
+        clearForm();
+      } else {
+        // do other stuff
+      }
+    });
+  }
+
   return (
     <Container>
       <StyledContactForm onSubmit={handleSubmit}>
