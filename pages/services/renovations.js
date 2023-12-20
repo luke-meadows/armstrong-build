@@ -8,7 +8,7 @@ import StartBuildingBanner from '../../components/StartBuildingBanner';
 import Footer from '../../components/Footer';
 import ServiceInformation from '../../components/ServiceInformation';
 import Container from '../../components/Container';
-import { newBuildData } from '../../lib/service-info-sections/newbuild-data';
+import { renovationData } from '../../lib/service-info-sections/renovation-data';
 import { NextSeo } from 'next-seo';
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
 
       <RenovationsHero />
       <Container>
-        <ServiceInformation service={newBuildData} />
+        <ServiceInformation service={renovationData} />
       </Container>
       <div className="two-rem-spacer" />
       <SectionHeading heading="Renovation Projects" />
