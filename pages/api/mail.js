@@ -22,7 +22,7 @@ export default async function handler(req, res) {
     .send({
       from: 'onboarding@resend.dev',
       // from: 'info@armstrongbuild.com',
-      to: 'info@armstrongbuild.com',
+      to: 'hello@lukemeadows.dev',
       subject: 'New Website Enquiry',
       html: html,
     })
