@@ -20,8 +20,8 @@ export default async function handler(req, res) {
   `;
   await resend.emails
     .send({
-      from: 'onboarding@resend.dev',
-      // from: 'info@armstrongbuild.com',
+      // from: 'onboarding@resend.dev',
+      from: 'info@armstrongbuild.com',
       to: 'hello@lukemeadows.dev',
       subject: 'New Website Enquiry',
       html: html,
